@@ -22,7 +22,7 @@ namespace aedt_launcher
     /// </summary>
     public partial class MainWindow : Window
     {
-        aedt_launcher.IcepakClass icepak = new IcepakClass();
+        aedt_launcher.FileClass icepak = new FileClass();
 
         public MainWindow()
         {

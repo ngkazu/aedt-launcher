@@ -11,7 +11,7 @@ using System.Configuration;
 
 namespace aedt_launcher
 {
-    class IcepakClass
+    class FileClass
     {
         private string filename;
         private string filepath;
