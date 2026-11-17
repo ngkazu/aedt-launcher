@@ -68,7 +68,7 @@
     <Resource Include="Images\title.png" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="SharpZipLib" Version="1.1.0" />
+    <PackageReference Include="SharpZipLib" Version="1.4.2" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="11.0.0" />
   </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
