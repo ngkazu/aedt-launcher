@@ -50,8 +50,9 @@ namespace aedt_launcher
 
         private void Window_Drop(object sender, DragEventArgs e)
         {
-            MyFileList list = this.DataContext as MyFileList;
-            string[] files = e.Data.GetData(DataFormats.FileDrop) as string[];
+            MyFileList? list = this.DataContext as MyFileList;
+            string[]? files = e.Data.GetData(DataFormats.FileDrop) as string[];
+            if (files == null) return;
 
             checkFile(files);
         }
