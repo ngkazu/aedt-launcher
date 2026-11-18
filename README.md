@@ -51,6 +51,19 @@ If no key matches the detected type and version, nothing is launched and no erro
 dotnet build .\aedt-launcher\aedt-launcher.csproj -c Release
 ```
 
+### Single-file publish
+
+To distribute the launcher as a single executable with its dependencies embedded, use `dotnet publish`.
+
+```powershell
+dotnet publish .\aedt-launcher\aedt-launcher.csproj -c Release -r win-x64 --self-contained false `
+  -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true -p:Platform=x64 -o .\publish
+```
+
+The output folder contains `aedt-launcher.exe` and `aedt-launcher.dll.config`. Edit the config file next to the executable to change the `appSettings`.
+
+The target machine needs the .NET 10 Desktop Runtime. Add `--self-contained true` to bundle the runtime instead (larger output).
+
 ## Dependencies
 
 - [SharpZipLib](https://github.com/icsharpcode/SharpZipLib) 1.4.2 (used to extract Tar archives)

@@ -51,6 +51,19 @@ ANSYS の解析ファイル（Icepak / AEDT / SIwave）をドラッグ＆ドロ�
 dotnet build .\aedt-launcher\aedt-launcher.csproj -c Release
 ```
 
+### 単一ファイルとしての発行
+
+依存 DLL をまとめた単一の実行ファイルとして配布するには、`dotnet publish` を使います。
+
+```powershell
+dotnet publish .\aedt-launcher\aedt-launcher.csproj -c Release -r win-x64 --self-contained false `
+  -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true -p:Platform=x64 -o .\publish
+```
+
+出力フォルダには `aedt-launcher.exe` と `aedt-launcher.dll.config` が作られます。設定を変更する場合は、exe と同じフォルダにある設定ファイルの `appSettings` を編集してください。
+
+実行先には .NET 10 Desktop Runtime が必要です。ランタイムを同梱する場合は `--self-contained true` を指定します（出力サイズは大きくなります）。
+
 ## 依存パッケージ
 
 - [SharpZipLib](https://github.com/icsharpcode/SharpZipLib) 1.4.2（Tar の展開に使用）
