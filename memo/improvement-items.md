@@ -78,10 +78,19 @@
 ## 10. 環境変数から AEDT の実行パスを取得
 
 - 内容: 現在は `App.config` の `appSettings` のみから実行パスを取得している。環境変数からも取得できるようにする。
+- 調査結果（このPC）:
+  - システム環境変数 `ANSYSEM_ROOT<数値>` が存在する（数値はバージョンに対応）。
+    - `ANSYSEM_ROOT242` = `C:\Program Files\AnsysEM\v242\Win64`
+    - `ANSYSEM_ROOT251` = `C:\Program Files\ANSYS Inc\v251\AnsysEM`
+    - `ANSYSEM_ROOT252` = `C:\Program Files\ANSYS Inc\v252\AnsysEM`
+    - `ANSYSEM_ROOT261` = `C:\Program Files\ANSYS Inc\v261\AnsysEM`
+    - `ANSYSEM_ROOT271` = `C:\Program Files\ANSYS Inc\v271\AnsysEM`
+  - C# からの取得: `Environment.GetEnvironmentVariables()` で列挙可能（システム・ユーザー両方を含む）。名前は正規表現 `^ANSYSEM_ROOT\d+$` で絞り込める。
+  - 注意: アプリ起動後にシステム側で変更された変数はプロセスに反映されない。反映させる場合はレジストリ `HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment` を直接読む必要がある。
+  - 未確認: 各フォルダに `ansysedt.exe` が存在するか。
 - 要確認:
-  - 環境変数名（例: `ANSYSEM_ROOT` のようなインストール先ルートか、実行ファイルのフルパスか）
+  - 環境変数 `ANSYSEM_ROOT<数値>` を使う場合の、実行ファイルへの組み立て方（ルート直下か `Win64` 配下か）
   - `App.config` と環境変数の優先順位
-  - バージョンごとに変数を分けるか（`AEDT:2018.1` などのキー単位で対応するか）
 - 補足: 項目 4（未設定時の表示）と関連する。README の「Executable Configuration」の更新が必要。
 - 終了フラグ: [ ]
 
@@ -91,6 +100,17 @@
 - 内容: メニューの `InputGestureText="Ctrl+Q"` は表示のみで、実際のショートカット（`KeyBinding`）が定義されていないため、Ctrl+Q を押してもアプリが終了しない。
 - 対応案: `Window` に `KeyBinding`（Ctrl+Q → `MenuItem_Click` 相当の終了処理）を追加する。
 - 補足: 既存の終了処理（`app_Exit`）を再利用できるため、変更は小さい。
+- 終了フラグ: [ ]
+
+## 12. アプリアイコンがさみしい
+
+- 内容: アプリアイコンの見た目が寂しい印象になっている。
+- 原因: `aedt-launcher.csproj` で `ApplicationIcon` を指定していないため、デフォルトアイコンが使われている。
+- 作り方:
+  1. 256×256px 以上の透過PNGを作成する（Inkscape / GIMP / Figma などで作成）。
+  2. `magick input.png -define icon:auto-resize=256,48,32,24,16 app.ico` で複数サイズの ICO に変換し、`Images\` に置く。
+  3. csproj に `<ApplicationIcon>Images\app.ico</ApplicationIcon>` を追加する。
+- 補足: 具体的なデザイン方針は未定。
 - 終了フラグ: [ ]
 
 ## 方針・未決事項のまとめ（8・9・10）
@@ -108,9 +128,8 @@
 - [ ] 承認: SharpCompress の NuGet 追加（依存関係の変更）
 - [ ] 確認: aedtz の展開後エントリ構成（どのエントリからバージョンを読むか）。サンプル `data/Graphics_Card_Test.aedtz`
 - [ ] 確認: siwz の展開後エントリ構成と、バージョン取得元（`DB_VERSION` を流用できるか）。サンプル `data/BD-SAMPLE.DSGN_GD6.siwz`
-- [ ] 決定: 環境変数名（インストール先ルートか、実行ファイルのフルパスか）
+- [ ] 決定: `ANSYSEM_ROOT<数値>` を使うか、使う場合の実行ファイルの組み立て方
 - [ ] 決定: `App.config` と環境変数の優先順位
-- [ ] 決定: バージョンごとに変数を分けるか（`AEDT:2018.1` などのキー単位か）
 - [ ] 決定: 項目 4 の未設定時表示方針（README の記載変更を含む）
 
 ### 実装前に必要な作業
