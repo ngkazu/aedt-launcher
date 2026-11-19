@@ -1,0 +1,2896 @@
+#@ Ansys Icepak 24.2 model file encoding::identity.1096 Thu Nov 19 02:23:16 GMT 2026
+
+object material Mask_material
+Il!!7atk2#t]zW!n`W4,Dd|h+/{k"H5l}jVHo
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC?lx,0P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;YhJQ(.CQecO4W%w:M!f`)
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp=xT~'
+Il!!1Kq^$-xcsB&e[B7/az
+end object
+
+object material Ceramic_material
+Il!!5_ri0!r[xU~l^U2*Bbzf)-yi F3j{i[
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCAl ,
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;YhJQ(.CQecO4W%w:M!f`)
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp?pO~'
+Il!!e0C:`QC<JvS--&XZj+G=jgL,[xj9Cn
+Il!!}H[Rxi[Da>gUG>zr+KcOq{fUYA}DHA+.	s!p8=.	1d.myV	9Oaq~82	l0D*
+Il!!1Kq^$-xcsB&e[B7/az
+Il!!}H[Rxi[Tb/kEE>p_7I`U"vYBsI=	zR/5V	~"&7-o	e?fbT=8N	y 8"}
+end object
+
+object material Substrate_material
+Il!!5_ri0!r[xU~l^U2*Bbzf)-yi F3j{hTHk
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC?lx,0P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;YhJQ(.CQecO4W%w:M!f`)
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp=xT~'
+Il!!1Kq^$-xcsB&e[B7/az
+end object
+
+object material Pad_material
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.evdX@
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC?lx,0P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;YhJQ(.CQecO4W%w:M!f`)
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp=xT~'
+Il!!1Kq^$-xcsB&e[B7/az
+end object
+
+object material Flipchip_underfill
+Il!!8bul3$u^{X"oaX5-Ee}i,0|l#I6m~kWP
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC?ey,0P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;YhJQ(.CQecO4W%w:M!f`)
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp7pV#%c
+Il!!1Kq^$-xcsB&e[B7/az
+end object
+
+object material Mold_material
+Il!!8bul3$u^{X"oaX5-Ee}i,0|l#I6m~kWP
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC?lx,0P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;YhJQ(.CQecO4W%w:M!f`)
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp=xT~'
+Il!!1Kq^$-xcsB&e[B7/az
+end object
+
+object material FC-72(@25degC)
+Il!!4^qh/ qZwT}k]T1)Aaye(,xh~E2izgSDk+
+Il!!1Nhq9y{g%s
+Il!!0Mjm+{mftA}WWP#qCWov"'zp7oT!%c
+Il!!0Mjm+{mimUxaiE8(3Xj"P
+Il!!9Vsv4%v_|Y#pbY6.Ff~j-1}m$J7n lXIo5
+Il!!6Sps1"soyTz]tR+#MXqv&"{e Z'eqYWDg)2?
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcEZi/<\cwub^Z:#HI5-
+Il!!2Olo-}okoWzckG:*5Nmr6/ia|aQ!)eSHj'
+Il!!d)4AU`\8>6P3@y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp7oR)%c
+Il!!1Kq^$-xcsB&e[B7/az
+Il!!0Mjm+{mWiP)[jUC?i!,0P
+Il!!}C[Ztx{\XBrMc|'i+KY]}&',syvLN6tb?h3Rvede}Ds9V-"mL>O1wklEm,,IP7z}6txzB!)8b.7&h+rc'[
+end object
+
+object material FC-3283(@25degC)
+Il!!4^qh/ qZwT}k]T1)Aaye(,xh~E2izgSDk+
+Il!!1Nhq9y{g%s
+Il!!0Mjm+{mftA}WWP#qCWov"'zp7oT!%c
+Il!!0Mjm+{mimUxaiE8(3Xj"P
+Il!!7Tqt2#t]zW!n`W4,Dd|h+/{k"H5l}jVGn1
+Il!!3Pmp.~plvQwZqO( JUns#~xb|W$bnVTAd&/9
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcEZi/<\cwub^Z:#HI5-
+Il!!6Sps1"sos[~goK>.9Rqv:3me!eU%-iXKg)7
+Il!!d)4AU`\8>6P3@y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp7oR)%c
+Il!!1Kq^$-xcsB&e[B7/az
+Il!!0Mjm+{mWiP)[jUC?k{,0P
+Il!!}C[Ztx{\XBrMc|'i+KY]}&',syvLN6tb?h3Rvede}Ds9V-"mL>O1wklEm,,IP7z}6pt%@1![a,qo#W`utLj
+end object
+
+object material Die_attach_material
+Il!!5_ri0!r[xU~l^U2*Bbzf)-yi F3j{jTJ
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC?lx,0P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;YhJQ(.CQecO4W%w:M!f`)
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp=xT~'
+Il!!1Kq^$-xcsB&e[B7/az
+end object
+
+object material FC-40(@25degC)
+Il!!4^qh/ qZwT}k]T1)Aaye(,xh~E2izgSDk+
+Il!!1Nhq9y{g%s
+Il!!0Mjm+{mftA}WWP#qCWov"'zp7oT!%c
+Il!!0Mjm+{mimUxaiE8(3Xj"P
+Il!!7Tqt2#t]zW!n`W4,Dd|h+/{k"H5l}jVGn1
+Il!!2Olo-}okuPvYpN'~ITmr"}wa{V#amUS@c%.7
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcEZi/<\cwub^Z:#HI5-
+Il!!4Qnq/ qmqY|emI<,7Pot81kc~cS#+gYEf+
+Il!!d)4AU`\8>6P3@y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp7oR)%c
+Il!!1Kq^$-xcsB&e[B7/az
+Il!!0Mjm+{mWiP)[jUC?k ,0P
+Il!!}C[Ztx{\XBrMc|'i+KY]}&',syvLN6tb?h3Rvede}Ds9V-"mL>O1wklEm,,IP7z}6pw"@1![a,qo#W`u6
+end object
+
+object material FR-4_Ref
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.evcOCa
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC?e},0P
+Il!!}8aX"jjUQ7hNY=1w?
+Il!!s8CPdng9\?i;YhJQ(.CQecO4W%w:M!f`)
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp7rO!%c
+Il!!1Kq^$-xcsB&e[B7/az
+end object
+
+object material FR-4
+Il!!5_ri0!r[xU~l^U2*Bbzf)-yi F3j{hTHk
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC?e},0P
+Il!!}8aX"jjUQ7hNY=1w?
+Il!!s8CPdng9\?i;YhJQ(.CQecO4W%w:M!f`)
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp7rO!%c
+Il!!1Kq^$-xcsB&e[B7/az
+end object
+
+object material FC-43(@25degC)
+Il!!4^qh/ qZwT}k]T1)Aaye(,xh~E2izgSDk+
+Il!!1Nhq9y{g%s
+Il!!0Mjm+{mftA}WWP#qCWov"'zp7oT!%c
+Il!!0Mjm+{mimUxaiE8(3Xj"P
+Il!!7Tqt2#t]zW!n`W4,Dd|h+/{k"H5l}jVGn1
+Il!!2Olo-}okuPvYpN'~ITmr"}wa{V#amUS@c%.7
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcEZi/<\cwub^Z:#HI5-
+Il!!4Qnq/ qmqY|emI<,7Pot81kc~cS#+gZFk+
+Il!!d)4AU`\8>6P3@y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp7oR)%c
+Il!!1Kq^$-xcsB&e[B7/az
+Il!!0Mjm+{mWiP)[jUC?k!,0P
+Il!!}C[Ztx{\XBrMc|'i+KY]}&',syvLN6tb?h3Rvede}Ds9V-"mL>O1wklEm,,IP7z}6py!@1![a,qo#W`u6
+end object
+
+object material Graphite-Typical
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.evhQ
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC?kx,
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yrl_!0OThqMIY6v
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp?oO~'
+Il!!e0C:`QC<JvS--&XZj+G=jgL,[xj9Cn
+Il!!}H[Rxi[Tb/kEE>p_7I`U"vYBsI=	wU?}Pw{	98&\1cA	{W=(Oqp~	;4k~B
+end object
+
+object material Fe-Pure_Ref
+Il!!2\of-}oXuR{i[R/'?_wc&*vf|C0gxmS@e
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCEk ,
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp:sX~'
+Il!!e0C:`QC<JvS--&XZj+G=jgL,[xj9Cn
+Il!!}H[Rxi[Da>gUG>zr+KcOq{fUYA}DHA+}Pnx!&5-m,\>VtQ=8>tt!620[2R<h`b=:DorlF/1c|\Aym^4'Mk|{312n)`9cmZ65Bu'v?+-_1_1qY[A8Sb{u/=*p"O4qzY?,QV#}>6so'f=ltQ//Onx!&5*t.Z>fbTB6Nq` ?20i/T,jp[<96pw!B/1c|Y:po^$8Hm|yC)~i+^9sWb88Pl}cF++o*Q5qnX@4Cj{s?5{r*d1osIH,Ofyo@7*l$]-vtO?.?q &44&\7\<frC>=Nop~(30k-T<Xq`@7Fob}G1/c-F;rs\478o|{A)/U4d7sgL8:Rj}s133m/a!tiZ>4ST$u=7,`%d3msY13Ud} .:$n"]=^zZ=3O`}!62&l}b?duS->Nqn~8"5o-[<Xx]<7Fob!E/4c|W:ro\478p~yF)~f-`9qg\&7Zj!s1,1o*_1qY]A2UdkvE5,n"_#rvWA,Ag" >4$ns`AlyQ/{
+Il!!}H[Rxi[Tb/kEE>p_7I`U"vYBsI-ptQ=.O`{)<2,l}^CfpS=(Rsu|92 m8\:iuM@=Omr|246c+V:bse45Nml C)-e+P=|gZ;5Bq}s?+-_/d2oqZ0:Sdyu?%1w%]<ocG
+end object
+
+object material Cu-German
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.eveV>a
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCFiy40P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp9xS~'
+end object
+
+object material {SiC-kt grade}
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.evdY@_#
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCAdx,0P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!r7BOcmf8[>h:X.zY{>
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp<vW~'
+end object
+
+object material Al-foil-bright
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!m2=J^ha3V9c5SZma~0HUk
+Il!!e*5BVa]9?7^=>wZGn
+Il!!7azq/ x_jN*bpV4,Dd|)WM=/
+end object
+
+object material Au-Typical
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.evfRC_#
+Il!!1Nhq9y{g%s
+Il!!1[ne,|nXjQ*\kVD@m{54
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp7rP~'
+Il!!e0C:`QC<JvS--&XZj+G=jgL,[xj9Cn
+Il!!}H[Rxi[Da>gUG>zr+KcOq{fUYA}DHA+.	sz%&5-o	_@jbVD;	tq"(30k/	?isM*
+Il!!}H[Rxi[Tb/kEE>p_7I`U"vYBsI=	}X/5V	"(&7-o	]AgbT=8N	q"9"}
+end object
+
+object material {Aluminum 6061-T4}
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.evdVD_#
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC@jx,0P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp>xU~'
+end object
+
+object material eGRAF_HS_400
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC?lx,
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;YglS,,3VvaK9O6v
+Il!!0Zmd+{mVsPygYP-%=]ua98:!6mO
+Il!!0Zmd+{mVsPygYP-%=]ua:8:!6mO
+Il!!5_ri0!r[xU~l^U2*Bbzf@=A$@
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp>sU~'
+Il!!o:MDj[M6S0YG90ld|=UAtqV6e/qE?#
+end object
+
+object material eGRAF_SPREAD_SS300
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC?f~,
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;YglS,,3VvaK9O6v
+Il!!0Zmd+{mVsPygYP-%=]ua989!6mO
+Il!!0Zmd+{mVsPygYP-%=]ua:89!6mO
+Il!!5_ri0!r[xU~l^U2*Bbzf@=?$@
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp=pP~'
+Il!!o:MDj[M6S0YG90ld|=UAtqV6e/qE?#
+end object
+
+object material {Aluminum 6061-T6}
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.evdWG_#
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC@jx,0P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp>xU~'
+end object
+
+object material Bakelite-JSME
+Il!!5_ri0!r[xU~l^U2*Bbzf)-yi F3j{hTJ
+Il!!1Nhq9y{g%s
+Il!!5_ri0!r\nU.`oZHDn%6
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yhue-9AZsn]
+Il!!d)4AU`\8>6]67y\
+Il!!5_ri0!rkyF#\\U(vH\t{', u<vY+
+end object
+
+object material STABLCOR_ST500
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC@ex,
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Ykh_!;AZio
+Il!!0Zmd+{mVsPygYP-%=]ua987&6mO
+Il!!0Zmd+{mVsPygYP-%=]ua:87&6mO
+Il!!0Zmd+{mVsPygYP-%=]ua;89~6
+Il!!d)4AU`\8>6]67y\
+Il!!6`sj1"slzG$]]V)wI]u|(-!vDx\%0l_L
+Il!!o:MDj[M6S0YG90ld|=UAtqV6e/qE?#
+end object
+
+object material STABLCOR_ST175
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC@dz,
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Ykh_!;AZio
+Il!!0Zmd+{mVsPygYP-%=]ua98;%4o
+Il!!0Zmd+{mVsPygYP-%=]ua:8;%4o
+Il!!0Zmd+{mVsPygYP-%=]ua;88~6
+Il!!d)4AU`\8>6]67y\
+Il!!7atk2#tm{H%^^W*xJ^v})."wD [&2qYN
+Il!!o:MDj[M6S0YG90ld|=UAtqV6e/qE?#
+end object
+
+object material Pt-Typical
+Il!!3]pg.~pYvS|j\S0(@`xd'+wg}D1hymW
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC@d|12
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp7qV~'
+Il!!e0C:`QC<JvS--&XZj+G=jgL,[xj9Cn
+Il!!}H[Rxi[Tb/kEE>p_7I`U"vYBsI=	|V/5V	!&&7-o	]AkbT=8N	q"="}
+end object
+
+object material Glycol-80
+Il!!0Mjm+{m`sNti[E+vHh24NH
+Il!!1Nhq9y{g%s
+Il!!0Mjm+{mftA}WWP#qCWov"'zp8wO!%c
+Il!!4Qnq/ qZwT}k]T1)Aaye(,xh~E2izgSGi
+Il!!8Uru3$uq{V|_vT-%OZsx($}g"\)gs[YFi+3@X
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcEXh;:Y\.YcKiBvNS5-
+Il!!3Pmp.~plpX{dlH;+6Ons70jb}bS%(f*@g
+Il!!d)4AU`\8>6P3@y\
+Il!!0Mjm+{mWiP)[jUC?dz/0P
+end object
+
+object material Fe-cast-polished
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!n3>K_ib4W:d6Tct\!
+Il!!e*5BVa]9?7^=>wZGn
+Il!!1[tk)yrYdH$\jP.&>^v#QG9#
+end object
+
+object material {Hard Rubber-Black-surface}
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcE/
+Il!!e*5BVa]9?7^=>wZGn
+Il!!5_xo-}v]hL(`nT2*Bbz'UKD+
+end object
+
+object material h2o
+Il!!5Ror0!rexSyn`J0{Mm2?SM<+
+Il!!1Nhq9y{g%s
+Il!!0Mjm+{mftA}WWP#qCWov"'zp8oQ!
+Il!!3Pmp.~pYvS|j\S0(@`xd'+wg}D1hyfRCf)
+Il!!3Pmp.~plvQwZqO( JUns#~xb|W$bnVTAd&1
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yfhe|@
+Il!!6Sps1"sos[~goK>.9Rqv:3me!e]%4?TFm
+Il!!d)4AU`\8>6P3@y\
+Il!!5Ror0!r\rM!lnJ?|Mg`j5,~jlS9u.>SEk
+Il!!};X[xi[Tb/kEE>p_7I`U"vYBsI@nt	@6Txhp<4&\}L@ftS-(Oqp~(" m1[AX`^A9F_bl237c.F<ro^$'8o%~Fx~g0`9cWL8>[rma
+Il!!6Sps1"s]oV/ap[IDg%
+end object
+
+object material Solder-pb50_sn50
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.evgW>a
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCFk",0P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!r7BOcmf8[>h:X.zY{>
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp8pR~'
+end object
+
+object material {Hard rubber-black}
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!r7BOcmf8[>h:XmzY{>
+Il!!e*5BVa]9?7^=>wZGn
+Il!!5_xo-}v]hL(`nT2*Bbz'UKD+
+end object
+
+object material {SiC-slf bnd_ he atm}
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.evdWG_#
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCAdx,0P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!r7BOcmf8[>h:X.zY{>
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp<vW~'
+end object
+
+object material Rubber-Polyisoprene-hard
+Il!!6`sj1"s\yV m_V3+Cc{g*.zj!G4k|iUGm
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC?d~,
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;YosS+AIIw
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp7rW!
+end object
+
+object material Fe-Pure
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.evjS>a
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCEk ,
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!2\of-}ohvC YYR%sEYqx$)|r<vS
+Il!!}H[Rxi[Da>gUG>zr+KcOq{fUYA}DHA+.	y"p7;)	7e.iyV	?Paq~82	r1D*
+end object
+
+object material Al-Pure
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.eveU@_#
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC@jx,
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp?oO~'
+Il!!e0C:`QC<JvS--&XZj+G=jgL,[xj9Cn
+Il!!}H[Rxi[Da>gUG>zr+KcOq{fUYA}DHA+.	r|"&5-o	^BgbVD;	st~(30k/	>lpM*
+Il!!}H[Rxi[Tb/kEE>p_7I`U"vYBsI=	wTE}Vw	$9:uo5_	ouZ-9Nqp	A57[|
+end object
+
+object material {Paint-black(parsons) }
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!t9DQeoh:]@j<Zpi\'B
+Il!!e*5BVa]9?7^=>wZGn
+Il!!8b{r0!y`kO+cqW5-Ee}*XNG1
+end object
+
+object material Nitrogen(@300K)
+Il!!3Pmp.~pcvQwl^H.yKk1=QK:'
+Il!!1Nhq9y{g%s
+Il!!0Mjm+{mftA}WWP#qCWov"'zp7oS"%c
+Il!!9Vsv4%v_|Y#pbY6.Ff~j-1}m$J7n lXIl1=
+Il!!4Qnq/ qmwRx[rP)!KVot$ yc}X%coWUBe'2=SN
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yfhe|@
+Il!!5Ror0!rnrZ}fnJ=-8Qpu92ld dU$3pZzc(5
+Il!!d)4AU`\8>6P3@y\
+Il!!5Ror0!r\rM!lnJ?|Mg`j5,~jlS9u.fXG<%0=
+Il!!e#@C`QC,I&O=/&bZr3K7lOH<A*n72)Z[y?6
+Il!!};X[xi[Tb/kEE>p_7I`U"vYBsI@nt	@.Suh'64u\}]>mwC>8Nq`n(31q3D=mp],)6pt K!3c-V*b__6?K]~!C)~Uza<tkL$
+Il!!3Pmp.~pZlS,^mXFBd|18
+Il!!};X[xi[Da>gUG>zr+KcOq{fUYA}DHA+.	nx";=um5_	drTBA>tw"	00n/],ip]<	Dou|K!~
+end object
+
+object material Cu-Brass-30%Zn
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.evdQI_#
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCFhz.0P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp9wT~'
+end object
+
+object material Au-Typical_Ref
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.evfRC_#
+Il!!1Nhq9y{g%s
+Il!!1[ne,|nXjQ*\kVD@m{54
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp7rP~'
+Il!!e0C:`QC<JvS--&XZj+G=jgL,[xj9Cn
+Il!!}H[Rxi[Da>gUG>zr+KcOq{fUYA}DHA+}Pnx!&9*r,\>VtQ=8>rp(800k~W:hpM=?Gop|B!5a-V*tog45Hml!A)/U-e;se\6%Xj}s1-5t*_1qYa>4ST~uH5*p"O;msY1/Siy}>6sw"]=^wSF.Mpxp74$l.LAhvS;8Naq$620[1XBhn]<)Hop|B!2h5V8roN77Fm|kJ.4c+`)wgZ65Bq~x?+-_/a/qiJD6Tb{u/;,n"_#rz]?,QV! <6$^'aEltQ/6Onx!&7)n,\>V{S;8Nas!@00k~U<hn]<)IqyzB1!d2V8roN79Mk|{3+/e)`9cj^93RlmuF++o*Q4sjX@4Cg{u=5,`%`:msY1/Vfw >&'o([=ndU?.Mpxp95'j.\.krS;8Nas~<00k~Z<hn]<)HxzzB1!k-V8roN6?Lk|{3*/e+^9sW^=5Pl}cB--o(a1ak_E2Sdkc
+Il!!}H[Rxi[Tb/kEE>p_7I`U"vYBsI=	}X/5V	"(&7-o	]AgbT=8N	q"9"}
+end object
+
+object material Helium(@366K)
+Il!!3Pmp.~pcvQwl^H.yKk33SK<
+Il!!1Nhq9y{g%s
+Il!!0Mjm+{mftA}WWP#qCWov"'zp;qO!%c
+Il!!9Vsv4%v_|Y#pbY6.Ff~j-1}m$J7n lXJp5
+Il!!8Uru3$uq{V|_vT-%OZsx($}g"\)gs[YFi+6AUV
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yfhe|@
+Il!!5Ror0!rnrZ}fnJ=-8Qpu92ld dV$/h[zc(5
+Il!!d)4AU`\8>6P3@y\
+Il!!5Ror0!r\rM!lnJ?|Mg`j5,~jlS9u,fVEf*4=
+Il!!e#@C`QC,I&O=/&bZr3K7lOH<A*n72)Z[y?6
+Il!!3Pmp.~pZlS,^mXFAd|28
+Il!!};X[xi[Da>gUG>zr+KcOq{fUYA}DHA+.	ny!:9um5_	dsSA=>tw"	01r6[,ip]<	Dpy$I!~
+end object
+
+object material Shellac-Dull-surface
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcE/
+Il!!e*5BVa]9?7^=>wZGn
+Il!!1[tk)yrYdH$\jP.&>^v#QG@#
+end object
+
+object material {Carbon Dioxide(@300K)}
+Il!!0Mjm+{m`sNti[E+vHh06NH7!
+Il!!1Nhq9y{g%s
+Il!!0Mjm+{mftA}WWP#qCWov"'zp>vP~'
+Il!!6Sps1"s\yV m_V3+Cc{g*.zj!G4k|iUFh/7
+Il!!1Nkn,|njtOuXoM&}HSlq!|v`zU"`lTR?e+-
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yfhe|@
+Il!!5Ror0!rnrZ}fnJ=-8Qpu92ld dU$0q[zc(5
+Il!!d)4AU`\8>6P3@y\
+Il!!5Ror0!r\rM!lnJ?|Mg`j5,~jlS9u-fVJo]-8R
+Il!!e#@C`QC,I&O=/&bZr3K7lOH<A*n72)Z[y?6
+Il!!};X[xi[Tb/kEE>p_7I`U"vYBsI@nt	G2U`~!6$'l5a.grS=(Oss#(35k/D,is_B)6qr|B!!d0];b_`97H]lkD,8lzN
+Il!!9Vsv4%v`rY2ds^LHj)>
+Il!!};X[xi[Da>gUG>zr+KcOq{fUYA}DHA+.	nx":9un5_	drTA=>tw"	00m1W,ip]<	Dot~E!~
+end object
+
+object material Ni-Oxidised-surface
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcE/
+Il!!e*5BVa]9?7^=>wZGn
+Il!!1[tk)yrYdH$\jP.&>^v#QG;#
+end object
+
+object material {Al-Die Cast-99.8}
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.eveQI_#
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC@jx,0P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp>vX~'
+end object
+
+object material {AL-heavily oxidized}
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!m2=J^ha3V9c5SZma~0HUk
+Il!!e*5BVa]9?7^=>wZGn
+Il!!5_xo-}v]hL(`nT2*Bbz'UK=+@
+end object
+
+object material Paint-non-metallic
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!t9DQeoh:]@j<Zpi\'B
+Il!!e*5BVa]9?7^=>wZGn
+Il!!9c|s1"zalP,drX6.Ff~+YOH
+end object
+
+object material {SiC-single xtal}
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.evgZ@_#
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCAey,0P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!r7BOcmf8[>h:X.zY{>
+Il!!d)4AU`\8>6]67y\
+Il!!8bul3$un|I&__X+yK_w~*/#xD~^'7
+end object
+
+object material Si-Typical
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.evdY@_#
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC@f{,
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yrl_!0OThqMIY6v
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp<uO~'
+Il!!e0C:`QC<JvS--&XZj+G=jgL,[xj9Cn
+Il!!}H[Rxi[Da>gUG>zr+KcOq{fUYA}DHA+.	s{!&5-o	_AfbXD;	wun920k	ZAX^
+Il!!}H[Rxi[Tb/kEE>p_7I`U"vYBsI=	uY?}Vw	">4uo5_	myS-9Nqp	?90[|
+end object
+
+object material Mica-powder
+Il!!2\of-}oXuR{i[R/'?_wc&*vf|C0gxeQCe
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCAfx*2
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yhue-9AZsn]
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp>rV~'
+end object
+
+object material Al-anodized
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!m2=J^ha3V9c5SZma~0HUk
+Il!!e*5BVa]9?7^=>wZGn
+Il!!8b{r0!y`kO+cqW5-Ee}*XNF
+end object
+
+object material Nylon-polycaprolactam
+Il!!4^qh/ qZwT}k]T1)Aaye(,xh~E2izgSFi
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC?dz,0P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;YosS+AIIw
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp7tQ(%c
+end object
+
+object material Paint-black-parsons
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!t9DQeoh:]@j<Zpi\'B
+Il!!e*5BVa]9?7^=>wZGn
+Il!!8b{r0!y`kO+cqW5-Ee}*XNG1
+end object
+
+object material {Fe-Ground Bright-surface}
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcE/
+Il!!e*5BVa]9?7^=>wZGn
+Il!!4^wn,|u\gK'_mS1)Aay&TJ<)
+end object
+
+object material Steel-Chromenickel
+Il!!9cvm4%v_|Y#pbY6.Ff~j-1}m$J7n mc
+Il!!1Nhq9y{g%s
+Il!!5_ri0!r\nU.`oZHJp$6
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp:uO
+end object
+
+object material Rubber-natural
+Il!!4^qh/ qZwT}k]T1)Aaye(,xh~E2izgSEi
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCGfx*2
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yhue-9AZsn]
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp8oX#%c
+end object
+
+object material Steel-Carbon-1020
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.evjR>a
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCEk~,0P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp:uO~'
+Il!!e0C:`QC<JvS--&XZj+G=jgL,[xj9Cn
+Il!!}H[Rxi[Da>gUG>zr+KcOq{fUYA}DHA+.	u|p8;)j5	CjbUE;Lx	">"1k/T	kvM*
+Il!!}H[Rxi[Tb/kEE>p_7I`U"vYBsI=	xWD}Qw{~8	*r3L@nuQ?	Ryvn920k	XDn`K
+end object
+
+object material {Fe-ground bright}
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!n3>K_ib4W:d6Tct\!
+Il!!e*5BVa]9?7^=>wZGn
+Il!!4^wn,|u\gK'_mS1)Aay&TJ<)
+end object
+
+object material Brass-polished
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9S
+Il!!e*5BVa]9?7^=>wZGn
+Il!!0Zsj(xqXcG#[iO-%=]u"PF6%7o
+end object
+
+object material Al-Pure_Ref
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.eveTG_#
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC@jx,
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp>xV~'
+Il!!e0C:`QC<JvS--&XZj+G=jgL,[xj9Cn
+Il!!}H[Rxi[Da>gUG>zr+KcOq{fUYA}DHA+}Pnx!&8'm.Z>fbU;8Nax @2.k/D?fp],:Hpr|@11S1T:r__9>Hmz{Cx4c+`)tod65Pl}cG)-oyc2tiZ>4ST#s?5{r$h3oqYA{Ydy .8'u$];ntAH,Oph#9=&l,\>VsS;8Nar"=20i/T,iu[<96py#B1/c-F<rm^4'In${C'/ezc9qg\&9[q}qA+|s*_1qY\D4Sb{u/:,n"_#pv^A*Qfi&>4$nseBnrQ?}Vpv!6$+t3Z>fb[=6Nq`#;4.k/DEhn]<)IstzB1!d-V8roN77Jk|{3*4e)`9ci`>3RlmuA++o*Q3tpX@4Cf!u=5,`$b8msY1/Qfw >&&q+[=ndTD.Mpxp88&j.\.jrS;8Nar#800k~Y<hn]<)HrxzB1!i-V8roN6:Ik|{31/e)`9ci]>3Rlma
+Il!!}H[Rxi[Tb/kEE>p_7I`U"vYBsI-ptQ=.O` *62+l}^CfpS=(Vvu|<2 m8\:iuMDBMmr|246c+V:bxa45Nml C)-e+PBxlZ;5Bq}s?+-_3j5oqZ0:Sdyu?%-p%c1osI/
+end object
+
+object material FC-75
+Il!!4^qh/ qZwT}k]T1)Aaye(,xh~E2izgSDk+
+Il!!1Nhq9y{g%s
+Il!!0Mjm+{mftA}WWP#qCWov"'zp7oT!%c
+Il!!4Qnq/ qZwT}k]T1)Aaye(,xh~E2izgSDk+
+Il!!6Sps1"soyTz]tR+#MXqv&"{e Z'eqYWDg)2?
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcEZi/<\cwub^Z:#HI5-
+Il!!4Qnq/ qmqY|emI<,7Pot81kc~cW#0=RH
+Il!!d)4AU`\8>6P3@y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp7oR)%c
+Il!!0Mjm+{mWiP)[jUC?j~,0P
+end object
+
+object material Ag-99.99%
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.evgSG_#
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC?c}.6NH
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp8rU~'
+Il!!e0C:`QC<JvS--&XZj+G=jgL,[xj9Cn
+Il!!}H[Rxi[Da>gUG>zr+KcOq{fUYA}DHA+.	t{#&5-o	`AhbVD;	ur!(30k/	@jrM*
+Il!!}H[Rxi[Tb/kEE>p_7I`U"vYBsI=	uWA}Vw	"<6uo5_	hu\-9Nqp	:59[|
+end object
+
+object material Nylon-Nylon-66
+Il!!5_ri0!r[xU~l^U2*Bbzf)-yi F3j{hTGk
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC?d|,
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;YosS+AIIw
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp7vO!
+end object
+
+object material FC-78
+Il!!1Nhq9y{g%s
+Il!!0Mjm+{mftA}WWP#qCWov"'zp7oT!%c
+Il!!2Olo-}oXuR{i[R/'?_wc&*vf|C0gxeQBi'
+Il!!6Sps1"soyTz]tR+#MXqv&"{e Z'eqYWDg)2?
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcEZi/<\cwub^Z:#HI5-
+Il!!4Qnq/ qmqY|emI<,7Pot81kc~cW#1i+Ai
+Il!!d)4AU`\8>6P3@y\
+Il!!0Mjm+{mWiP)[jUC?jx,0P
+end object
+
+object material Rubber-dielectric
+Il!!1[ne,|nWtQzhZQ.&>^vb%)ue{B/fwdPCc
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC?dx,0P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yhue-9AZsn]
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp8oX#%c
+end object
+
+object material Ni-Monel-cast
+Il!!7atk2#t]zW!n`W4,Dd|h+/{k"H5l}l^Eo
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCFi{,0P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp:rX~'
+Il!!e0C:`QC<JvS--&XZj+G=jgL,[xj9Cn
+Il!!}H[Rxi[Da>gUG>zr+KcOq{fUYA}DHA+.	ryp8;)	0].kyV	;Naq~82	n/D*
+Il!!}H[Rxi[Tb/kEE>p_7I`U"vYBsI=	wV?}Pw{	99&\1cA	vWE(Oqp~	64s~B
+end object
+
+object material Solder-pb39.2_sn60.8
+Il!!2\of-}oXuR{i[R/'?_wc&*vf|C0gxjS@e
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCFhx,0P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!r7BOcmf8[>h:X.zY{>
+Il!!d)4AU`\8>6]67y\
+Il!!6`sj1"slzG$]]V)wI]u|(-!v=~[%3
+end object
+
+object material {Fe-Cast_ Polished-surface}
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcE/
+Il!!e*5BVa]9?7^=>wZGn
+Il!!1[tk)yrYdH$\jP.&>^v#QG9#
+end object
+
+object material Porcelain-glazed
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!r7BOcmf8[>h:XmzY{>
+Il!!e*5BVa]9?7^=>wZGn
+Il!!3]vm+{t[fJ&^lR0(@`x%SIB'
+end object
+
+object material Asbestos-surface
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcE/
+Il!!e*5BVa]9?7^=>wZGn
+Il!!0Zsj(xqXcG#[iO-%=]u"PF;"?o
+end object
+
+object material Fe-Cast(Grey)
+Il!!5_ri0!r[xU~l^U2*Bbzf)-yi F3j{o[
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCEd},
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp;oO
+end object
+
+object material Fe-emeried
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!n3>K_ib4W:d6Tct\!
+Il!!e*5BVa]9?7^=>wZGn
+Il!!2\ul*zsZeI%]kQ/'?_w$RH:':
+end object
+
+object material FC-88
+Il!!1Nhq9y{g%s
+Il!!0Mjm+{mftA}WWP#qCWov"'zp7oT!%c
+Il!!6Sps1"s\yV m_V3+Cc{g*.zj!G4k|iUFl/
+Il!!6Sps1"soyTz]tR+#MXqv&"{e Z'eqYWDg)2?
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcEZi/<\cwub^Z:#HI5-
+Il!!4Qnq/ qmqY|emI<,7Pot81kc~cW#-=RH
+Il!!d)4AU`\8>6P3@y\
+Il!!0Mjm+{mWiP)[jUC?i|,0P
+end object
+
+object material {Red lead primer-surface}
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!r7BOcmf8[>h:XmzY{>
+Il!!e*5BVa]9?7^=>wZGn
+Il!!3]vm+{t[fJ&^lR0(@`x%SIB'
+end object
+
+object material Ag-Silver-surface
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcE/
+Il!!e*5BVa]9?7^=>wZGn
+Il!!5_xo-}v]hL(`nT2*Bbz'UK;(AzY
+end object
+
+object material Ag-99.9%
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.evgRA_#
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC?c}.6NH
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp8rU~'
+end object
+
+object material {Phenol Resin-JSME}
+Il!!9cvm4%v_|Y#pbY6.Ff~j-1}m$J7n lXJs
+Il!!1Nhq9y{g%s
+Il!!5_ri0!r\nU.`oZHDj%6
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yhue-9AZsn]
+Il!!d)4AU`\8>6]67y\
+Il!!5_ri0!rkyF#\\U(vH\t{', u<zZ+
+end object
+
+object material {Mica-brick-red or white}
+Il!!7atk2#t]zW!n`W4,Dd|h+/{k"H5l}jVHo
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCDkx*2
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yhue-9AZsn]
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp>rV~'
+end object
+
+object material {Nylon-glass filled}
+Il!!1[ne,|nWtQzhZQ.&>^vb%)ue{B/fwdPCc
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC?gx,0P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;YosS+AIIw
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp7rR*%c
+end object
+
+object material Shellac-Bright-surface
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcE/
+Il!!e*5BVa]9?7^=>wZGn
+Il!!2\ul*zsZeI%]kQ/'?_w$RH@%
+end object
+
+object material Steel-Chrome
+Il!!1Nhq9y{g%s
+Il!!5_ri0!r\nU.`oZHJp$6
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp:uO
+end object
+
+object material Ni-Pure
+Il!!4^qh/ qZwT}k]T1)Aaye(,xh~E2izpVBl+
+Il!!1Nhq9y{g%s
+Il!!7atk2#t^pW0bq\JMs :
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!6`sj1"slzG$]]V)wI]u|(-!v@{U%3
+Il!!e0C:`QC<JvS--&XZj+G=jgL,[xj9Cn
+Il!!}H[Rxi[Da>gUG>zr+KcOq{fUYA}DHA+.	qy$&5-o	]?ibVD;	ysn920k	\?X^
+Il!!}H[Rxi[Tb/kEE>p_7I`U"vYBsI=	uWB}Vw	"<7uo5_	jxX-9Nqp	<85[|
+end object
+
+object material {Fe-cast-machine cut surface}
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!n3>K_ib4W:d6Tct\!
+Il!!e*5BVa]9?7^=>wZGn
+Il!!4^wn,|u\gK'_mS1)Aay&TJ>)
+end object
+
+object material Air@(9000m)
+Il!!6Sps1"sfyTzoaK1|Nn4@TWB-
+Il!!1Nhq9y{g%s
+Il!!5Ror0!rkyF#\\U(vH\t{', u<tT+
+Il!!1Nkn,|nWtQzhZQ.&>^vb%)ue{B/fwdPAd*-
+Il!!3Pmp.~plvQwZqO( JUns#~xb|W$bnVTAd&19N
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yfhe|@
+Il!!5Ror0!rnrZ}fnJ=-8Qpu92ld dU$4l,Bf-
+Il!!d)4AU`\8>6P3@y\
+Il!!5Ror0!r\rM!lnJ?|Mg`j5,~jlS9u.f^M<%0=
+Il!!6Sps1"s]oV/ap[IDg"9?\
+end object
+
+object material Glycol-60
+Il!!0Mjm+{m`sNti[E+vHh24NH
+Il!!1Nhq9y{g%s
+Il!!0Mjm+{mftA}WWP#qCWov"'zp9pO!%c
+Il!!8Uru3$u^{X"oaX5-Ee}i,0|l#I6m~kWKq
+Il!!2Olo-}okuPvYpN'~ITmr"}wa{V#amUS@c%-:L
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcEXh;:Y\.YcKiBvNS5-
+Il!!3Pmp.~plpX{dlH;+6Ons70jb}bW"-<QF
+Il!!d)4AU`\8>6P3@y\
+Il!!0Mjm+{mWiP)[jUC?c"40P
+end object
+
+object material Al-paint-surface
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!m2=J^ha3V9c5SZma~0HUk
+Il!!e*5BVa]9?7^=>wZGn
+Il!!5_xo-}v]hL(`nT2*Bbz'UK>+
+end object
+
+object material Solder-pb37.5_sn37.5_in25
+Il!!9cvm4%v_|Y#pbY6.Ff~j-1}m$J7n q`Gs
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCFi",0P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!r7BOcmf8[>h:X.zY{>
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp8rX~'
+end object
+
+object material STABLCOR_ST250
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC@d~,
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Ykh_!;AZio
+Il!!0Zmd+{mVsPygYP-%=]ua98=)4o
+Il!!0Zmd+{mVsPygYP-%=]ua:8=)4o
+Il!!5_ri0!r[xU~l^U2*Bbzf@==$@
+Il!!d)4AU`\8>6]67y\
+Il!!7atk2#tm{H%^^W*xJ^v})."wD [&2qYN
+Il!!o:MDj[M6S0YG90ld|=UAtqV6e/qE?#
+end object
+
+object material {Au-highly polished}
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9S
+Il!!e*5BVa]9?7^=>wZGn
+Il!!3]vm+{t[fJ&^lR0(@`x%SI9'
+end object
+
+object material Hydrogen
+Il!!4Qnq/ qdwRxm_I/zLl24TM?.>
+Il!!1Nhq9y{g%s
+Il!!3Pmp.~piwD!ZZS&tFZry%*}s:vT,-
+Il!!2Olo-}oXuR{i[R/'?_wc&*vf|C0gxeQCi,/
+Il!!3Pmp.~plvQwZqO( JUns#~xb|W$bnVTAd&19NL
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yfhe|@
+Il!!6Sps1"sos[~goK>.9Rqv:3me!e]%1jX{d)7
+Il!!d)4AU`\8>6P3@y\
+Il!!5Ror0!r\rM!lnJ?|Mg`j5,~jlS9u0fWH<%0=
+Il!!9Vsv4%v`rY2ds^LGj"=<aZ
+end object
+
+object material Air@(6000m)
+Il!!6Sps1"sfyTzoaK1|Nn4@TWB-
+Il!!1Nhq9y{g%s
+Il!!5Ror0!rkyF#\\U(vH\t{', u<tT+
+Il!!1Nkn,|nWtQzhZQ.&>^vb%)ue{B/fwdPAd*-
+Il!!3Pmp.~plvQwZqO( JUns#~xb|W$bnVTAd&19N
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yfhe|@
+Il!!5Ror0!rnrZ}fnJ=-8Qpu92ld dU$4l,Bf-
+Il!!d)4AU`\8>6P3@y\
+Il!!5Ror0!r\rM!lnJ?|Mg`j5,~jlS9u.f^M<%0=
+Il!!3Pmp.~pZlS,^mXFAd!59V
+end object
+
+object material Nylon-Nylon-6
+Il!!5_ri0!r[xU~l^U2*Bbzf)-yi F3j{hTGk
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC?d},
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;YosS+AIIw
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp7uO!
+end object
+
+object material Polystyrene-JSME
+Il!!5_ri0!r[xU~l^U2*Bbzf)-yi F3j{hTFk
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC?c},
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;YosS+AIIw
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp7pU!
+end object
+
+object material Al-commercial-sheet
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!m2=J^ha3V9c5SZma~0HUk
+Il!!e*5BVa]9?7^=>wZGn
+Il!!9c|s1"zalP,drX6.Ff~+YO?3
+end object
+
+object material {Cu-lightly tarnished}
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9S
+Il!!e*5BVa]9?7^=>wZGn
+Il!!7azq/ x_jN*bpV4,Dd|)WM=+D
+end object
+
+object material Air@(3000m)
+Il!!6Sps1"sfyTzoaK1|Nn4@TWB-
+Il!!1Nhq9y{g%s
+Il!!5Ror0!rkyF#\\U(vH\t{', u<tT+
+Il!!1Nkn,|nWtQzhZQ.&>^vb%)ue{B/fwdPAd*-
+Il!!3Pmp.~plvQwZqO( JUns#~xb|W$bnVTAd&19N
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yfhe|@
+Il!!5Ror0!rnrZ}fnJ=-8Qpu92ld dU$4l,Bf-
+Il!!d)4AU`\8>6P3@y\
+Il!!5Ror0!r\rM!lnJ?|Mg`j5,~jlS9u.f^M<%0=
+Il!!7Tqt2#t^pW0bq\JEh(4B^
+end object
+
+object material {Al Paint-surface}
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcE/
+Il!!e*5BVa]9?7^=>wZGn
+Il!!5_xo-}v]hL(`nT2*Bbz'UK>+
+end object
+
+object material Fe-Emeried-surface
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcE/
+Il!!e*5BVa]9?7^=>wZGn
+Il!!2\ul*zsZeI%]kQ/'?_w$RH:':
+end object
+
+object material {Fe-rusted red}
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!n3>K_ib4W:d6Tct\!
+Il!!e*5BVa]9?7^=>wZGn
+Il!!1[tk)yrYdH$\jP.&>^v#QG=#
+end object
+
+object material h2o(@373K)
+Il!!5Ror0!rexSyn`J0{Mm2?SM<+
+Il!!1Nhq9y{g%s
+Il!!0Mjm+{mftA}WWP#qCWov"'zp8oR!%c
+Il!!7Tqt2#t]zW!n`W4,Dd|h+/{k"H5l}jVGj-9
+Il!!3Pmp.~plvQwZqO( JUns#~xb|W$bnVTAd&1
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yfhe|@
+Il!!5Ror0!rnrZ}fnJ=-8Qpu92ld dU$.j^zc(5
+Il!!d)4AU`\8>6P3@y\
+Il!!5Ror0!r\rM!lnJ?|Mg`j5,~jlS9u.fVGi]-8R
+Il!!};X[xi[Tb/kEE>p_7I`U"vYBsI@nt	@6Txhp<4&\}L@ftS-(Oqp~(" m1[AX`^A9F_bl237c.F<ro^$'8o%~Fx~g0`9cWL8>[rma
+Il!!7Tqt2#t^pW0bq\JEh%<@
+end object
+
+object material Air@(10000m)
+Il!!6Sps1"sfyTzoaK1|Nn4@TWB-
+Il!!1Nhq9y{g%s
+Il!!5Ror0!rkyF#\\U(vH\t{', u<tT+
+Il!!1Nkn,|nWtQzhZQ.&>^vb%)ue{B/fwdPAd*-
+Il!!3Pmp.~plvQwZqO( JUns#~xb|W$bnVTAd&19N
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yfhe|@
+Il!!5Ror0!rnrZ}fnJ=-8Qpu92ld dU$4l,Bf-
+Il!!d)4AU`\8>6P3@y\
+Il!!5Ror0!r\rM!lnJ?|Mg`j5,~jlS9u.f^M<%0=
+Il!!9Vsv4%v`rY2ds^LGj%7Bb
+end object
+
+object material Helium
+Il!!3Pmp.~pcvQwl^H.yKk33SK<
+Il!!1Nhq9y{g%s
+Il!!0Mjm+{mftA}WWP#qCWov"'zp;qO!
+Il!!2Olo-}oXuR{i[R/'?_wc&*vf|C0gxeQCh'
+Il!!8Uru3$uq{V|_vT-%OZsx($}g"\)gs[YFi+6AUV
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yfhe|@
+Il!!5Ror0!rnrZ}fnJ=-8Qpu92ld dV$/>SEk
+Il!!d)4AU`\8>6P3@y\
+Il!!5Ror0!r\rM!lnJ?|Mg`j5,~jlS9u,fVEf*4=
+Il!!e#@C`QC,I&O=/&bZr3K7lOH<A*n72)Z[y?6
+Il!!4Qnq/ q[mT-_nYGBe}4
+Il!!};X[xi[Da>gUG>zr+KcOq{fUYA}DHA+.	ny!:9um5_	dsSA=>tw"	01r6[,ip]<	Dpy$I!~
+end object
+
+object material {Water Vapor(@373K)}
+Il!!5Ror0!rexSyn`J0{Mm2?SM<+
+Il!!1Nhq9y{g%s
+Il!!0Mjm+{mftA}WWP#qCWov"'zp8oR!%c
+Il!!7Tqt2#t]zW!n`W4,Dd|h+/{k"H5l}jVGj-9
+Il!!3Pmp.~plvQwZqO( JUns#~xb|W$bnVTAd&1
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yfhe|@
+Il!!5Ror0!rnrZ}fnJ=-8Qpu92ld dU$.j^zc(5
+Il!!d)4AU`\8>6P3@y\
+Il!!5Ror0!r\rM!lnJ?|Mg`j5,~jlS9u.fVGi]-8R
+Il!!};X[xi[Tb/kEE>p_7I`U"vYBsI@nt	@6Txhp<4&\}L@ftS-(Oqp~(" m1[AX`^A9F_bl237c.F<ro^$'8o%~Fx~g0`9cWL8>[rma
+Il!!7Tqt2#t^pW0bq\JEh%<@
+end object
+
+object material Ag-silver-surface
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9S
+Il!!e*5BVa]9?7^=>wZGn
+Il!!5_xo-}v]hL(`nT2*Bbz'UK;(AzY
+end object
+
+object material Steel-Nickel(10Ni)
+Il!!6`sj1"s\yV m_V3+Cc{g*.zj!G4k|k]
+Il!!1Nhq9y{g%s
+Il!!5_ri0!r\nU.`oZHJq"6
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp:uO
+end object
+
+object material Al-Silumin
+Il!!4^qh/ qZwT}k]T1)Aaye(,xh~E2izh[H
+Il!!1Nhq9y{g%s
+Il!!9cvm4%v`rY2ds^LIr'>
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!1[ne,|nguB~XXQ$rDXpw#({q?wQ
+end object
+
+object material Water(@320K)
+Il!!5Ror0!rexSyn`J0{Mm2?SM<+
+Il!!1Nhq9y{g%s
+Il!!0Mjm+{mftA}WWP#qCWov"'zp:pV(%c
+Il!!7Tqt2#t]zW!n`W4,Dd|h+/{k"H5l}jVMk09
+Il!!5Ror0!rnxSy\sQ*"LWpu%!zd~Y&dpXVCf(0<PP
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!r7BOcmf8[>h:Xuge{>
+Il!!7Tqt2#tpt\ hpL?/:Srw;4nf"fV&.jXLo1
+Il!!d)4AU`\8>6P3@y\
+Il!!7Tqt2#t^tO#npLA~Oibl7.!lnU;w/h]Ki_/:V
+Il!!0Mjm+{mWiP)[jUCGk"*2
+end object
+
+object material eGRAF_SPREAD_SS400
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC?j~,
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;YglS,,3VvaK9O6v
+Il!!0Zmd+{mVsPygYP-%=]ua98:!6mO
+Il!!0Zmd+{mVsPygYP-%=]ua:8:!6mO
+Il!!5_ri0!r[xU~l^U2*Bbzf@=>$@
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp=pP~'
+Il!!o:MDj[M6S0YG90ld|=UAtqV6e/qE?#
+end object
+
+object material {Non-Metallic Paint-surface}
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcE/
+Il!!e*5BVa]9?7^=>wZGn
+Il!!9c|s1"zalP,drX6.Ff~+YOH
+end object
+
+object material Ag-pure-polished
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9S
+Il!!e*5BVa]9?7^=>wZGn
+Il!!6`yp.~w^iM)aoU3+Cc{(VL<)B
+end object
+
+object material {Carbon Monoxide}
+Il!!5Ror0!rexSyn`J0{Mm3?SM<&@y
+Il!!1Nhq9y{g%s
+Il!!3Pmp.~piwD!ZZS&tFZry%*}s:rV'
+Il!!5Ror0!r[xU~l^U2*Bbzf)-yi F3j{hTEg*5
+Il!!3Pmp.~plvQwZqO( JUns#~xb|W$bnVTAd&19NL
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yfhe|@
+Il!!5Ror0!rnrZ}fnJ=-8Qpu92ld dU$3m,Bf-
+Il!!d)4AU`\8>6P3@y\
+Il!!5Ror0!r\rM!lnJ?|Mg`j5,~jlS9u.f^M<%0=
+Il!!3Pmp.~pZlS,^mXFBd|18V
+end object
+
+object material Air@(11000m)
+Il!!6Sps1"sfyTzoaK1|Nn4@TWB-
+Il!!1Nhq9y{g%s
+Il!!5Ror0!rkyF#\\U(vH\t{', u<tT+
+Il!!1Nkn,|nWtQzhZQ.&>^vb%)ue{B/fwdPAd*-
+Il!!3Pmp.~plvQwZqO( JUns#~xb|W$bnVTAd&19N
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yfhe|@
+Il!!5Ror0!rnrZ}fnJ=-8Qpu92ld dU$4l,Bf-
+Il!!d)4AU`\8>6P3@y\
+Il!!5Ror0!r\rM!lnJ?|Mg`j5,~jlS9u.f^M<%0=
+Il!!6Sps1"s]oV/ap[IDg!:;\
+end object
+
+object material Steel-stainless-400
+Il!!4^qh/ qZwT}k]T1)Aaye(,xh~E2iziXBi
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCEj},0P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp:rP~'
+end object
+
+object material Cu-Brass(Die-Cast)
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.evdS@
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCFhx,
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp9wO
+end object
+
+object material Fe-Cast(White)
+Il!!5_ri0!r[xU~l^U2*Bbzf)-yi F3j{o[
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCEjx,
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp;oO
+end object
+
+object material eGRAF_HITHERM_SRS_1200
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCDgx
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Ykh_!;AZio
+Il!!0Zmd+{mVsPygYP-%=]ua987&6mO
+Il!!0Zmd+{mVsPygYP-%=]ua:87&6mO
+Il!!0Zmd+{mVsPygYP-%=]ua;87!4o
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp=pP~'
+Il!!o:MDj[M6S0YG90ld|=UAtqV6e/qE?#
+end object
+
+object material Ti-Typical
+Il!!5_ri0!r[xU~l^U2*Bbzf)-yi F3j{jWCk
+Il!!1Nhq9y{g%s
+Il!!8bul3$u_qX1cr]KJp!<
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp;oO~'
+Il!!e0C:`QC<JvS--&XZj+G=jgL,[xj9Cn
+Il!!}H[Rxi[Da>gUG>zr+KcOq{fUYA}DHA+.	r~p7;)	0b.iyV	:Oaq~82	m0D*
+Il!!}H[Rxi[Tb/kEE>p_7I`U"vYBsI=	vRG}Vw	#7<uo5_	kuY-9Nqp	=56[|
+end object
+
+object material Cu-Polished-surface
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcE/
+Il!!e*5BVa]9?7^=>wZGn
+Il!!2\ul*zsZeI%]kQ/'?_w$RH8(:
+end object
+
+object material Zn-oxide
+Il!!2\of-}oXuR{i[R/'?_wc&*vf|C0gxgZ@e
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCCi{,0P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp:xS~'
+end object
+
+object material {Steel-Ground Sheet-surface}
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcE/
+Il!!e*5BVa]9?7^=>wZGn
+Il!!0Zsj(xqXcG#[iO-%=]u"PF;&6
+end object
+
+object material Oxygen(@300k)
+Il!!9Vsv4%vi|W}rdN4 Qq8<WZH3
+Il!!1Nhq9y{g%s
+Il!!0Mjm+{mftA}WWP#qCWov"'zp?qO~'
+Il!!6Sps1"s\yV m_V3+Cc{g*.zj!G4k|iUFi-7
+Il!!6Sps1"soyTz]tR+#MXqv&"{e Z'eqYWDk17
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yfhe|@
+Il!!5Ror0!rnrZ}fnJ=-8Qpu92ld dV$,n,Bf-
+Il!!d)4AU`\8>6P3@y\
+Il!!5Ror0!r\rM!lnJ?|Mg`j5,~jlS9u.fXHk]-8R
+Il!!e#@C`QC,I&O=/&bZr3K7lOH<A*n72)Z[y?6
+Il!!};X[xi[Tb/kEE>p_7I`U"vYBsI@nt	H/S`~!6$u\/\>kbT=8Na`n928o~D=mp],)6ps H!!e-V:b_N58Orlk3+4e+P)ch^7:BZ
+Il!!3Pmp.~pZlS,^mXFBd~
+Il!!};X[xi[Da>gUG>zr+KcOq{fUYA}DHA+.	nx";=um5_	drTBA>tw"	00n1W,ip]<	Dou~E!~
+end object
+
+object material {Silicone Resin-JSME}
+Il!!6`sj1"s\yV m_V3+Cc{g*.zj!G4k|iUGm
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC@ex,
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yhue-9AZsn]
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp7rO!
+end object
+
+object material Cu-Aluminised
+Il!!3]pg.~pYvS|j\S0(@`xd'+wg}D1hynW
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCFcx,
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp:pO
+end object
+
+object material Asbestos-board
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!r7BOcmf8[>h:XmzY{>
+Il!!e*5BVa]9?7^=>wZGn
+Il!!6`yp.~w^iM)aoU3+Cc{(VLE-
+end object
+
+object material Alumina-Typical
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.eveX>a
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCAl ,
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yhue-9AZsn]
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp?pO~'
+Il!!e0C:`QC<JvS--&XZj+G=jgL,[xj9Cn
+Il!!}H[Rxi[Da>gUG>zr+KcOq{fUYA}DHA+.	s!p8=.	1d.myV	9Oaq~82	l0D*
+Il!!}H[Rxi[Tb/kEE>p_7I`U"vYBsI=	zR/5V	~"&7-o	e?fbT=8N	y 8"}
+end object
+
+object material Ag-Typical
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.evgSB_#
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC?c},2
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp8rO~'
+Il!!e0C:`QC<JvS--&XZj+G=jgL,[xj9Cn
+Il!!}H[Rxi[Da>gUG>zr+KcOq{fUYA}DHA+.	t{#&5-o	`AhbVD;	ur!(30k/	@jrM*
+Il!!}H[Rxi[Tb/kEE>p_7I`U"vYBsI=	uWA}Vw	"<6uo5_	hu\-9Nqp	:59[|
+end object
+
+object material Air@(1000m)
+Il!!6Sps1"sfyTzoaK1|Nn4@TWB-
+Il!!1Nhq9y{g%s
+Il!!5Ror0!rkyF#\\U(vH\t{', u<tT+
+Il!!1Nkn,|nWtQzhZQ.&>^vb%)ue{B/fwdPAd*-
+Il!!3Pmp.~plvQwZqO( JUns#~xb|W$bnVTAd&19N
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yfhe|@
+Il!!5Ror0!rnrZ}fnJ=-8Qpu92ld dU$4l,Bf-
+Il!!d)4AU`\8>6P3@y\
+Il!!5Ror0!r\rM!lnJ?|Mg`j5,~jlS9u.f^M<%0=
+Il!!7Tqt2#t^pW0bq\JFh 6?^
+end object
+
+object material Steel-Cast
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.evgW>a
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCEk{,0P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp:uO~'
+end object
+
+object material Ni-oxidised
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9S
+Il!!e*5BVa]9?7^=>wZGn
+Il!!4^wn,|u\gK'_mS1)Aay&TJ>
+end object
+
+object material Freon-C-51-12
+Il!!1Nhq9y{g%s
+Il!!0Mjm+{mftA}WWP#qCWov"'zp7pR!%c
+Il!!9Vsv4%v_|Y#pbY6.Ff~j-1}m$J7n lXIo5
+Il!!6Sps1"soyTz]tR+#MXqv&"{e Z'eqYWDg)3?
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcEZi/<\cwub^Z:#HI5-
+Il!!3Pmp.~plpX{dlH;+6Ons70jb}bS"*i*@g
+Il!!d)4AU`\8>6P3@y\
+Il!!0Mjm+{mWiP)[jUC?i ,0P
+end object
+
+object material {Al-Polished Plate-surface}
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcE/
+Il!!e*5BVa]9?7^=>wZGn
+Il!!1[tk)yrYdH$\jP.&>^v#QG7&8
+end object
+
+object material Polypropylene-JSME
+Il!!2\of-}oXuR{i[R/'?_wc&*vf|C0gxeQD
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCGdx
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;YosS+AIIw
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp7vO!
+end object
+
+object material Air-Dry(@325K)
+Il!!6Sps1"sfyTzoaK1|Nn4@TWB-
+Il!!1Nhq9y{g%s
+Il!!3Pmp.~piwD!ZZS&tFZry%*}s:rR*(i
+Il!!6Sps1"s\yV m_V3+Cc{g*.zj!G4k|iUFi12?
+Il!!3Pmp.~plvQwZqO( JUns#~xb|W$bnVTAd&19N
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yfhe|@
+Il!!5Ror0!rnrZ}fnJ=-8Qpu92ld dU$5nXzc(5
+Il!!d)4AU`\8>6P3@y\
+Il!!5Ror0!r\rM!lnJ?|Mg`j5,~jlS9u.f_J<%0=
+Il!!6Sps1"s]oV/ap[IEg~:>
+end object
+
+object material Polycarbonate-JSME
+Il!!3]pg.~pYvS|j\S0(@`xd'+wg}D1hyfREg
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC?ex,
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;YosS+AIIw
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp7oT!
+end object
+
+object material Steel-oxidised-surface
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!l1<I]g`2U8b4RktPu2
+Il!!e*5BVa]9?7^=>wZGn
+Il!!8b{r0!y`kO+cqW5-Ee}*XNF
+end object
+
+object material STABLCOR_ST325
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC@d ,
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Ykh_!;AZio
+Il!!0Zmd+{mVsPygYP-%=]ua98?'4o
+Il!!0Zmd+{mVsPygYP-%=]ua:8?'4o
+Il!!0Zmd+{mVsPygYP-%=]ua;89~6
+Il!!d)4AU`\8>6]67y\
+Il!!6`sj1"slzG$]]V)wI]u|(-!vDx\%0l_L
+Il!!o:MDj[M6S0YG90ld|=UAtqV6e/qE?#
+end object
+
+object material Zn-typical
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.evdSA_#
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCEd|00P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp9wW~'
+end object
+
+object material Brass-Polished-surface
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcE/
+Il!!e*5BVa]9?7^=>wZGn
+Il!!0Zsj(xqXcG#[iO-%=]u"PF6%7o
+end object
+
+object material Asbestos-Typical
+Il!!3]pg.~pYvS|j\S0(@`xd'+wg}D1hyfRDe)
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC@gx,
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yhue-9AZsn]
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp>sO
+end object
+
+object material {Al Paint & Laquer-surface}
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcE/
+Il!!e*5BVa]9?7^=>wZGn
+Il!!3]vm+{t[fJ&^lR0(@`x%SI9'
+end object
+
+object material {Cu-Lightly Tarnished-surface}
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcE/
+Il!!e*5BVa]9?7^=>wZGn
+Il!!7azq/ x_jN*bpV4,Dd|)WM=+D
+end object
+
+object material Stainless-steel-typical
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!l1<I]g`2U8b4RktPu2
+Il!!e*5BVa]9?7^=>wZGn
+Il!!3]vm+{t[fJ&^lR0(@`x%SI;'
+end object
+
+object material {Carbon Dioxide}
+Il!!5Ror0!rexSyn`J0{Mm5;SM;/Dy
+Il!!1Nhq9y{g%s
+Il!!0Mjm+{mftA}WWP#qCWov"'zp>vP~'
+Il!!6Sps1"s\yV m_V3+Cc{g*.zj!G4k|iUFh/7
+Il!!3Pmp.~plvQwZqO( JUns#~xb|W$bnVTAd&19NL
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yfhe|@
+Il!!5Ror0!rnrZ}fnJ=-8Qpu92ld dU$0q[zc(5
+Il!!d)4AU`\8>6P3@y\
+Il!!5Ror0!r\rM!lnJ?|Mg`j5,~jlS9u-fVJo]-8R
+Il!!e#@C`QC,I&O=/&bZr3K7lOH<A*n72)Z[y?6
+Il!!};X[xi[Tb/kEE>p_7I`U"vYBsI@nt	G2U`~!6$'l5a.grS=(Oss#(35k/D,is_B)6qr|B!!d0];b_`97H]lkD,8lzN
+Il!!5Ror0!r\nU.`oZHDf 6
+Il!!};X[xi[Da>gUG>zr+KcOq{fUYA}DHA+.	nx":9un5_	drTA=>tw"	00m1W,ip]<	Dot~E!~
+end object
+
+object material Cu-polished-surface
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9S
+Il!!e*5BVa]9?7^=>wZGn
+Il!!2\ul*zsZeI%]kQ/'?_w$RH8(:
+end object
+
+object material {Paint-white-zinc oxide}
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!t9DQeoh:]@j<Zpi\'B
+Il!!e*5BVa]9?7^=>wZGn
+Il!!2\ul*zsZeI%]kQ/'?_w$RHA%
+end object
+
+object material {Epoxy-glass fiber}
+Il!!7atk2#t]zW!n`W4,Dd|h+/{k"H5l}jVHo
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC?lx,0P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!y>IVjtm?bEoA_j}g6L
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp=xT~'
+end object
+
+object material Zn-ferrite
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.evgO@
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCCf{,0P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp;wT~'
+end object
+
+object material {Epoxy-hysol 6000}
+Il!!2\of-}oXuR{i[R/'?_wc&*vf|C0gxeQD
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC?ey,0P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!y>IVjtm?bEoA_j}g6L
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp7pV#%c
+end object
+
+object material Minteq_Pyroid_HT
+Il!!1Nhq9y{g%s
+Il!!5_ri0!r\nU.`oZHEj!6
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;YglS,,3VvaK9O6v
+Il!!3]pg.~pYvS|j\S0(@`xd<;:*>{P'
+Il!!3]pg.~pYvS|j\S0(@`xd=;:*>{P'
+Il!!5_ri0!r[xU~l^U2*Bbzf@=A$@
+Il!!d)4AU`\8>6]67y\
+Il!!5_ri0!rkyF#\\U(vH\t{', uBzV$1
+Il!!o:MDj[M6S0YG90ld|=UAtqV6e/qE?#
+end object
+
+object material Freon-TF
+Il!!5Ror0!rexSyn`J0{Mm2?\K>+
+Il!!1Nhq9y{g%s
+Il!!0Mjm+{mftA}WWP#qCWov"'zp>xO~'
+Il!!4Qnq/ qZwT}k]T1)Aaye(,xh~E2izgSDl+
+Il!!2Olo-}okuPvYpN'~ITmr"}wa{V#amUS@c%/
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcEZi/<\cwub^Z:#HI5-
+Il!!4Qnq/ qmqY|emI<,7Pot81kc~cZ#-kZyb+
+Il!!d)4AU`\8>6P3@y\
+Il!!0Mjm+{mWiP)[jUC?h~,0P
+end object
+
+object material {Flouroethylene Resin-JSME}
+Il!!4^qh/ qZwT}k]T1)Aaye(,xh~E2izgSFi
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC@d ,
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yhue-9AZsn]
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp?uO
+end object
+
+object material {Al-rough plate-surface}
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!m2=J^ha3V9c5SZma~0HUk
+Il!!e*5BVa]9?7^=>wZGn
+Il!!6`yp.~w^iM)aoU3+Cc{(VL<-
+end object
+
+object material {Pt-Polished Plate-surface}
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcE/
+Il!!e*5BVa]9?7^=>wZGn
+Il!!4^wn,|u\gK'_mS1)Aay&TJ:*>
+end object
+
+object material {Epoxy-silica filled}
+Il!!3]pg.~pYvS|j\S0(@`xd'+wg}D1hyfRIg
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC?kx,0P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!y>IVjtm?bEoA_j}g6L
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp7oO%%c
+end object
+
+object material Benzene
+Il!!1Nkn,|natOuj\F,wIi4;OJ8
+Il!!0Mjm+{mimUxaiE8(3Lqt7}yakC~ivdO@
+Il!!1Nkn,|njnVybjF9)4Mru8~zblD kwe
+Il!!3Pmp.~piwD!ZZS&tFZry%*}s:xX'
+Il!!2Olo-}oXuR{i[R/'?_wc&*vf|C0gxeQBd&/
+Il!!3Pmp.~plvQwZqO( JUns#~xb|W$bnVTAd&19NL
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!0Zmd+{mVsPygYP-%=]ua$.xgkS0VZ3:0b!+
+Il!!s8CPdng9\?i;Yfhe|@
+Il!!1[ne,|nWtQzhZQ.&>^vb%/yhlT1W[4<1c
+Il!!6Sps1"sos[~goK>.9Rqv:3me!e]\*i]
+Il!!d)4AU`\8>6P3@y\
+Il!!0Zmd+{mftA}WWP#qI[rg4)kTeX?"%c
+Il!!0Mjm+{mftA}WWP#qI[rg4)kTeX?"%c
+Il!!1[ne,|nguB~XXQ$rJ\sh5*lUfZ@#
+Il!!1Nkn,|nguB~XXQ$rJ\sh5*lUfZ@#
+Il!!5Ror0!r\rM!lnJ?|Mg`j5,~jlS9u.f^M<%0=
+Il!!0Mjm+{mWmH{giE:wHb[e6+|VyP%TVLAA_#
+Il!!1Nkn,|nXnI|hjF;xIc\f7,}WzQ&UWNBB
+Il!!1Nkn,|nXjQ*\kVDBb|.
+Il!!0Mjm+{mVsPygYP-%=]ua$.xgkS0VZ3:0b!+
+Il!!0Mjm+{misNtWnL%|GRkp {{c|E3a\7!)Q$)3
+Il!!1Nkn,|nWtQzhZQ.&>^vb%/yhlT1W[4<1c
+Il!!1Nkn,|njtOuXoM&}HSlq!||d}F4b]8"+R%
+end object
+
+object material {Oil Paint-Typical-surface}
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcE/
+Il!!e*5BVa]9?7^=>wZGn
+Il!!2\ul*zsZeI%]kQ/'?_w$RHA%
+end object
+
+object material {Fe-Cast_ Machine Cut-surface}
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcE/
+Il!!e*5BVa]9?7^=>wZGn
+Il!!4^wn,|u\gK'_mS1)Aay&TJ>)
+end object
+
+object material {Au-Not Polished-surface}
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcE/
+Il!!e*5BVa]9?7^=>wZGn
+Il!!7azq/ x_jN*bpV4,Dd|)WMA/
+end object
+
+object material Chromenickel-surface
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcE/
+Il!!e*5BVa]9?7^=>wZGn
+Il!!0Zsj(xqXcG#[iO-%=]u"PF=!
+end object
+
+object material Air@(8000m)
+Il!!6Sps1"sfyTzoaK1|Nn4@TWB-
+Il!!1Nhq9y{g%s
+Il!!5Ror0!rkyF#\\U(vH\t{', u<tT+
+Il!!1Nkn,|nWtQzhZQ.&>^vb%)ue{B/fwdPAd*-
+Il!!3Pmp.~plvQwZqO( JUns#~xb|W$bnVTAd&19N
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yfhe|@
+Il!!5Ror0!rnrZ}fnJ=-8Qpu92ld dU$4l,Bf-
+Il!!d)4AU`\8>6P3@y\
+Il!!5Ror0!r\rM!lnJ?|Mg`j5,~jlS9u.f^M<%0=
+Il!!2Olo-}oYkR+]lWE@c~17T
+end object
+
+object material eGRAF_HITHERM_SRS_700
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC?dz,
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Ykh_!;AZio
+Il!!0Zmd+{mVsPygYP-%=]ua988%6mO
+Il!!0Zmd+{mVsPygYP-%=]ua:88%6mO
+Il!!0Zmd+{mVsPygYP-%=]ua;8<~6
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp=pP~'
+Il!!o:MDj[M6S0YG90ld|=UAtqV6e/qE?#
+end object
+
+object material Water
+Il!!5Ror0!rexSyn`J0{Mm2?SM<+
+Il!!1Nhq9y{g%s
+Il!!0Mjm+{mftA}WWP#qCWov"'zp:pW!
+Il!!6Sps1"s\yV m_V3+Cc{g*.zj!G4k|iUL
+Il!!1Nkn,|njtOuXoM&}HSlq!|v`zU"`lTR?b$,6J
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Ykpc-6DY
+Il!!1Nkn,|njnVybjF9)4Mlq5.h`{`P (dS
+Il!!d)4AU`\8>6P3@y\
+Il!!7Tqt2#t^tO#npLA~Oibl7.!lnU;w/h\Jm_/:V
+Il!!0Mjm+{mWiP)[jUC?cx,
+end object
+
+object material {Steel-Polished Casting}
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcE/
+Il!!e*5BVa]9?7^=>wZGn
+Il!!2\ul*zsZeI%]kQ/'?_w$RH=%
+end object
+
+object material Bismuth-Telluride
+Il!!5_ri0!r[xU~l^U2*Bbzf)-yi F3j{iTJ
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC@fx,0P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;YsL5v:AZinS6V7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp<uO~'
+end object
+
+object material Ni-polished
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9S
+Il!!e*5BVa]9?7^=>wZGn
+Il!!5_xo-}v]hL(`nT2*Bbz'UK;+@
+end object
+
+object material Ni-Inconel
+Il!!8bul3$u^{X"oaX5-Ee}i,0|l#I6m~l_Fq
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCFhx,
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp:uO~'
+Il!!e0C:`QC<JvS--&XZj+G=jgL,[xj9Cn
+Il!!}H[Rxi[Da>gUG>zr+KcOq{fUYA}DHA+.	q|~<$(s1	?jpY-=Ut	 A01[0T<h	^E7G_`
+Il!!}H[Rxi[Tb/kEE>p_7I`U"vYBsI=	xU?}Qw{	:8&\1cA	vYB(Oqp~	66p~B
+end object
+
+object material Zn-Al-Cu-alloy
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.evdQI_#
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCDjx,0P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp:pW~'
+end object
+
+object material Nitrogen
+Il!!4Qnq/ qdwRxm_I/zLl2>RL;(>
+Il!!1Nhq9y{g%s
+Il!!7Tqt2#tm{H%^^W*xJ^v})."w>vZ(,p_
+Il!!2Olo-}oXuR{i[R/'?_wc&*vf|C0gxeQBe)/
+Il!!4Qnq/ qmwRx[rP)!KVot$ yc}X%coWUBe'2=SN
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yfhe|@
+Il!!5Ror0!rnrZ}fnJ=-8Qpu92ld dU$2nYzc(5
+Il!!d)4AU`\8>6P3@y\
+Il!!5Ror0!r\rM!lnJ?|Mg`j5,~jlS9u.>SEk
+Il!!e#@C`QC,I&O=/&bZr3K7lOH<A*n72)Z[y?6
+Il!!};X[xi[Tb/kEE>p_7I`U"vYBsI@nt	@.Suh'64u\}]>mwC>8Nq`n(31q3D=mp],)6pt K!3c-V*b__6?K]~!C)~Uza<tkL$
+Il!!5Ror0!r\nU.`oZHDf 6
+Il!!};X[xi[Da>gUG>zr+KcOq{fUYA}DHA+.	nx";=um5_	drTBA>tw"	00n/],ip]<	Dou|K!~
+end object
+
+object material Al-Extruded
+Il!!5_ri0!r[xU~l^U2*Bbzf)-yi F3j{jVJ
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC@kx,
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp?oO
+end object
+
+object material Air@(5000m)
+Il!!6Sps1"sfyTzoaK1|Nn4@TWB-
+Il!!1Nhq9y{g%s
+Il!!5Ror0!rkyF#\\U(vH\t{', u<tT+
+Il!!1Nkn,|nWtQzhZQ.&>^vb%)ue{B/fwdPAd*-
+Il!!3Pmp.~plvQwZqO( JUns#~xb|W$bnVTAd&19N
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yfhe|@
+Il!!5Ror0!rnrZ}fnJ=-8Qpu92ld dU$4l,Bf-
+Il!!d)4AU`\8>6P3@y\
+Il!!5Ror0!r\rM!lnJ?|Mg`j5,~jlS9u.f^M<%0=
+Il!!0Mjm+{mWiP)[jUC>a~03P
+end object
+
+object material Ammonia
+Il!!1Nkn,|natOuj\F,wIi.:OI:"=q
+Il!!1Nhq9y{g%s
+Il!!8Uru3$un|I&__X+yK_w~*/#x@x\1
+Il!!7Tqt2#t]zW!n`W4,Dd|h+/{k"H5l}jVGj.9
+Il!!3Pmp.~plvQwZqO( JUns#~xb|W$bnVTAd&19NL
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yfhe|@
+Il!!5Ror0!rnrZ}fnJ=-8Qpu92ld dU$,i[zc(5
+Il!!d)4AU`\8>6P3@y\
+Il!!5Ror0!r\rM!lnJ?|Mg`j5,~jlS9u.f]N<%0=
+Il!!4Qnq/ q[mT-_nYGBe#8?X
+end object
+
+object material {Water Vapor}
+Il!!5Ror0!rexSyn`J0{Mm2?SM<+
+Il!!1Nhq9y{g%s
+Il!!0Mjm+{mftA}WWP#qCWov"'zp8oQ!
+Il!!3Pmp.~pYvS|j\S0(@`xd'+wg}D1hyfRCf)
+Il!!3Pmp.~plvQwZqO( JUns#~xb|W$bnVTAd&1
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yfhe|@
+Il!!6Sps1"sos[~goK>.9Rqv:3me!e]%4?TFm
+Il!!d)4AU`\8>6P3@y\
+Il!!5Ror0!r\rM!lnJ?|Mg`j5,~jlS9u.>SEk
+Il!!};X[xi[Tb/kEE>p_7I`U"vYBsI@nt	@6Txhp<4&\}L@ftS-(Oqp~(" m1[AX`^A9F_bl237c.F<ro^$'8o%~Fx~g0`9cWL8>[rma
+Il!!6Sps1"s]oV/ap[IDg%
+end object
+
+object material Air-Moist(@325K)
+Il!!6Sps1"sfyTzoaK1|Nn4@TWB-
+Il!!1Nhq9y{g%s
+Il!!2Olo-}ohvC YYR%sEYqx$)|r9qX('g
+Il!!5Ror0!r[xU~l^U2*Bbzf)-yi F3j{hTEh/5
+Il!!3Pmp.~plvQwZqO( JUns#~xb|W$bnVTAd&19N
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yfhe|@
+Il!!5Ror0!rnrZ}fnJ=-8Qpu92ld dU$4qWzc(5
+Il!!d)4AU`\8>6P3@y\
+Il!!5Ror0!r\rM!lnJ?|Mg`j5,~jlS9u.f_J<%0=
+Il!!6Sps1"s]oV/ap[IEg~6:\
+end object
+
+object material Ni-Inconel-cast
+Il!!5_ri0!r[xU~l^U2*Bbzf)-yi F3j{iVCk
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCFfx,0P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp:tQ~'
+Il!!e0C:`QC<JvS--&XZj+G=jgL,[xj9Cn
+Il!!}H[Rxi[Da>gUG>zr+KcOq{fUYA}DHA+.	q|~<$(s1	?jpY-=Ut	 A01[0T<h	^E7G_`
+Il!!}H[Rxi[Tb/kEE>p_7I`U"vYBsI=	xU?}Qw{	:8&\1cA	vYB(Oqp~	66p~B
+end object
+
+object material Air@(2000m)
+Il!!6Sps1"sfyTzoaK1|Nn4@TWB-
+Il!!1Nhq9y{g%s
+Il!!5Ror0!rkyF#\\U(vH\t{', u<tT+
+Il!!1Nkn,|nWtQzhZQ.&>^vb%)ue{B/fwdPAd*-
+Il!!3Pmp.~plvQwZqO( JUns#~xb|W$bnVTAd&19N
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yfhe|@
+Il!!5Ror0!rnrZ}fnJ=-8Qpu92ld dU$4l,Bf-
+Il!!d)4AU`\8>6P3@y\
+Il!!5Ror0!r\rM!lnJ?|Mg`j5,~jlS9u.f^M<%0=
+Il!!0Mjm+{mWiP)[jUC>a".5P
+end object
+
+object material Mica-Typical
+Il!!6`sj1"s\yV m_V3+Cc{g*.zj!G4k|iUL
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC@kx,
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yhue-9AZsn]
+Il!!d)4AU`\8>6]67y\
+Il!!7atk2#tm{H%^^W*xJ^v})."wEy]
+end object
+
+object material Air@(12000m)
+Il!!6Sps1"sfyTzoaK1|Nn4@TWB-
+Il!!1Nhq9y{g%s
+Il!!5Ror0!rkyF#\\U(vH\t{', u<tT+
+Il!!1Nkn,|nWtQzhZQ.&>^vb%)ue{B/fwdPAd*-
+Il!!3Pmp.~plvQwZqO( JUns#~xb|W$bnVTAd&19N
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yfhe|@
+Il!!5Ror0!rnrZ}fnJ=-8Qpu92ld dU$4l,Bf-
+Il!!d)4AU`\8>6P3@y\
+Il!!5Ror0!r\rM!lnJ?|Mg`j5,~jlS9u.f^M<%0=
+Il!!3Pmp.~pZlS,^mXFAd}39V
+end object
+
+object material {Al-surface roofing}
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!m2=J^ha3V9c5SZma~0HUk
+Il!!e*5BVa]9?7^=>wZGn
+Il!!6`yp.~w^iM)aoU3+Cc{(VL>(B
+end object
+
+object material Polystyrene-Typical
+Il!!8bul3$u^{X"oaX5-Ee}i,0|l#I6m~kWHq
+Il!!1Nhq9y{g%s
+Il!!5_ri0!r\nU.`oZHDi$6
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;YosS+AIIw
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp7rO!
+end object
+
+object material Ni-Polished-surface
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcE/
+Il!!e*5BVa]9?7^=>wZGn
+Il!!5_xo-}v]hL(`nT2*Bbz'UK;+@
+end object
+
+object material Au-polished
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9S
+Il!!e*5BVa]9?7^=>wZGn
+Il!!0Zsj(xqXcG#[iO-%=]u"PF6#6
+end object
+
+object material Air
+Il!!6Sps1"sfyTzoaK1|Nn4@TWB-
+Il!!1Nhq9y{g%s
+Il!!5Ror0!rkyF#\\U(vH\t{', u<tT+
+Il!!1Nkn,|nWtQzhZQ.&>^vb%)ue{B/fwdPAd*-
+Il!!3Pmp.~plvQwZqO( JUns#~xb|W$bnVTAd&19N
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yfhe|@
+Il!!5Ror0!rnrZ}fnJ=-8Qpu92ld dU$4l,Bf-
+Il!!d)4AU`\8>6P3@y\
+Il!!5Ror0!r\rM!lnJ?|Mg`j5,~jlS9u.f^M<%0=
+Il!!4Qnq/ q[mT-_nYGCe}67X
+end object
+
+object material {Acrylic Resin-JSME}
+Il!!1[ne,|nWtQzhZQ.&>^vb%)ue{B/fwdPCc
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC?d",
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yhue-9AZsn]
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp7sO!
+end object
+
+object material Ni-Pure_Ref
+Il!!4^qh/ qZwT}k]T1)Aaye(,xh~E2izpVBl+
+Il!!1Nhq9y{g%s
+Il!!7atk2#t^pW0bq\JMs :
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!6`sj1"slzG$]]V)wI]u|(-!v@{U%3
+Il!!e0C:`QC<JvS--&XZj+G=jgL,[xj9Cn
+Il!!}H[Rxi[Da>gUG>zr+KcOq{fUYA}DHA+}Pnx!&6's,\>VtQ=8>us#620[2R<h`c@BDorlF/1c|^?{m^4'Mk|{3*/k+^9sWb45R\~uF++o*Q8oiZ05Wf{s?5{x _3_t^I,OfyoG4$ns^DotO?.?qx~64um6]>drS-9Sop~(39p/R<h`_<7Fob}H61a-V*uo\478v""A)/U/`7sgL;=Tj}s10-m*a!uiZ>4ST"u=5,`%_;msY13Qdy .8)n"]=^|Q=.O`z"62&l}e>drS-9Vtn~8"1k/R<h`^B=DorlC61a-V*sq`27H]~{C'/eza9ze\6%Tq}qA+|x1_6qY]@4Qd{eH5*w"O6tsWA,An~}>6sr$];ntAG.Mrxp;4&j.\.mtQ?8>wp~620[5Y:npMD9Fmr|278a3V*so^45Hml#D'7eza;sgZ65Bs$qC+|p.a1oiZ0<Sb u/#
+Il!!}H[Rxi[Tb/kEE>p_7I`U"vYBsI=	uWB}Vw	"<7uo5_	jxX-9Nqp	<85[|
+end object
+
+object material eGRAF_SPREAD_SS500
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC?k{,
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;YglS,,3VvaK9O6v
+Il!!0Zmd+{mVsPygYP-%=]ua98;!6mO
+Il!!0Zmd+{mVsPygYP-%=]ua:8;!6mO
+Il!!9cvm4%v_|Y#pbY6.Ff~jDAA(H
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp=pP~'
+Il!!o:MDj[M6S0YG90ld|=UAtqV6e/qE?#
+end object
+
+object material Steel-Mild-surface
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcE/
+Il!!e*5BVa]9?7^=>wZGn
+Il!!0Zsj(xqXcG#[iO-%=]u"PF8!
+end object
+
+object material Cu-Constantan
+Il!!5_ri0!r[xU~l^U2*Bbzf)-yi F3j{jZCk
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCFlx,
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp9wO
+Il!!}H[Rxi[Da>gUG>zr+KcOq{fUYA}DHA+.	rzp8;)	0^.kyV	:Uaq~82	m6D*
+end object
+
+object material {Hard Vinyl Chloride-JSME}
+Il!!6`sj1"s\yV m_V3+Cc{g*.zj!G4k|iUGm
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC?gx,
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yhue-9AZsn]
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp?tO
+end object
+
+object material Ni-Monel
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.eveV>a
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCFkx,
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp:qT~'
+Il!!e0C:`QC<JvS--&XZj+G=jgL,[xj9Cn
+Il!!}H[Rxi[Da>gUG>zr+KcOq{fUYA}DHA+.	ryp8;)	0].kyV	;Naq~82	n/D*
+Il!!}H[Rxi[Tb/kEE>p_7I`U"vYBsI=	wV?}Pw{	99&\1cA	vWE(Oqp~	64s~B
+end object
+
+object material Ge-Typical
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.eviV>a
+Il!!1Nhq9y{g%s
+Il!!3]pg.~pZlS,^mXFFi}2
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yrl_!0OThqMIY6v
+Il!!d)4AU`\8>6]67y\
+Il!!2\of-}ohvC YYR%sEYqx$)|r;sS
+Il!!}H[Rxi[Da>gUG>zr+KcOq{fUYA}DHA+}Pnx!&6-j2\.hpS=(Pqv|82 n-T<Xu`A7Fob!@11S5]Apo^$<Fm|kD*5e)`9cmZ65Bm!|A)-oyh/qiJA9Xdyu?%4n"_#py_A*Qfi)<6$^%d@nrQ?}Ppv!6$'s5\<frC>=Lqpn993k-T<Xr]:9F_s!K1/c-F=rm^4'Im%{A)/U/`7sgL=>Zj}s10-m*a!wj_>4ST"u=5,`&g:msY13Qdy .9-q"]=^|Q=.O`{#;2&l}e>drS-:Uqn~8"1k/R<h`_?;DorlC61a-V*sr`27H]~{C'/ezi?qo\&7Wl{sAz4s(j1alZ@2SdkzH35pqb8oqYA{Uow%>&(n$[=ndUB,Qph&64$l.LAip[=(Tqp|82 m6R?h`e<9DorlC:/k-F;ro^27H]}#A-/U,b9se\6%Ss{wAzz
+Il!!}H[Rxi{\o
+end object
+
+object material {Steel-ground sheet-surface}
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!l1<I]g`2U8b4RktPu2
+Il!!e*5BVa]9?7^=>wZGn
+Il!!0Zsj(xqXcG#[iO-%=]u"PF;&6
+end object
+
+object material Fe-Wrought
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.eviQ
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCEkx,
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp:vO
+end object
+
+object material Ceramic-surface
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcE/
+Il!!e*5BVa]9?7^=>wZGn
+Il!!9c|s1"zalP,drX6.Ff~+YOH
+end object
+
+object material Cu-Brass(Moldformed)
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.evdS@
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCFhx,
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp9wO
+end object
+
+object material Air(@300K)
+Il!!6Sps1"sfyTzoaK1|Nn4@TWB-
+Il!!1Nhq9y{g%s
+Il!!0Mjm+{mftA}WWP#qCWov"'zp7oO&%c
+Il!!1Nkn,|nWtQzhZQ.&>^vb%)ue{B/fwdPAd*-
+Il!!3Pmp.~plvQwZqO( JUns#~xb|W$bnVTAd&19N
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yfhe|@
+Il!!5Ror0!rnrZ}fnJ=-8Qpu92ld dU$4mYzc(5
+Il!!d)4AU`\8>6P3@y\
+Il!!5Ror0!r\rM!lnJ?|Mg`j5,~jlS9u.f_G<%0=
+Il!!4Qnq/ q[mT-_nYGCe}67X
+end object
+
+object material Mg-Typical_Ref
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.evdVF_#
+Il!!1Nhq9y{g%s
+Il!!8bul3$u_qX1cr]KGr$<
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp7oO!%c
+Il!!e0C:`QC<JvS--&XZj+G=jgL,[xj9Cn
+Il!!}H[Rxi[Da>gUG>zr+KcOq{fUYA}DHA+}Pnx!&=.r,\>VtQ=8>ry%800k~W:hpM>BFop|B!5a-V*uvd45Hml!A)/U/e9se\6%Xj}s10-w*_1qYa>4ST!yF5*p"O;msY11Wmy}>6sw"]=^yX?.Mpxp74$l.LCkzS;8Naq$620[3U=hn]<)Hop|B!3j/V8roN77Fm|kD+8e)`9ck\45R\%tJ)-oyf1oiZ08Yiyu?%2p _3_v[H*Qfi'>4$ns_AwrQ?}Wpv!6$(l0Z>fb\=6Nq` ?:.k/D=hp[<96px&@11S.[:po^$8Nnz{Cx1e+^9sW];>Pl}cC0-m*a!rna>4ST~u?3,pq`8uqYA{Tky}>6so)b;ntAC.Onx!&5+o,\>VwS=6Nq` =3.k/DBhp[<96pv&@11S5V:po^$8Lsz{Cx|
+Il!!}H[Rxi[Tb/kEE>p_7I`U"vYBsI-ptQ=.O`"$:2.l}^CfpS=(Wyx|;2 m8\:iuM=9Hrp|B!4h-T:r__4<Jk|{3-/e)`9ch\=:Pl}cF+-m*a!rj[H2Sdk{?5*p"O4pxb?,QVg
+end object
+
+object material {Rubber-buna-carbon black}
+Il!!3]pg.~pYvS|j\S0(@`xd'+wg}D1hyfREh)
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC?cx,0P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yhue-9AZsn]
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp7vT(%c
+end object
+
+object material {Paint-Al surface}
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!t9DQeoh:]@j<Zpi\'B
+Il!!e*5BVa]9?7^=>wZGn
+Il!!5_xo-}v]hL(`nT2*Bbz'UK>+
+end object
+
+object material Steel-Polished-surface
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcE/
+Il!!e*5BVa]9?7^=>wZGn
+Il!!8b{r0!y`kO+cqW5-Ee}*XNF
+end object
+
+object material Oxygen
+Il!!9Vsv4%vi|W}rdN4 Qq8<WZH3
+Il!!1Nhq9y{g%s
+Il!!0Mjm+{mftA}WWP#qCWov"'zp?qO
+Il!!6Sps1"s\yV m_V3+Cc{g*.zj!G4k|iUFi-7
+Il!!6Sps1"soyTz]tR+#MXqv&"{e Z'eqYWDk17
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yfhe|@
+Il!!5Ror0!rnrZ}fnJ=-8Qpu92ld dV$,>SEk
+Il!!d)4AU`\8>6P3@y\
+Il!!5Ror0!r\rM!lnJ?|Mg`j5,~jlS9u.fXH<%0=
+Il!!e#@C`QC,I&O=/&bZr3K7lOH<A*n72)Z[y?6
+Il!!};X[xi[Tb/kEE>p_7I`U"vYBsI@nt	H/S`~!6$u\/\>kbT=8Na`n928o~D=mp],)6ps H!!e-V:b_N58Orlk3+4e+P)ch^7:BZ
+Il!!4Qnq/ q[mT-_nYGCe!
+Il!!};X[xi[Da>gUG>zr+KcOq{fUYA}DHA+.	nx";=um5_	drTBA>tw"	00n1W,ip]<	Dou~E!~
+end object
+
+object material {Al-Rough Plate-surface}
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcE/
+Il!!e*5BVa]9?7^=>wZGn
+Il!!6`yp.~w^iM)aoU3+Cc{(VL<-
+end object
+
+object material {Enamels & Laquer-surface}
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcE/
+Il!!e*5BVa]9?7^=>wZGn
+Il!!8b{r0!y`kO+cqW5-Ee}*XNF
+end object
+
+object material {Paint-typical oil}
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!t9DQeoh:]@j<Zpi\'B
+Il!!e*5BVa]9?7^=>wZGn
+Il!!2\ul*zsZeI%]kQ/'?_w$RHA%
+end object
+
+object material {Aluminum 6063-T5}
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.eveQI_#
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC@jx,0P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp?oO~'
+end object
+
+object material {Al-polished plate-surface}
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!m2=J^ha3V9c5SZma~0HUk
+Il!!e*5BVa]9?7^=>wZGn
+Il!!1[tk)yrYdH$\jP.&>^v#QG7&8
+end object
+
+object material {Plastics-Infrared Opaque}
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcE/
+Il!!e*5BVa]9?7^=>wZGn
+Il!!9c|s1"zalP,drX6.Ff~+YOH
+end object
+
+object material {Al-highly polished}
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!m2=J^ha3V9c5SZma~0HUk
+Il!!e*5BVa]9?7^=>wZGn
+Il!!8b{r0!y`kO+cqW5-Ee}*XN>-F
+end object
+
+object material Water(@360K)
+Il!!5Ror0!rexSyn`J0{Mm2?SM<+
+Il!!1Nhq9y{g%s
+Il!!0Mjm+{mftA}WWP#qCWov"'zp:qO'%c
+Il!!3Pmp.~pYvS|j\S0(@`xd'+wg}D1hyfRIk*1
+Il!!9Vsv4%vr|W}`wU.&P[ty)%~h#]*ht\ZGj,4BZVJ
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!r7BOcmf8[>h:Xuge{>
+Il!!4Qnq/ qmqY|emI<,7Pot81kc~cS#+gUGg+
+Il!!d)4AU`\8>6P3@y\
+Il!!7Tqt2#t^tO#npLA~Oibl7.!lnU;w/h^Lo_/:V
+Il!!4Qnq/ q[mT-_nYGKm$.:
+end object
+
+object material Diamond-IIa
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.eveT@a!+
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCAhx,0P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!r7BOcmf8[>h:X.zY{>
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp;oX~'
+end object
+
+object material Chlorine
+Il!!5Ror0!rexSyn`J0{Mm77SMB*@y
+Il!!1Nhq9y{g%s
+Il!!5Ror0!rkyF#\\U(vH\t{', uByY
+Il!!4Qnq/ qZwT}k]T1)Aaye(,xh~E2izgSDf'3
+Il!!3Pmp.~plvQwZqO( JUns#~xb|W$bnVTAd&19NL
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yfhe|@
+Il!!5Ror0!rnrZ}fnJ=-8Qpu92ld dU$.>SEk
+Il!!d)4AU`\8>6P3@y\
+Il!!5Ror0!r\rM!lnJ?|Mg`j5,~jlS9u.f^M<%0=
+Il!!8Uru3$u_qX1cr]KHi&8B
+end object
+
+object material Ag-Typical_Ref
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.evgSB_#
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC?c},2
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp8rO~'
+Il!!e0C:`QC<JvS--&XZj+G=jgL,[xj9Cn
+Il!!}H[Rxi[Da>gUG>zr+KcOq{fUYA}DHA+/Mpxp9=*l,\>VtQ=8>xx"800k~W:hpM=:KorzB1!g+V:bpb;7Hk|{3.-e+P:zi\63Rlmy?+-_+i8qiX@4Ckyu?%-y%_3msY14Ofyo??$n$[=ndZ=.O`y)74&j.\.grQ=8>rv'82.k/D=mn]<)Our|@11S/V8roN98Imz{Cx2e)`9che95Pl}cE++o*Q2qnZ>4ST!u=5,`)_3msY12Qdy .;)n"]=^{Q=.O`|*=2&l}d>drS-<Urn~8"9k-T<Xtc<7Fob}B1/c-F>wo\478n"{A)/U/c;qg\&7Rl{sAz1r*_1qY\E4Qd{eC75n"_#rsY?,QV}"G4$ns`BnrQ?}Sr ~64up.\<frCA:Sop~(70k-T<Xt^E7Fob#B1/c-F>sq\478u|{A)/U.i?qg\&6Rl}qA+|r1j/qiJA6Sdyu?%/v#]3ocG
+Il!!}H[Rxi[Tb/kEE>p_7I`U"vYBsI=	uWA}Vw	"<6uo5_	hu\-9Nqp	:59[|
+end object
+
+object material {Al-Die Cast}
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.evdQ@
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC@jx,
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp?uO
+end object
+
+object material Steel-Stainless
+Il!!4^qh/ qZwT}k]T1)Aaye(,xh~E2izhYBi
+Il!!1Nhq9y{g%s
+Il!!7atk2#t^pW0bq\JLr!:
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!1[ne,|nguB~XXQ$rDXpw#({q;vQ
+end object
+
+object material {Ge-n type}
+Il!!6`sj1"s\yV m_V3+Cc{g*.zj!G4k|n_Dm
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCCfz10P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yrl_!0OThqMIY6v
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp9qQ~'
+end object
+
+object material Au-Polished-surface
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcE/
+Il!!e*5BVa]9?7^=>wZGn
+Il!!0Zsj(xqXcG#[iO-%=]u"PF6#6
+end object
+
+object material {Aluminum 1100}
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.eveRH_#
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC@jy,0P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp?oO~'
+end object
+
+object material {Shellac dull-surface}
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!r7BOcmf8[>h:XmzY{>
+Il!!e*5BVa]9?7^=>wZGn
+Il!!1[tk)yrYdH$\jP.&>^v#QG@#
+end object
+
+object material Polystyrene-rigid-R12
+Il!!4^qh/ qZwT}k]T1)Aaye(,xh~E2izgSDi
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCCiv,
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;YosS+AIIw
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp7rO!%c
+end object
+
+object material Air-solid
+Il!!1[ne,|nWtQzhZQ.&>^vb%)ue{B/fwdPAd(-
+Il!!1Nhq9y{g%s
+Il!!4^qh/ q[mT-_nYGCe}67X
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yhue-9AZsn]
+Il!!d)4AU`\8>6]67y\
+Il!!5_ri0!rkyF#\\U(vH\t{', u<tT+
+end object
+
+object material Steel-mild-surface
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!l1<I]g`2U8b4RktPu2
+Il!!e*5BVa]9?7^=>wZGn
+Il!!6`yp.~w^iM)aoU3+Cc{(VL>-
+end object
+
+object material {Steel-300m-high strength}
+Il!!7atk2#t]zW!n`W4,Dd|h+/{k"H5l}o_Eo
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCEk|,0P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp:sW~'
+end object
+
+object material Porcelain-Glazed-surface
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcE/
+Il!!e*5BVa]9?7^=>wZGn
+Il!!3]vm+{t[fJ&^lR0(@`x%SIB'
+end object
+
+object material {Polyethylene Resin-JSME}
+Il!!5_ri0!r[xU~l^U2*Bbzf)-yi F3j{hTHm-
+Il!!1Nhq9y{g%s
+Il!!5_ri0!r\nU.`oZHLk#
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yhue-9AZsn]
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp8qO!
+end object
+
+object material Cu-Brass
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.evdT@_#
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCFhx,
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp9xO~'
+Il!!e0C:`QC<JvS--&XZj+G=jgL,[xj9Cn
+Il!!}H[Rxi[Da>gUG>zr+KcOq{fUYA}DHA+.	qx'&6)s	]>lbXD;	rt%(30k/	=lvM*
+Il!!}H[Rxi[Tb/kEE>p_7I`U"vYBsI=	uZD}Vw	"?9uo5_	i{S-9Nqp	;;0[|
+end object
+
+object material Water(@280K)
+Il!!5Ror0!rexSyn`J0{Mm2?SM<+
+Il!!1Nhq9y{g%s
+Il!!0Mjm+{mftA}WWP#qCWov"'zp:pX)%c
+Il!!2Olo-}oXuR{i[R/'?_wc&*vf|C0gxeQGk'
+Il!!5Ror0!rnxSy\sQ*"LWpu%!zd~Y&dpXZCl]-8R
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!r7BOcmf8[>h:Xuge{>
+Il!!2Olo-}okoWzckG:*5Nmr6/ia|aQ!)eTFe'
+Il!!d)4AU`\8>6P3@y\
+Il!!7Tqt2#t^tO#npLA~Oibl7.!lnU;w/h[On_/:V
+Il!!0Mjm+{mWiP)[jUC?cx,0P
+end object
+
+object material Cu-Pure
+Il!!6`sj1"s\yV m_V3+Cc{g*.zj!G4k|l_Me/
+Il!!1Nhq9y{g%s
+Il!!3]pg.~pZlS,^mXFIo~2
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp9wP~'
+Il!!e0C:`QC<JvS--&XZj+G=jgL,[xj9Cn
+Il!!}H[Rxi[Da>gUG>zr+KcOq{fUYA}DHA+.	tz!&5-o	`@fbVD;	ty$(30k/	?quM*
+Il!!}H[Rxi[Tb/kEE>p_7I`U"vYBsI=	uZD}Vw	"?9uo5_	i{Z-9Nqp	;;7[|
+end object
+
+object material STABLCOR_ST10
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC?j~,
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Ykh_!;AZio
+Il!!0Zmd+{mVsPygYP-%=]ua989~6
+Il!!0Zmd+{mVsPygYP-%=]ua:89~6
+Il!!0Zmd+{mVsPygYP-%=]ua;88~6
+Il!!d)4AU`\8>6]67y\
+Il!!7atk2#tm{H%^^W*xJ^v})."wD [&2qYN
+Il!!o:MDj[M6S0YG90ld|=UAtqV6e/qE?#
+end object
+
+object material Freon-E5
+Il!!1Nhq9y{g%s
+Il!!0Mjm+{mftA}WWP#qCWov"'zp?xX~'
+Il!!7Tqt2#t]zW!n`W4,Dd|h+/{k"H5l}jVGn1
+Il!!1Nkn,|njtOuXoM&}HSlq!|v`zU"`lTR?b$-5
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcEZi/<\cwub^Z:#HI5-
+Il!!3Pmp.~plpX{dlH;+6Ons70jb}bY"-k*@g
+Il!!d)4AU`\8>6P3@y\
+Il!!0Mjm+{mWiP)[jUC?j",0P
+end object
+
+object material {Epoxy Resin-JSME}
+Il!!3]pg.~pYvS|j\S0(@`xd'+wg}D1hyfRF
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC?k},
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yhue-9AZsn]
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp7pO!
+end object
+
+object material Ti-Typical_Ref
+Il!!5_ri0!r[xU~l^U2*Bbzf)-yi F3j{jWCk
+Il!!1Nhq9y{g%s
+Il!!8bul3$u_qX1cr]KJp!<
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp;oO~'
+Il!!e0C:`QC<JvS--&XZj+G=jgL,[xj9Cn
+Il!!}H[Rxi[Da>gUG>zr+KcOq{fUYA}DHA+/Mpxp72*p}^<frC?6Vy`"620[3R?j`a:9F_wzI6!h+V:bv\5@8sz{Cx7c1c)ze\6%Sl{tAz5m*a!rjXE4Cmyu?%-r h3_tY?,QVz$<9$^%b;ntAA/Mrxp84$l.L@mpX=(Qqn~8"3q-Y<Xt]:9F_u&@11S2V8roN7>Fq|kI)-e+P<xea6%Yl{sAz0s(a1aqZ>4ST~w=;,`+_1osID-Okyo?6$l$]-qtOD.?q}!44&\0c<frC?8Nop~(44i4T,ju]:9F_t~@:1S0V:po^$9Ik&{3,4e)`9ci]45R\"sA)-oyc1omZ09Sdyu?%-y f3_yYA*Qfi!G4(nse=nrQ?}Pyv(6$'l.\<frC?8Lxpn940k-T<Xr_:9F_s!B1/c-F<umd4'Is|{A)/U-e7vgL7=Rl{sAz/v(a1aW
+Il!!}H[Rxi[Tb/kEE>p_7I`U"vYBsI?ntO?.?t~(47&\0a>drS-=Nsn(8"2t7R=m`b><DorlE61a-V*wsd2>H]!{C'/eze?te]6%Wl}qA+|t2c/uiJF4Sb{u/:5w d3_a
+end object
+
+object material Air@(4000m)
+Il!!6Sps1"sfyTzoaK1|Nn4@TWB-
+Il!!1Nhq9y{g%s
+Il!!5Ror0!rkyF#\\U(vH\t{', u<tT+
+Il!!1Nkn,|nWtQzhZQ.&>^vb%)ue{B/fwdPAd*-
+Il!!3Pmp.~plvQwZqO( JUns#~xb|W$bnVTAd&19N
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yfhe|@
+Il!!5Ror0!rnrZ}fnJ=-8Qpu92ld dU$4l,Bf-
+Il!!d)4AU`\8>6P3@y\
+Il!!5Ror0!r\rM!lnJ?|Mg`j5,~jlS9u.f^M<%0=
+Il!!9Vsv4%v`rY2ds^LGj)7@b
+end object
+
+object material Epoxy-unfilled
+Il!!9cvm4%v_|Y#pbY6.Ff~j-1}m$J7n lXJs
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC?ex,0P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!y>IVjtm?bEoA_j}g6L
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp7oS'%c
+end object
+
+object material Steel-Carbon
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.evfW>a
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCEkx,
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp:wU~'
+Il!!e0C:`QC<JvS--&XZj+G=jgL,[xj9Cn
+Il!!}H[Rxi[Da>gUG>zr+KcOq{fUYA}DHA+.	u|p8;)j5	CjbUE;Lx	">"1k/T	kvM*
+Il!!}H[Rxi[Tb/kEE>p_7I`U"vYBsI=	xWD}Qw{~8	*r3L@nuQ?	Ryvn920k	XDn`K
+end object
+
+object material Steel-Oxidised-surface
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcE/
+Il!!e*5BVa]9?7^=>wZGn
+Il!!8b{r0!y`kO+cqW5-Ee}*XNF
+end object
+
+object material Stainless-steel-cleaned
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!l1<I]g`2U8b4RktPu2
+Il!!e*5BVa]9?7^=>wZGn
+Il!!8b{r0!y`kO+cqW5-Ee}*XN@1
+end object
+
+object material Glycol-20
+Il!!0Mjm+{m`sNti[E+vHh24NH
+Il!!1Nhq9y{g%s
+Il!!0Mjm+{mftA}WWP#qCWov"'zp9xO!%c
+Il!!2Olo-}oXuR{i[R/'?_wc&*vf|C0gxeQGd'
+Il!!3Pmp.~plvQwZqO( JUns#~xb|W$bnVTAd&.9N
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcEXh;:Y\.YcKiBvNS5-
+Il!!3Pmp.~plpX{dlH;+6Ons70jb}bS"0k*@g
+Il!!d)4AU`\8>6P3@y\
+Il!!0Mjm+{mWiP)[jUC?c{,0P
+end object
+
+object material {Au-not polished-surface}
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9S
+Il!!e*5BVa]9?7^=>wZGn
+Il!!7azq/ x_jN*bpV4,Dd|)WMA/
+end object
+
+object material Steel-polished
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!l1<I]g`2U8b4RktPu2
+Il!!e*5BVa]9?7^=>wZGn
+Il!!6`yp.~w^iM)aoU3+Cc{(VL<-B
+end object
+
+object material Pt-Typical_Ref
+Il!!3]pg.~pYvS|j\S0(@`xd'+wg}D1hymW
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC@d|12
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp7qV~'
+Il!!e0C:`QC<JvS--&XZj+G=jgL,[xj9Cn
+Il!!}H[Rxi[Da>gUG>zr+KcOq{fUYA}DHA+/Mpxp87'j.\.hpS=(Rwp|82 n-T<XvdE7Fob!@11S5^:po^$<Fm|kD)4e)`9cmZ65Bm~{A)-oyh/qiJA6Ydyu?%4n"_#pubA*Qfi)<6$^%_EnrQ?}Ppv!6$'n1\<frC>=Lqpn@61i/T,jp[<96s{"@11S0V8roN68Mk|{3-/c+`)tje45R\#s?+-_+a:oiZ0:Sb{u/>0n)_#vsWA,An }@6sv$[=ndY@,Tph*62&l}cFd{S-9Nqn~8"7r-Y<Xqb<7Fob$F/1c|X:rm^4'Ooz"Cx1j+^9sWc73ZlmvA++o*Q8rg`@$Vi{s?5{w#]:oc]A,OfyoE7"v$MBntO?.?wz~94ur.\<frCD;Lspn@20i/T,ou[B96pr|B/1c|]Bpv^$8Jm|yC)~m-^?sW]:5Rj}s134m+a!roZ@2Sdk~@35pq`;osWA,Ao }?6sp$]=ltQ/7Xn|!&"
+Il!!}H[Rxi[Tb/kEE>p_7I`U"vYBsI=	|V/5V	!&&7-o	]AkbT=8N	q"="}
+end object
+
+object material Paint-white-acylic
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!t9DQeoh:]@j<Zpi\'B
+Il!!e*5BVa]9?7^=>wZGn
+Il!!0Zsj(xqXcG#[iO-%=]u"PF?!
+end object
+
+object material Cu-Pure_Ref
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.evgQA_#
+Il!!1Nhq9y{g%s
+Il!!3]pg.~pZlS,^mXFIo~2
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp9wT~'
+Il!!e0C:`QC<JvS--&XZj+G=jgL,[xj9Cn
+Il!!}H[Rxi[Da>gUG>zr+KcOq{fUYA}DHA+}Pnx!&8(n.Z>fbU;8Nax#82.k/D?fp],:Htr|@11S1T:r__:9Hmz{Cx4c+`)tpa65Pl}cG)-oyc3siZ>4ST#s?5{r%h3oqYA{Ydy .8(v$];ntAH,Oph#:=&l,\>VsS;8Nar#;20i/T,iu[<96py}B1/c-F<rm^4'Im%{C'/ezc9qg\&9Vq}qA+|s*_1qY\A;Sb{u/:,n"_#pu^A*Qfi&>4$nse?wrQ?}Vpv!6$,p5Z>fb[=6Nq`$=9.k/DEhn]<)KozzB1!d-V8roN8?Jk|{3*4e)`9ck^?3RlmuA++o*Q5rlX@4Cf!u=5,`&_9msY1/Qfw >&(n%[=ndTD.Mpxp9=,j.\.jrS;8Nas(;00k~Y<hn]<)IwxzB1!i-V8roN7>Qk|{31/e)`9cjb<3RlmtA+-m*a!tn\>4ST|w?5*p"O6r|WA,AT
+Il!!}H[Rxi[Tb/kEE>p_7I`U"vYBsI-ptQ=.O`{&<2'l}^CfpS=(Qxt|92 m8\:iuM?AKmr|246c+V:brg65Nml C)-e+P<|oZ<5Bq}s?+-_.a8opZ0:Sdyu?%0q(]:ocG
+end object
+
+object material {Al-Die Cast-90}
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.evdQE_#
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC@jx,0P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp>vX~'
+end object
+
+object material {Plastics-infrared Opaque}
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!r7BOcmf8[>h:XmzY{>
+Il!!e*5BVa]9?7^=>wZGn
+Il!!9c|s1"zalP,drX6.Ff~+YOH
+end object
+
+object material {Rubber-Plyspr natural}
+Il!!3]pg.~pYvS|j\S0(@`xd'+wg}D1hyfRDg
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCGdx
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;YosS+AIIw
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp7wW!
+end object
+
+object material Al-2024-T6
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.evdXG_#
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC@j ,0P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp>vT~'
+end object
+
+object material Pt-polished
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9S
+Il!!e*5BVa]9?7^=>wZGn
+Il!!4^wn,|u\gK'_mS1)Aay&TJ:*>
+end object
+
+object material {Shellac bright-surface}
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!r7BOcmf8[>h:XmzY{>
+Il!!e*5BVa]9?7^=>wZGn
+Il!!2\ul*zsZeI%]kQ/'?_w$RH@%
+end object
+
+object material {Soft Rubber-Gray-surface}
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcE/
+Il!!e*5BVa]9?7^=>wZGn
+Il!!6`yp.~w^iM)aoU3+Cc{(VLD-
+end object
+
+object material Al-Commercial-surface
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcE/
+Il!!e*5BVa]9?7^=>wZGn
+Il!!9c|s1"zalP,drX6.Ff~+YO?3
+end object
+
+object material Glycol-34
+Il!!0Mjm+{m`sNti[E+vHh24NH
+Il!!1Nhq9y{g%s
+Il!!0Mjm+{mftA}WWP#qCWov"'zp9uQ!%c
+Il!!7Tqt2#t]zW!n`W4,Dd|h+/{k"H5l}jVKo
+Il!!4Qnq/ qmwRx[rP)!KVot$ yc}X%coWUBe'/;P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcEXh;:Y\.YcKiBvNS5-
+Il!!3Pmp.~plpX{dlH;+6Ons70jb}bT"-h*@g
+Il!!d)4AU`\8>6P3@y\
+Il!!0Mjm+{mWiP)[jUC?c}10P
+end object
+
+object material Air@(500m)
+Il!!6Sps1"sfyTzoaK1|Nn4@TWB-
+Il!!1Nhq9y{g%s
+Il!!5Ror0!rkyF#\\U(vH\t{', u<tT+
+Il!!1Nkn,|nWtQzhZQ.&>^vb%)ue{B/fwdPAd*-
+Il!!3Pmp.~plvQwZqO( JUns#~xb|W$bnVTAd&19N
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yfhe|@
+Il!!5Ror0!rnrZ}fnJ=-8Qpu92ld dU$4l,Bf-
+Il!!d)4AU`\8>6P3@y\
+Il!!5Ror0!r\rM!lnJ?|Mg`j5,~jlS9u.f^M<%0=
+Il!!6Sps1"s]oV/ap[IEg~;?\
+end object
+
+object material Mg-Typical
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.evdVD_#
+Il!!1Nhq9y{g%s
+Il!!8bul3$u_qX1cr]KGr$<
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp7oO!%c
+Il!!e0C:`QC<JvS--&XZj+G=jgL,[xj9Cn
+Il!!}H[Rxi[Da>gUG>zr+KcOq{fUYA}DHA+.	q~!&5-o	]DfbVD;	ru#(30k/	=mtM*
+Il!!}H[Rxi[Tb/kEE>p_7I`U"vYBsI=	xYG}Vw	%><uo5_	grY=(Oqp~	30q/D*
+end object
+
+object material Cu-Bronze
+Il!!5_ri0!r[xU~l^U2*Bbzf)-yi F3j{n\Ck
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCFkx,
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp9uO
+Il!!}H[Rxi[Da>gUG>zr+KcOq{fUYA}DHA+.	u{p8;)	3_.kuZ	@Naq~82	s/D*
+end object
+
+object material Glycol-50
+Il!!0Mjm+{m`sNti[E+vHh24NH
+Il!!1Nhq9y{g%s
+Il!!0Mjm+{mftA}WWP#qCWov"'zp9rO!%c
+Il!!4Qnq/ qZwT}k]T1)Aaye(,xh~E2izgSH
+Il!!8Uru3$uq{V|_vT-%OZsx($}g"\)gs[YFi+3?X
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcEXh;:Y\.YcKiBvNS5-
+Il!!3Pmp.~plpX{dlH;+6Ons70jb}bV"0<QF
+Il!!d)4AU`\8>6P3@y\
+Il!!0Mjm+{mWiP)[jUC?c!.0P
+end object
+
+object material Si-Typical_Ref
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.evdUH_#
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC@f{,
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yrl_!0OThqMIY6v
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp<uO~'
+Il!!e0C:`QC<JvS--&XZj+G=jgL,[xj9Cn
+Il!!}H[Rxi[Da>gUG>zr+KcOq{fUYA}DHA+/Mpxp<2/o}^<frCA=Lupn;00k~U?pn]<)Jmr|23:j+V:bt\478r~#A)/U1^9sWd88Pl}cH)-oyb2xiX@4Clyu?%-u'_1osIJ*Qfi!G;$l$]-otO?.?r{$62&l}]CdrS-<Owp|82 m/R<h`aEAFmr|241a-V*vw_45Hml C'/ezc>vgZ65Bq}qA+|q0i1oiZ0:Sb{u/7-q"]3oc`A*Qfi!D>$l$]-vtO?.?q{%62&l}e>drS-9Nyp|82 l/T:hpMDAJmr|226c+V:bs^=5Hml}C)-e+P;ykZ65Bn#s?+-_+j2oiZ07Sdyu?%-t*]3oc\F,Ofyo?7-l$]-rtQ=.O`")4=&\3\>drS-?Tor~(80k-T<Xv^:BF_z|B/1c|Z<pq^$8Hm|yC)~h,^;sW]85Rj}s1-2m1a!rmZ@2SdkwB31pq`9osWA,Ah{}?6s\
+Il!!}H[Rxi[Tb/kEE>p_7I`U"vYBsI?ntO?.?u}'4=&\0a>drS->Ryn&8"2t7R=m`d<>DorlE61a-V*yte2>H]!{C'/ezgA{e_6%Wl}qA+|w-a/xiJF4Sb{u/=1y h3_a
+end object
+
+object material Fe-Rusted-surface
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcE/
+Il!!e*5BVa]9?7^=>wZGn
+Il!!5_xo-}v]hL(`nT2*Bbz'UKA+
+end object
+
+object material Fe-polished
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!n3>K_ib4W:d6Tct\!
+Il!!e*5BVa]9?7^=>wZGn
+Il!!6`yp.~w^iM)aoU3+Cc{(VL>-
+end object
+
+object material Zn-Al-alloy
+Il!!0Zmd+{mVsPygYP-%=]ua$(tdzA.evdRC_#
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCDix,0P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp:pW~'
+end object
+
+object material Steel-Stainless-300
+Il!!6`sj1"s\yV m_V3+Cc{g*.zj!G4k|j[Dm
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUCFcx,0P
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp;oQ~'
+end object
+
+object material Air@(7000m)
+Il!!6Sps1"sfyTzoaK1|Nn4@TWB-
+Il!!1Nhq9y{g%s
+Il!!5Ror0!rkyF#\\U(vH\t{', u<tT+
+Il!!1Nkn,|nWtQzhZQ.&>^vb%)ue{B/fwdPAd*-
+Il!!3Pmp.~plvQwZqO( JUns#~xb|W$bnVTAd&19N
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yfhe|@
+Il!!5Ror0!rnrZ}fnJ=-8Qpu92ld dU$4l,Bf-
+Il!!d)4AU`\8>6P3@y\
+Il!!5Ror0!r\rM!lnJ?|Mg`j5,~jlS9u.f^M<%0=
+Il!!2Olo-}oYkR+]lWE@c~79T
+end object
+
+object material {Epoxy Resin-Typical}
+Il!!2\of-}oXuR{i[R/'?_wc&*vf|C0gxeQD
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC?dz,
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yhue-9AZsn]
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp7sO!
+end object
+
+object material {Fe-Smooth Sheet-surface}
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcE/
+Il!!e*5BVa]9?7^=>wZGn
+Il!!0Zsj(xqXcG#[iO-%=]u"PF;&6
+end object
+
+object material Au-foil-bright
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9S
+Il!!e*5BVa]9?7^=>wZGn
+Il!!7azq/ x_jN*bpV4,Dd|)WM=/
+end object
+
+object material Fe-cast
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!n3>K_ib4W:d6Tct\!
+Il!!e*5BVa]9?7^=>wZGn
+Il!!5_xo-}v]hL(`nT2*Bbz'UKA+
+end object
+
+object material Al-Duralumin
+Il!!4^qh/ qZwT}k]T1)Aaye(,xh~E2izh[H
+Il!!1Nhq9y{g%s
+Il!!0Zmd+{mWiP)[jUC@kx,
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!s8CPdng9\?i;Yllfx9StEhVDc7
+Il!!d)4AU`\8>6]67y\
+Il!!0Zmd+{mftA}WWP#qCWov"'zp?oO~'
+Il!!e0C:`QC<JvS--&XZj+G=jgL,[xj9Cn
+Il!!}H[Rxi[Tb/kEE>p_7I`U"vYBsI=	xY?}Vw	%>4uo5_	osS-9Nqp	A30[|
+end object
+
+object material {Fe-smooth sheet}
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!n3>K_ib4W:d6Tct\!
+Il!!e*5BVa]9?7^=>wZGn
+Il!!0Zsj(xqXcG#[iO-%=]u"PF;&6
+end object
+
+object material {Red Lead Primer-surface}
+Il!!1Nhq9y{g%s
+Il!!t/XOxaaLH._EP4(W}4B\qq
+Il!!}BMZnxqCfIsEcE/
+Il!!e*5BVa]9?7^=>wZGn
+Il!!3]vm+{t[fJ&^lR0(@`x%SIB'
+end object
+
