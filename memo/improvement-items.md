@@ -7,30 +7,35 @@
 - 場所: `MainWindow.xaml.cs` の `Window_Loaded`
 - 内容: `checkFile(args)` に `args[0]`（実行ファイル自身のパス）も渡している。
 - 影響: 解析対象外のパスを処理しており、無駄な処理になっている。
+- 終了フラグ: [ ]
 
 ## 2. 複数ファイル指定時に最後の1件しか表示されない
 
 - 場所: `MainWindow.xaml.cs` の `checkFile(string[])`
 - 内容: ループ内で毎回テキストボックスを上書きしているため、最後のファイルの結果だけが残る。
 - 影響: 複数ファイルをドロップ/引数指定したときに、先頭のファイルの情報が見えない。
+- 終了フラグ: [ ]
 
 ## 3. 不正なファイルで例外が未処理のまま落ちる可能性
 
 - 場所: `FileClass.cs` の `checkSAversion`、`checkAEDTversion`、`checkSIversion`、`extrctSAversion`
 - 内容: gzip でない `.tgz`、壊れた `.aedt` / `.siw` などで例外が発生しても捕捉していない。
 - 影響: ドロップ時にアプリケーションが異常終了する可能性がある。
+- 終了フラグ: [ ]
 
 ## 4. Launch の失敗・未設定が無表示
 
 - 場所: `FileClass.cs` の `launchApplication`
 - 内容: `catch {}` が空で、`App.config` に設定キーがない場合や起動失敗時に何も通知されない。
 - 補足: README には「キーがない場合は何も起動せずエラーも表示しない」と記載されている。表示方針を変更する場合は README も併せて更新が必要。
+- 終了フラグ: [ ]
 
 ## 5. パス区切りのハードコード
 
 - 場所: `FileClass.cs` の `checkSAversion`
 - 内容: `Path.GetDirectoryName(fi) + "\\" + te.Name.Split('/')[0]` のように `"\\"` を直接連結している。
 - 影響: `Path.Combine` を使うと安全に組み立てられる。
+- 終了フラグ: [ ]
 
 ## 6. 未使用コード・命名・リソース管理の整理
 
@@ -38,12 +43,14 @@
 - typo / 命名: `extrctSAversion`（extract）、`get_filetye`（filetype）
 - リソース: `launchApplication` の `Process` が Dispose されていない
 - 補足: 公開メソッド名を変更するとすべての呼び出し元の修正が必要になる。
+- 終了フラグ: [ ]
 
 ## 7. 解析ロジックの単体テストがない
 
 - 対象: AEDT / SIwave / Icepak のバージョン判定（`checkAEDTversion`、`checkSIversion`、`checkSAdirectory`、`ParseIcepakVersion`）
 - 内容: テストプロジェクトが存在しないため、解析処理の回帰を検出する手段がない。
 - 補足: テストプロジェクトの追加は依存関係の変更を伴うため、実施前に承認が必要。
+- 終了フラグ: [ ]
 
 ## 8. aedtz ファイル（7-Zip 形式）への対応
 
@@ -57,6 +64,7 @@
   - AES 暗号化されたエントリは読めないため、その場合は「暗号化されているため判定不可」と表示する。
 - 要確認: 展開後のファイル構成（どのエントリからバージョンを読むか）。サンプル `data/Graphics_Card_Test.aedtz`（pyaedt の `tests/system/**/*.aedtz` も参考）で確認する。
 - 補足: README の「Supported Files」表の更新が必要。
+- 終了フラグ: [ ]
 
 ## 9. siwz ファイル（7-Zip 形式）への対応
 
@@ -65,6 +73,7 @@
 - サンプル: `data/BD-SAMPLE.DSGN_GD6.siwz`
 - 要確認: 展開後のエントリ構成と、バージョンの取得元（現在の `.siw` の `DB_VERSION` 判定を流用できるか）。
 - 補足: README の「Supported Files」表の更新が必要。
+- 終了フラグ: [ ]
 
 ## 10. 環境変数から AEDT の実行パスを取得
 
@@ -74,6 +83,15 @@
   - `App.config` と環境変数の優先順位
   - バージョンごとに変数を分けるか（`AEDT:2018.1` などのキー単位で対応するか）
 - 補足: 項目 4（未設定時の表示）と関連する。README の「Executable Configuration」の更新が必要。
+- 終了フラグ: [ ]
+
+## 11. Ctrl+Q でアプリが終了しない
+
+- 場所: `MainWindow.xaml` の `File > Quit`
+- 内容: メニューの `InputGestureText="Ctrl+Q"` は表示のみで、実際のショートカット（`KeyBinding`）が定義されていないため、Ctrl+Q を押してもアプリが終了しない。
+- 対応案: `Window` に `KeyBinding`（Ctrl+Q → `MenuItem_Click` 相当の終了処理）を追加する。
+- 補足: 既存の終了処理（`app_Exit`）を再利用できるため、変更は小さい。
+- 終了フラグ: [ ]
 
 ## 方針・未決事項のまとめ（8・9・10）
 
