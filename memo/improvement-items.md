@@ -186,7 +186,7 @@
   - `Settings.settings` は空で、使われていない。
   - `App.xaml.cs` の未使用 `using` は項目 12 で扱う。
 - 対応案: 不要な項目を削除する。`Settings.settings` は `Settings.Designer.cs` と合わせて削除する。
-- 終了フラグ: [ ]
+- 終了フラグ: [x]
 
 ## 方針・未決事項のまとめ（6・7・8）
 
