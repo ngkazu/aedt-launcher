@@ -109,8 +109,83 @@
 
 - 未使用の変数・型: `MainWindow.xaml.cs` の `list`（`MyFileList`）、`App.xaml.cs` の未使用 `using`
 - typo / 命名: `extrctSAversion`（extract）、`get_filetye`（filetype）
+- 命名規則の不統一: `get_filename` / `get_fileversion` などの `get_` 接頭辞（プロパティにする）、`checkFILE` の大文字（`CheckFile`）、`checkSIversion` などの PascalCase 化、`filename` などの private フィールドに `_` 接頭辞がない、`fi` / `ar` / `te` / `li` などの短い変数名
 - リソース: `launchApplication` の `Process` が Dispose されていない
 - 補足: 公開メソッド名を変更するとすべての呼び出し元の修正が必要になる。
+- 終了フラグ: [ ]
+
+## 13. 展開処理が Launch の中で実行される・状態を flag で持っている
+
+- 場所: `FileClass.cs` の `launchApplication`、`extrctSAversion`、フィールド `flag`
+- 内容: 「Launch」の処理の中で `flag == 0` の場合に展開（副作用）が走る。展開済みかどうかを `int flag` で判断しており、意味が分かりにくい。
+- 影響: 展開の失敗時の扱いが Launch 側と分離されていない。状態の受け渡しがフィールドに依存している。
+- 対応案: 判定結果（種類・バージョン・パス）を 1 つのオブジェクトにまとめ、展開は別メソッドとして明示的に呼ぶ。`flag` は `bool` にする。
+- 終了フラグ: [ ]
+
+## 14. UI の表示文字列で処理を分岐している・種類を文字列で管理している
+
+- 場所: `MainWindow.xaml.cs` の `checkFile`、`FileClass.cs` の `filetype` / `launchApplication`
+- 内容: `textBox_Type.Text` と `"None"` / `"ICEPAK Packfile"` を比較して Extract / Launch ボタンの有効・無効を決めている。種類も `"ICEPAK"`、`"AEDT"`、`"SIwave"` などの文字列で扱っている。
+- 影響: 表示文字列を変えると動作が壊れる。タイプミスをコンパイラが検出できない。
+- 対応案: 種類を `enum` にし、ボタンの状態は FileClass 側の判定結果から決める。
+- 終了フラグ: [ ]
+
+## 15. 拡張子判定が大文字小文字を区別する・Regex の使い方が広い
+
+- 場所: `FileClass.cs` の `checkFILE`（`switch (ext)`）、`checkSAversion`（`Regex.IsMatch(te.Name, "model$")`）、`checkSIversion` / `checkAEDTversion`
+- 内容:
+  - `.TZR` や `.AEDT` など大文字の拡張子が認識されない。
+  - `"model$"` は `xmodel` のような名前にも一致する。
+  - `"DB_VERSION"` や `"begin 'Desktop'"` の判定は `Contains` で十分である。
+- 対応案: 拡張子は大文字小文字を無視して比較する。tar のエントリ名は `Path.GetFileName(te.Name) == "model"` のように完全一致で判定する。
+- 終了フラグ: [ ]
+
+## 16. 展開先の上書き確認がなく、展開後のフィードバックもない
+
+- 場所: `FileClass.cs` の `extrctSAversion`、`MainWindow.xaml.cs` の `button_Extract_Click`
+- 内容:
+  - 展開先は元ファイルと同じフォルダで、既存のファイル・フォルダがあっても確認せず上書きする。
+  - 展開が成功したか、どこに展開されたかが画面に表示されない。
+  - Extract ボタンは押すたびに展開を実行する。
+- 対応案: 展開先が既に存在する場合は確認する。展開完了後にパスを表示し、展開済みならボタンを無効にする。
+- 終了フラグ: [ ]
+
+## 17. App.config のバージョンキーとインストール先の対応を確認していない
+
+- 場所: [App.config](d:/+Projects/repos/aedt-launcher/aedt-launcher/App.config)
+- 内容:
+  - `AEDT:2019.1` が `AnsysEM19.3` フォルダを指している。`AEDT:2018.x` のキーは `AnsysEM19.x` フォルダを指しており、キーの年とフォルダ名の対応が揃っていない。
+  - インストール先パスがハードコードされているため、環境によっては起動できない。
+- 対応案: ファイル内のバージョン表記（`begin 'Desktop'` の値など）と各キーの対応を、実際の AEDT / Icepak のバージョンで確認する。
+- 補足: 項目 8 の環境変数対応を行う場合は、この確認結果を前提にする。
+- 終了フラグ: [ ]
+
+## 18. app.manifest・AssemblyInfo.cs がテンプレートのまま
+
+- 場所: [app.manifest](d:/+Projects/repos/aedt-launcher/aedt-launcher/Properties/app.manifest)、[AssemblyInfo.cs](d:/+Projects/repos/aedt-launcher/aedt-launcher/Properties/AssemblyInfo.cs)
+- 内容:
+  - `assemblyIdentity name="MyApplication.app"` が初期値のまま。
+  - `applicationRequestMinimum` の `PermissionSet` は .NET Framework の旧機能で、.NET 10 では効果がない。
+  - `AssemblyCopyright` の年が 2019 のまま。
+- 対応案: manifest は `requestedExecutionLevel` 以外を削除し、名前を実際のアプリ名に合わせる。著作権年は意図を確認して更新する。
+- 終了フラグ: [ ]
+
+## 19. 「About」メニューに処理が割り当てられていない
+
+- 場所: `MainWindow.xaml` の `Help > About`
+- 内容: `MenuItem` に `Click` ハンドラがなく、クリックしても何も起きない。
+- 対応案: About ダイアログを表示するか、項目を削除する。どちらにするかは仕様として決める必要がある。
+- 終了フラグ: [ ]
+
+## 20. csproj と未使用ファイルの整理
+
+- 場所: [aedt-launcher.csproj](d:/+Projects/repos/aedt-launcher/aedt-launcher/aedt-launcher.csproj)、[Settings.settings](d:/+Projects/repos/aedt-launcher/aedt-launcher/Properties/Settings.settings)
+- 内容:
+  - `ErrorReport` と `WarningLevel` は SDK スタイルの csproj では不要。
+  - `<None Include="App.config" />` は `<AppConfig>` と重複している。
+  - `Settings.settings` は空で、使われていない。
+  - `App.xaml.cs` の未使用 `using` は項目 12 で扱う。
+- 対応案: 不要な項目を削除する。`Settings.settings` は `Settings.Designer.cs` と合わせて削除する。
 - 終了フラグ: [ ]
 
 ## 方針・未決事項のまとめ（6・7・8）
@@ -131,6 +206,8 @@
 - [ ] 決定: `ANSYSEM_ROOT<数値>` を使うか、使う場合の実行ファイルの組み立て方
 - [ ] 決定: `App.config` と環境変数の優先順位
 - [ ] 決定: 項目 5 の未設定時表示方針（README の記載変更を含む）
+- [ ] 確認: 項目 17 のバージョンキーとインストール先の対応（実際の AEDT / Icepak で確認）
+- [ ] 決定: 項目 19 の About メニューを実装するか、削除するか
 
 ### 実装前に必要な作業
 
