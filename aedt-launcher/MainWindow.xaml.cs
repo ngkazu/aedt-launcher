@@ -12,8 +12,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-//
-using System.Collections.ObjectModel;
 
 namespace aedt_launcher
 {
@@ -50,7 +48,6 @@ namespace aedt_launcher
 
         private void Window_Drop(object sender, DragEventArgs e)
         {
-            MyFileList? list = this.DataContext as MyFileList;
             string[]? files = e.Data.GetData(DataFormats.FileDrop) as string[];
             if (files == null) return;
 
@@ -68,7 +65,7 @@ namespace aedt_launcher
 
         private void button_Extract_Click(object sender, RoutedEventArgs e)
         {
-            icepak.extrctSAversion();
+            icepak.extractSAversion();
         }
 
         private void button_Launch_Click(object sender, RoutedEventArgs e)
@@ -91,7 +88,7 @@ namespace aedt_launcher
                     this.button_Launch.IsEnabled = false;
                     icepak.checkFILE(fi);
                     this.textBox_Filename.Text = icepak.get_filename();
-                    this.textBox_Type.Text = icepak.get_filetye();
+                    this.textBox_Type.Text = icepak.get_filetype();
                     this.textBox_Version.Text = icepak.get_fileversion();
 
                     if (this.textBox_Type.Text != "None")
@@ -103,19 +100,6 @@ namespace aedt_launcher
                         }
                     }
                 }
-            }
-        }
-
-        public class MyFileList
-        {
-            public MyFileList()
-            {
-                FileNames = new ObservableCollection<string>();
-            }
-            public ObservableCollection<string> FileNames
-            {
-                get;
-                private set;
             }
         }
 

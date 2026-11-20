@@ -38,7 +38,7 @@ namespace aedt_launcher.Tests
             var file = new FileClass();
             file.checkFILE(path);
 
-            Assert.Equal("SIwave", file.get_filetye());
+            Assert.Equal("SIwave", file.get_filetype());
             Assert.Equal("2019.1", file.get_fileversion());
         }
 
@@ -51,7 +51,7 @@ namespace aedt_launcher.Tests
             var file = new FileClass();
             file.checkFILE(path);
 
-            Assert.Equal("AEDT", file.get_filetye());
+            Assert.Equal("AEDT", file.get_filetype());
             Assert.Equal("2019.1", file.get_fileversion());
         }
 
@@ -65,7 +65,7 @@ namespace aedt_launcher.Tests
             var file = new FileClass();
             file.checkFILE(dir);
 
-            Assert.Equal("ICEPAK", file.get_filetye());
+            Assert.Equal("ICEPAK", file.get_filetype());
             Assert.Equal("19.0", file.get_fileversion());
         }
 
@@ -78,7 +78,7 @@ namespace aedt_launcher.Tests
             var file = new FileClass();
             file.checkFILE(path);
 
-            Assert.Equal("None", file.get_filetye());
+            Assert.Equal("None", file.get_filetype());
             Assert.Equal("None", file.get_fileversion());
         }
 
@@ -88,7 +88,7 @@ namespace aedt_launcher.Tests
             var file = new FileClass();
             file.checkFILE(Path.Combine(tempDir, "missing.siw"));
 
-            Assert.Equal("None", file.get_filetye());
+            Assert.Equal("None", file.get_filetype());
         }
     }
 }

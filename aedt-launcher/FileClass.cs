@@ -23,7 +23,7 @@ namespace aedt_launcher
             return this.filename;
         }
 
-        public string get_filetye()
+        public string get_filetype()
         {
             return this.filetype;
         }
@@ -33,7 +33,7 @@ namespace aedt_launcher
             return this.fileversion;
         }
 
-        public void extrctSAversion()
+        public void extractSAversion()
         {
             string fo = Path.GetDirectoryName(this.filename) ?? string.Empty;
 
@@ -171,7 +171,7 @@ namespace aedt_launcher
                     myPath = this.filepath;
                     break;
                 case "ICEPAK Packfile":
-                    if (flag == 0) extrctSAversion();
+                    if (flag == 0) extractSAversion();
                     myKey = "ICEPAK:" + this.fileversion;
                     myPath = this.filepath;
                     break;
@@ -193,7 +193,7 @@ namespace aedt_launcher
             {
                 try
                 {
-                    Process p = new Process();
+                    using var p = new Process();
                     p.StartInfo.FileName = ConfigurationManager.AppSettings.Get(myKey) ?? string.Empty;
                     p.StartInfo.Arguments = myPath;
                     p.Start();
