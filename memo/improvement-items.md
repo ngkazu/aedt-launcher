@@ -168,7 +168,7 @@
   - `applicationRequestMinimum` の `PermissionSet` は .NET Framework の旧機能で、.NET 10 では効果がない。
   - `AssemblyCopyright` の年が 2019 のまま。
 - 対応案: manifest は `requestedExecutionLevel` 以外を削除し、名前を実際のアプリ名に合わせる。著作権年は意図を確認して更新する。
-- 終了フラグ: [x]
+- 終了フラグ: [ ]
 
 ## 19. 「About」メニューに処理が割り当てられていない
 
