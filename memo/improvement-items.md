@@ -96,7 +96,7 @@
 - 対象: AEDT / SIwave / Icepak のバージョン判定（`checkAEDTversion`、`checkSIversion`、`checkSAdirectory`、`ParseIcepakVersion`）
 - 内容: テストプロジェクトが存在しないため、解析処理の回帰を検出する手段がない。
 - 補足: テストプロジェクトの追加は依存関係の変更を伴うため、実施前に承認が必要。
-- 終了フラグ: [ ]
+- 終了フラグ: [x]
 
 ## 11. パス区切りのハードコード
 
@@ -168,7 +168,7 @@
   - `applicationRequestMinimum` の `PermissionSet` は .NET Framework の旧機能で、.NET 10 では効果がない。
   - `AssemblyCopyright` の年が 2019 のまま。
 - 対応案: manifest は `requestedExecutionLevel` 以外を削除し、名前を実際のアプリ名に合わせる。著作権年は意図を確認して更新する。
-- 終了フラグ: [ ]
+- 終了フラグ: [x]
 
 ## 19. 「About」メニューに処理が割り当てられていない
 
