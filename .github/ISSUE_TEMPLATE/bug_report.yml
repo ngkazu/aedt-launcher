@@ -55,21 +55,21 @@ body:
     id: ansys_version
     attributes:
       label: AEDT / ICEPAK のバージョン
-      placeholder: 例: 2019 R3
+      placeholder: "例: 2019 R3"
     validations:
       required: true
   - type: input
     id: os
     attributes:
       label: OS
-      placeholder: 例: Windows 11 (x64)
+      placeholder: "例: Windows 11 (x64)"
     validations:
       required: true
   - type: input
     id: app_version
     attributes:
       label: aedt-launcher のバージョン
-      placeholder: 例: v0.1.1
+      placeholder: "例: v0.1.1"
     validations:
       required: true
   - type: input
