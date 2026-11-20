@@ -77,7 +77,7 @@ namespace aedt_launcher
             }
         }
 
-        private static string? ParseIcepakVersion(string[] ar)
+        internal static string? ParseIcepakVersion(string[] ar)
         {
             if (ar.Length < 3) return null;
             int index = ar[2] == "Icepak" ? 3 : 2;
