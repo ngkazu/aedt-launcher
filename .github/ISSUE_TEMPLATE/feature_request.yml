@@ -1,35 +1,35 @@
 name: Feature request
-description: 機能追加・改善を提案する（本文は日本語で記入してください）
+description: Propose a feature or enhancement (write the body in Japanese)
 labels: ["enhancement"]
 body:
   - type: input
     id: title_ja
     attributes:
-      label: 日本語タイトル
-      description: Issue の日本語タイトルを書いてください。
+      label: Japanese title
+      description: Enter the Japanese title of this issue.
     validations:
       required: true
   - type: textarea
     id: background
     attributes:
-      label: 背景
-      description: なぜ必要か、書いてください。
+      label: Background
+      description: Explain why this is needed.
     validations:
       required: true
   - type: textarea
     id: proposal
     attributes:
-      label: 提案
-      description: どう変えるか、書いてください。
+      label: Proposal
+      description: Describe the proposed change.
     validations:
       required: true
   - type: textarea
     id: impact
     attributes:
-      label: 影響範囲・注意点
-      description: 既存の動作や他の機能への影響があれば書いてください。
+      label: Impact and notes
+      description: Describe any effect on existing behavior or other features.
   - type: input
     id: memo_item
     attributes:
-      label: 元の項目番号
-      description: memo/improvement-items.md から作成した場合は、その項目番号を書いてください。
+      label: Memo item number
+      description: If this issue came from memo/improvement-items.md, enter the item number.

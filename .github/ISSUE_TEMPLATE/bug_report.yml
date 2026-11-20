@@ -1,26 +1,26 @@
 name: Bug report
-description: バグを報告する（本文は日本語で記入してください）
+description: Report a bug (write the body in Japanese)
 labels: ["bug"]
 body:
   - type: input
     id: title_ja
     attributes:
-      label: 日本語タイトル
-      description: Issue の日本語タイトルを書いてください。
+      label: Japanese title
+      description: Enter the Japanese title of this issue.
     validations:
       required: true
   - type: textarea
     id: summary
     attributes:
-      label: 概要
-      description: 何が問題か、1〜2文で書いてください。
+      label: Summary
+      description: Describe the problem in one or two sentences.
     validations:
       required: true
   - type: textarea
     id: repro
     attributes:
-      label: 再現手順
-      description: 再現する手順を番号付きで書いてください。
+      label: Steps to reproduce
+      description: List the steps to reproduce the bug.
       placeholder: |
         1.
         2.
@@ -30,50 +30,50 @@ body:
   - type: textarea
     id: expected
     attributes:
-      label: 期待する動作
+      label: Expected behavior
     validations:
       required: true
   - type: textarea
     id: actual
     attributes:
-      label: 実際の動作
+      label: Actual behavior
     validations:
       required: true
   - type: dropdown
     id: file_type
     attributes:
-      label: 対象ファイルの種類
+      label: Target file type
       options:
         - ICEPAK (.tzr / .tgz)
         - AEDT (.aedt / .aedtz)
         - SIwave (.siw / .siwz)
-        - フォルダ
-        - 不明 / その他
+        - Folder
+        - Unknown / Other
     validations:
       required: true
   - type: input
     id: ansys_version
     attributes:
-      label: AEDT / ICEPAK のバージョン
-      placeholder: "例: 2019 R3"
+      label: AEDT / ICEPAK version
+      placeholder: "e.g. 2019 R3"
     validations:
       required: true
   - type: input
     id: os
     attributes:
       label: OS
-      placeholder: "例: Windows 11 (x64)"
+      placeholder: "e.g. Windows 11 (x64)"
     validations:
       required: true
   - type: input
     id: app_version
     attributes:
-      label: aedt-launcher のバージョン
-      placeholder: "例: v0.1.1"
+      label: aedt-launcher version
+      placeholder: "e.g. v0.1.1"
     validations:
       required: true
   - type: input
     id: memo_item
     attributes:
-      label: 元の項目番号
-      description: memo/improvement-items.md から作成した場合は、その項目番号を書いてください。
+      label: Memo item number
+      description: If this issue came from memo/improvement-items.md, enter the item number.
