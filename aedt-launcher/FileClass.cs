@@ -10,48 +10,47 @@ using ICSharpCode.SharpZipLib.Tar;
 
 namespace aedt_launcher
 {
+    internal sealed record DetectedFile(string FileName, string FileType, string FileVersion, string FilePath, bool IsExtracted)
+    {
+        public static DetectedFile None(string fileName) => new(fileName, "None", "None", "None", false);
+    }
+
     class FileClass
     {
-        private string _filename = string.Empty;
-        private string _filepath = string.Empty;
-        private string _filetype = string.Empty;
-        private string _fileversion = string.Empty;
-        private int _flag;
+        private DetectedFile _detected = DetectedFile.None(string.Empty);
 
-        public string FileName => this._filename;
+        public string FileName => _detected.FileName;
 
-        public string FileType => this._filetype;
+        public string FileType => _detected.FileType;
 
-        public string FileVersion => this._fileversion;
+        public string FileVersion => _detected.FileVersion;
 
         public void ExtractSAversion()
         {
-            string folder = Path.GetDirectoryName(this._filename) ?? string.Empty;
+            string folder = Path.GetDirectoryName(_detected.FileName) ?? string.Empty;
 
-            using (var tzrStream = File.OpenRead(this._filename))
+            using (var tzrStream = File.OpenRead(_detected.FileName))
             using (var gzStream = new GZipStream(tzrStream, CompressionMode.Decompress))
             using (var tarStream = TarArchive.CreateInputTarArchive(gzStream, Encoding.UTF8))
             {
                 tarStream.ExtractContents(folder);
             }
-            this._flag = 1;
+            _detected = _detected with { IsExtracted = true };
         }
 
-        private void CheckSIversion(string path)
+        private static DetectedFile? CheckSIversion(string path)
         {
             foreach (var line in File.ReadLines(path, Encoding.UTF8))
             {
                 if (Regex.IsMatch(line, "DB_VERSION"))
                 {
-                    this._fileversion = Regex.Replace(line, @"[^0-9.]", "");
-                    this._filetype = "SIwave";
-                    this._filepath = path;
-                    return;
+                    return new DetectedFile(path, "SIwave", Regex.Replace(line, @"[^0-9.]", ""), path, false);
                 }
             }
+            return null;
         }
 
-        private void CheckAEDTversion(string path)
+        private static DetectedFile? CheckAEDTversion(string path)
         {
             using var lines = File.ReadLines(path, Encoding.UTF8).GetEnumerator();
             while (lines.MoveNext())
@@ -59,13 +58,11 @@ namespace aedt_launcher
                 if (Regex.IsMatch(lines.Current, "begin 'Desktop'") && lines.MoveNext())
                 {
                     var versionText = Regex.Replace(lines.Current, @"[^0-9,]", "");
-
-                    this._fileversion = Regex.Replace(versionText, @",", ".");
-                    this._filetype = "AEDT";
-                    this._filepath = path;
-                    return;
+                    var version = Regex.Replace(versionText, @",", ".");
+                    return new DetectedFile(path, "AEDT", version, path, false);
                 }
             }
+            return null;
         }
 
         internal static string? ParseIcepakVersion(string[] parts)
@@ -75,21 +72,20 @@ namespace aedt_launcher
             return parts.Length > index ? parts[index] : null;
         }
 
-        private void CheckSAdirectory(string path)
+        private static DetectedFile? CheckSAdirectory(string path)
         {
             string modelPath = Path.Combine(path, "model");
             if (File.Exists(modelPath))
             {
                 string? line = File.ReadLines(modelPath, Encoding.UTF8).FirstOrDefault();
-                if (line == null) return;
+                if (line == null) return null;
 
-                this._filetype = "ICEPAK";
-                this._fileversion = ParseIcepakVersion(line.Split(' ')) ?? this._fileversion;
-                this._filepath = path;
+                return new DetectedFile(path, "ICEPAK", ParseIcepakVersion(line.Split(' ')) ?? "None", path, false);
             }
+            return null;
         }
 
-        private void CheckSAversion(string path)
+        private static DetectedFile? CheckSAversion(string path)
         {
             using (var tzrStream = File.OpenRead(path))
             using (var gzStream = new GZipStream(tzrStream, CompressionMode.Decompress))
@@ -107,23 +103,18 @@ namespace aedt_launcher
                             string content = new StreamReader(memoryStream).ReadToEnd();
                             string head = content.Substring(0, Math.Min(100, content.Length));
 
-                            this._filetype = "ICEPAK Packfile";
-                            this._fileversion = ParseIcepakVersion(head.Split(' ')) ?? this._fileversion;
-                            this._filepath = Path.Combine(Path.GetDirectoryName(path) ?? string.Empty, entry.Name.Split('/')[0]);
+                            string folder = Path.Combine(Path.GetDirectoryName(path) ?? string.Empty, entry.Name.Split('/')[0]);
+                            return new DetectedFile(path, "ICEPAK Packfile", ParseIcepakVersion(head.Split(' ')) ?? "None", folder, false);
                         }
-                        break;
                     }
                 }
             }
+            return null;
         }
 
         public void CheckFile(string path)
         {
-            this._filename = path;
-            this._filetype = "None";
-            this._filepath = "None";
-            this._fileversion = "None";
-            this._flag = 0;
+            DetectedFile? detected = null;
 
             if (File.Exists(path))
             {
@@ -132,13 +123,13 @@ namespace aedt_launcher
                 {
                     case ".tzr":
                     case ".tgz":
-                        CheckSAversion(path);
+                        detected = CheckSAversion(path);
                         break;
                     case ".aedt":
-                        CheckAEDTversion(path);
+                        detected = CheckAEDTversion(path);
                         break;
                     case ".siw":
-                        CheckSIversion(path);
+                        detected = CheckSIversion(path);
                         break;
                     default:
                         break;
@@ -146,8 +137,10 @@ namespace aedt_launcher
             }
             else if (Directory.Exists(path))
             {
-                CheckSAdirectory(path);
+                detected = CheckSAdirectory(path);
             }
+
+            _detected = detected ?? DetectedFile.None(path);
         }
 
         public void launchApplication()
@@ -155,24 +148,24 @@ namespace aedt_launcher
             string myKey;
             string myPath;
 
-            switch (this._filetype)
+            switch (_detected.FileType)
             {
                 case "ICEPAK":
-                    myKey = "ICEPAK:" + this._fileversion;
-                    myPath = this._filepath;
+                    myKey = "ICEPAK:" + _detected.FileVersion;
+                    myPath = _detected.FilePath;
                     break;
                 case "ICEPAK Packfile":
-                    if (_flag == 0) ExtractSAversion();
-                    myKey = "ICEPAK:" + this._fileversion;
-                    myPath = this._filepath;
+                    if (!_detected.IsExtracted) ExtractSAversion();
+                    myKey = "ICEPAK:" + _detected.FileVersion;
+                    myPath = _detected.FilePath;
                     break;
                 case "AEDT":
-                    myKey = "AEDT:" + this._fileversion;
-                    myPath = this._filename;
+                    myKey = "AEDT:" + _detected.FileVersion;
+                    myPath = _detected.FileName;
                     break;
                 case "SIwave":
-                    myKey = "SIwave:" + this._fileversion;
-                    myPath = this._filename;
+                    myKey = "SIwave:" + _detected.FileVersion;
+                    myPath = _detected.FileName;
                     break;
                 default:
                     myKey = "ERROR";
