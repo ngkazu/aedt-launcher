@@ -16,14 +16,6 @@
 - 影響: 複数ファイルをドロップ/引数指定したときに、先頭のファイルの情報が見えない。
 - 終了フラグ: [ ]
 
-## Ctrl+Q でアプリが終了しない (#4)
-
-- 場所: `MainWindow.xaml` の `File > Quit`
-- 内容: メニューの `InputGestureText="Ctrl+Q"` は表示のみで、実際のショートカット（`KeyBinding`）が定義されていないため、Ctrl+Q を押してもアプリが終了しない。
-- 対応案: `Window` に `KeyBinding`（Ctrl+Q → `MenuItem_Click` 相当の終了処理）を追加する。
-- 補足: 既存の終了処理（`app_Exit`）を再利用できるため、変更は小さい。
-- 終了フラグ: [ ]
-
 ## Launch の失敗・未設定が無表示 (#6)
 
 - 場所: `FileClass.cs` の `launchApplication`
