@@ -42,7 +42,7 @@ namespace aedt_launcher
 
             if (args.Length > 1)
             {
-                checkFile(args);
+                checkFile(args[1..]);
             }
         }
 
