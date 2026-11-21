@@ -101,12 +101,15 @@
 
 ## 15. 拡張子判定が大文字小文字を区別する・Regex の使い方が広い (#17)
 
-- 場所: `FileClass.cs` の `CheckFile`（`switch (ext)`）、`CheckSAversion`（`Regex.IsMatch(entry.Name, "model$")`）、`CheckSIversion` / `CheckAEDTversion`
+- 場所: `FileClass.cs` の `CheckFile`（`switch (extension)`）、`CheckSAversion`（`Regex.IsMatch(entry.Name, "model$")`）、`CheckSIversion` / `CheckAEDTversion`
 - 内容:
   - `.TZR` や `.AEDT` など大文字の拡張子が認識されない。
   - `"model$"` は `xmodel` のような名前にも一致する。
-  - `"DB_VERSION"` や `"begin 'Desktop'"` の判定は `Contains` で十分である。
-- 対応案: 拡張子は大文字小文字を無視して比較する。tar のエントリ名は `Path.GetFileName(entry.Name) == "model"` のように完全一致で判定する。
+  - `"DB_VERSION"` や `"begin 'Desktop'"` の判定は `Regex` を使わず `Contains` で十分である。
+- 対応案:
+  - 拡張子は大文字小文字を無視して比較する。
+  - tar のエントリは、ファイル名が `model` のものを優先する。`model` が無い場合のみ `*.model` を使う。
+  - `DB_VERSION` / `begin 'Desktop'` は `Contains` で判定する。
 - 終了フラグ: [ ]
 
 ## 16. 展開先の上書き確認がなく、展開後のフィードバックもない (#18)

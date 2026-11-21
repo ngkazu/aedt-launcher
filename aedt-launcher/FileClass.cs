@@ -42,7 +42,7 @@ namespace aedt_launcher
         {
             foreach (var line in File.ReadLines(path, Encoding.UTF8))
             {
-                if (Regex.IsMatch(line, "DB_VERSION"))
+                if (line.Contains("DB_VERSION"))
                 {
                     return new DetectedFile(path, "SIwave", Regex.Replace(line, @"[^0-9.]", ""), path, false);
                 }
@@ -55,7 +55,7 @@ namespace aedt_launcher
             using var lines = File.ReadLines(path, Encoding.UTF8).GetEnumerator();
             while (lines.MoveNext())
             {
-                if (Regex.IsMatch(lines.Current, "begin 'Desktop'") && lines.MoveNext())
+                if (lines.Current.Contains("begin 'Desktop'") && lines.MoveNext())
                 {
                     var versionText = Regex.Replace(lines.Current, @"[^0-9,]", "");
                     var version = Regex.Replace(versionText, @",", ".");
@@ -92,24 +92,30 @@ namespace aedt_launcher
             using (var tarStream = new TarInputStream(gzStream, Encoding.UTF8))
             {
                 TarEntry? entry;
+                DetectedFile? fallback = null;
                 while ((entry = tarStream.GetNextEntry()) != null)
                 {
-                    if (Regex.IsMatch(entry.Name, "model$"))
-                    {
-                        using (var memoryStream = new MemoryStream())
-                        {
-                            tarStream.CopyEntryContents(memoryStream);
-                            memoryStream.Position = 0;
-                            string content = new StreamReader(memoryStream).ReadToEnd();
-                            string head = content.Substring(0, Math.Min(100, content.Length));
+                    string name = Path.GetFileName(entry.Name);
+                    bool isModel = name == "model";
+                    bool isFallback = fallback == null && name.EndsWith(".model", StringComparison.Ordinal);
+                    if (!isModel && !isFallback) continue;
 
-                            string folder = Path.Combine(Path.GetDirectoryName(path) ?? string.Empty, entry.Name.Split('/')[0]);
-                            return new DetectedFile(path, "ICEPAK Packfile", ParseIcepakVersion(head.Split(' ')) ?? "None", folder, false);
-                        }
+                    using (var memoryStream = new MemoryStream())
+                    {
+                        tarStream.CopyEntryContents(memoryStream);
+                        memoryStream.Position = 0;
+                        string content = new StreamReader(memoryStream).ReadToEnd();
+                        string firstLine = content.Split('\n')[0].TrimEnd('\r');
+                        string head = firstLine.Substring(0, Math.Min(100, firstLine.Length));
+
+                        string folder = Path.Combine(Path.GetDirectoryName(path) ?? string.Empty, entry.Name.Split('/')[0]);
+                        var detected = new DetectedFile(path, "ICEPAK Packfile", ParseIcepakVersion(head.Split(' ')) ?? "None", folder, false);
+                        if (isModel) return detected;
+                        fallback = detected;
                     }
                 }
+                return fallback;
             }
-            return null;
         }
 
         public void CheckFile(string path)
@@ -118,7 +124,7 @@ namespace aedt_launcher
 
             if (File.Exists(path))
             {
-                string extension = Path.GetExtension(path);
+                string extension = Path.GetExtension(path).ToLowerInvariant();
                 switch (extension)
                 {
                     case ".tzr":
