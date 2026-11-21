@@ -99,7 +99,7 @@
 - 対応案: 種類を `enum` にし、ボタンの状態は FileClass 側の判定結果から決める。
 - 終了フラグ: [ ]
 
-## 16.
+## 16. 展開先の上書き確認がなく、展開後のフィードバックもない (#18)
 
 - 場所: `FileClass.cs` の `ExtractSAversion`、`MainWindow.xaml.cs` の `button_Extract_Click`
 - 内容:
