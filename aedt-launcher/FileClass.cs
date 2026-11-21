@@ -12,113 +12,104 @@ namespace aedt_launcher
 {
     class FileClass
     {
-        private string filename = string.Empty;
-        private string filepath = string.Empty;
-        private string filetype = string.Empty;
-        private string fileversion = string.Empty;
-        private int flag;
+        private string _filename = string.Empty;
+        private string _filepath = string.Empty;
+        private string _filetype = string.Empty;
+        private string _fileversion = string.Empty;
+        private int _flag;
 
-        public string get_filename()
+        public string FileName => this._filename;
+
+        public string FileType => this._filetype;
+
+        public string FileVersion => this._fileversion;
+
+        public void ExtractSAversion()
         {
-            return this.filename;
-        }
+            string folder = Path.GetDirectoryName(this._filename) ?? string.Empty;
 
-        public string get_filetype()
-        {
-            return this.filetype;
-        }
-
-        public string get_fileversion()
-        {
-            return this.fileversion;
-        }
-
-        public void extractSAversion()
-        {
-            string fo = Path.GetDirectoryName(this.filename) ?? string.Empty;
-
-            using (var tzrStream = File.OpenRead(this.filename))
+            using (var tzrStream = File.OpenRead(this._filename))
             using (var gzStream = new GZipStream(tzrStream, CompressionMode.Decompress))
             using (var tarStream = TarArchive.CreateInputTarArchive(gzStream, Encoding.UTF8))
             {
-                tarStream.ExtractContents(fo);
+                tarStream.ExtractContents(folder);
             }
-            this.flag = 1;
+            this._flag = 1;
         }
 
-        private void checkSIversion(string fi)
+        private void CheckSIversion(string path)
         {
-            foreach (var line in File.ReadLines(fi, Encoding.UTF8))
+            foreach (var line in File.ReadLines(path, Encoding.UTF8))
             {
                 if (Regex.IsMatch(line, "DB_VERSION"))
                 {
-                    this.fileversion = Regex.Replace(line, @"[^0-9.]", "");
-                    this.filetype = "SIwave";
-                    this.filepath = fi;
+                    this._fileversion = Regex.Replace(line, @"[^0-9.]", "");
+                    this._filetype = "SIwave";
+                    this._filepath = path;
                     return;
                 }
             }
         }
 
-        private void checkAEDTversion(string fi)
+        private void CheckAEDTversion(string path)
         {
-            using var lines = File.ReadLines(fi, Encoding.UTF8).GetEnumerator();
+            using var lines = File.ReadLines(path, Encoding.UTF8).GetEnumerator();
             while (lines.MoveNext())
             {
                 if (Regex.IsMatch(lines.Current, "begin 'Desktop'") && lines.MoveNext())
                 {
-                    var st = Regex.Replace(lines.Current, @"[^0-9,]", "");
+                    var versionText = Regex.Replace(lines.Current, @"[^0-9,]", "");
 
-                    this.fileversion = Regex.Replace(st, @",", ".");
-                    this.filetype = "AEDT";
-                    this.filepath = fi;
+                    this._fileversion = Regex.Replace(versionText, @",", ".");
+                    this._filetype = "AEDT";
+                    this._filepath = path;
                     return;
                 }
             }
         }
 
-        internal static string? ParseIcepakVersion(string[] ar)
+        internal static string? ParseIcepakVersion(string[] parts)
         {
-            if (ar.Length < 3) return null;
-            int index = ar[2] == "Icepak" ? 3 : 2;
-            return ar.Length > index ? ar[index] : null;
+            if (parts.Length < 3) return null;
+            int index = parts[2] == "Icepak" ? 3 : 2;
+            return parts.Length > index ? parts[index] : null;
         }
 
-        private void checkSAdirectory(string fi)
+        private void CheckSAdirectory(string path)
         {
-            string fe = Path.Combine(fi, "model");
-            if (File.Exists(fe))
+            string modelPath = Path.Combine(path, "model");
+            if (File.Exists(modelPath))
             {
-                string? li = File.ReadLines(fe, Encoding.UTF8).FirstOrDefault();
-                if (li == null) return;
+                string? line = File.ReadLines(modelPath, Encoding.UTF8).FirstOrDefault();
+                if (line == null) return;
 
-                this.filetype = "ICEPAK";
-                this.fileversion = ParseIcepakVersion(li.Split(' ')) ?? this.fileversion;
-                this.filepath = fi;
+                this._filetype = "ICEPAK";
+                this._fileversion = ParseIcepakVersion(line.Split(' ')) ?? this._fileversion;
+                this._filepath = path;
             }
         }
 
-        private void checkSAversion(string fi)
+        private void CheckSAversion(string path)
         {
-            using (var tzrStream = File.OpenRead(fi))
+            using (var tzrStream = File.OpenRead(path))
             using (var gzStream = new GZipStream(tzrStream, CompressionMode.Decompress))
             using (var tarStream = new TarInputStream(gzStream, Encoding.UTF8))
             {
-                TarEntry? te;
-                while ((te = tarStream.GetNextEntry()) != null)
+                TarEntry? entry;
+                while ((entry = tarStream.GetNextEntry()) != null)
                 {
-                    if (Regex.IsMatch(te.Name, "model$"))
+                    if (Regex.IsMatch(entry.Name, "model$"))
                     {
-                        using (var ms = new MemoryStream())
+                        using (var memoryStream = new MemoryStream())
                         {
-                            tarStream.CopyEntryContents(ms);
-                            ms.Position = 0;
-                            string li = new StreamReader(ms).ReadToEnd();
-                            string head = li.Substring(0, Math.Min(100, li.Length));
+                            tarStream.CopyEntryContents(memoryStream);
+                            memoryStream.Position = 0;
+                            string content = new StreamReader(memoryStream).ReadToEnd();
+                            string head = content.Substring(0, Math.Min(100, content.Length));
 
-                            this.filetype = "ICEPAK Packfile";
-                            this.fileversion = ParseIcepakVersion(head.Split(' ')) ?? this.fileversion;
-                            this.filepath = Path.GetDirectoryName(fi) + "\\" + te.Name.Split('/')[0];
+                            this._filetype = "ICEPAK Packfile";
+                            this._fileversion = ParseIcepakVersion(head.Split(' ')) ?? this._fileversion;
+                            this._filepath = Path.GetDirectoryName(path) + "\\" + entry.Name.Split('/')[0];
                         }
                         break;
                     }
@@ -126,36 +117,36 @@ namespace aedt_launcher
             }
         }
 
-        public void checkFILE(string fi)
+        public void CheckFile(string path)
         {
-            this.filename = fi;
-            this.filetype = "None";
-            this.filepath = "None";
-            this.fileversion = "None";
-            this.flag = 0;
+            this._filename = path;
+            this._filetype = "None";
+            this._filepath = "None";
+            this._fileversion = "None";
+            this._flag = 0;
 
-            if (File.Exists(fi))
+            if (File.Exists(path))
             {
-                string ext = Path.GetExtension(fi);
-                switch (ext)
+                string extension = Path.GetExtension(path);
+                switch (extension)
                 {
                     case ".tzr":
                     case ".tgz":
-                        checkSAversion(fi);
+                        CheckSAversion(path);
                         break;
                     case ".aedt":
-                        checkAEDTversion(fi);
+                        CheckAEDTversion(path);
                         break;
                     case ".siw":
-                        checkSIversion(fi);
+                        CheckSIversion(path);
                         break;
                     default:
                         break;
                 }
             }
-            else if (Directory.Exists(fi))
+            else if (Directory.Exists(path))
             {
-                checkSAdirectory(fi);
+                CheckSAdirectory(path);
             }
         }
 
@@ -164,24 +155,24 @@ namespace aedt_launcher
             string myKey;
             string myPath;
 
-            switch (this.filetype)
+            switch (this._filetype)
             {
                 case "ICEPAK":
-                    myKey = "ICEPAK:" + this.fileversion;
-                    myPath = this.filepath;
+                    myKey = "ICEPAK:" + this._fileversion;
+                    myPath = this._filepath;
                     break;
                 case "ICEPAK Packfile":
-                    if (flag == 0) extractSAversion();
-                    myKey = "ICEPAK:" + this.fileversion;
-                    myPath = this.filepath;
+                    if (_flag == 0) ExtractSAversion();
+                    myKey = "ICEPAK:" + this._fileversion;
+                    myPath = this._filepath;
                     break;
                 case "AEDT":
-                    myKey = "AEDT:" + this.fileversion;
-                    myPath = this.filename;
+                    myKey = "AEDT:" + this._fileversion;
+                    myPath = this._filename;
                     break;
                 case "SIwave":
-                    myKey = "SIwave:" + this.fileversion;
-                    myPath = this.filename;
+                    myKey = "SIwave:" + this._fileversion;
+                    myPath = this._filename;
                     break;
                 default:
                     myKey = "ERROR";
@@ -193,10 +184,10 @@ namespace aedt_launcher
             {
                 try
                 {
-                    using var p = new Process();
-                    p.StartInfo.FileName = ConfigurationManager.AppSettings.Get(myKey) ?? string.Empty;
-                    p.StartInfo.Arguments = myPath;
-                    p.Start();
+                    using var process = new Process();
+                    process.StartInfo.FileName = ConfigurationManager.AppSettings.Get(myKey) ?? string.Empty;
+                    process.StartInfo.Arguments = myPath;
+                    process.Start();
                 }
                 catch
                 {

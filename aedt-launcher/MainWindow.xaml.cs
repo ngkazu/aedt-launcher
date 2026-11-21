@@ -65,7 +65,7 @@ namespace aedt_launcher
 
         private void button_Extract_Click(object sender, RoutedEventArgs e)
         {
-            icepak.extractSAversion();
+            icepak.ExtractSAversion();
         }
 
         private void button_Launch_Click(object sender, RoutedEventArgs e)
@@ -82,14 +82,14 @@ namespace aedt_launcher
         {
             if (files != null)
             {
-                foreach (var fi in files)
+                foreach (var path in files)
                 {
                     this.button_Extract.IsEnabled = false;
                     this.button_Launch.IsEnabled = false;
-                    icepak.checkFILE(fi);
-                    this.textBox_Filename.Text = icepak.get_filename();
-                    this.textBox_Type.Text = icepak.get_filetype();
-                    this.textBox_Version.Text = icepak.get_fileversion();
+                    icepak.CheckFile(path);
+                    this.textBox_Filename.Text = icepak.FileName;
+                    this.textBox_Type.Text = icepak.FileType;
+                    this.textBox_Version.Text = icepak.FileVersion;
 
                     if (this.textBox_Type.Text != "None")
                     {

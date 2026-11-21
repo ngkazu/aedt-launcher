@@ -4,7 +4,7 @@
 
 ## 1. 不正なファイルで例外が未処理のまま落ちる可能性
 
-- 場所: `FileClass.cs` の `checkSAversion`、`checkAEDTversion`、`checkSIversion`、`extrctSAversion`
+- 場所: `FileClass.cs` の `CheckSAversion`、`CheckAEDTversion`、`CheckSIversion`、`ExtractSAversion`
 - 内容: gzip でない `.tgz`、壊れた `.aedt` / `.siw` などで例外が発生しても捕捉していない。
 - 影響: ドロップ時にアプリケーションが異常終了する可能性がある。
 - 終了フラグ: [ ]
@@ -45,7 +45,7 @@
 - 方針: テンポラリへの展開は行わず、メモリ上で 7z アーカイブを読み、バージョン判定に必要なエントリの内容だけを文字列として取り出す。
 - ライブラリ: 現在の SharpZipLib は 7z 非対応のため、7z をストリームから読める SharpCompress（MIT ライセンス）を追加する。`SevenZipArchive` でストリームを開き、必要なエントリのストリームだけを読む。依存関係の変更を伴うため承認が必要。
 - 実装方針:
-  - 既存の `checkAEDTversion` / `checkSIversion` は `File.ReadLines` 前提のため、`TextReader` を受け取る形に分けて、ファイル・メモリ両方から同じ判定ロジックを使う。
+  - 既存の `CheckAEDTversion` / `CheckSIversion` は `File.ReadLines` 前提のため、`TextReader` を受け取る形に分けて、ファイル・メモリ両方から同じ判定ロジックを使う。
   - 全体を展開せず、対象エントリ（`.aedt` / `.siw` 相当）だけを `StreamReader` で読む。
   - AES 暗号化されたエントリは読めないため、その場合は「暗号化されているため判定不可」と表示する。
 - 要確認: 展開後のファイル構成（どのエントリからバージョンを読むか）。サンプル `data/Graphics_Card_Test.aedtz`（pyaedt の `tests/system/**/*.aedtz` も参考）で確認する。
@@ -93,15 +93,15 @@
 
 ## 10. 解析ロジックの単体テストがない
 
-- 対象: AEDT / SIwave / Icepak のバージョン判定（`checkAEDTversion`、`checkSIversion`、`checkSAdirectory`、`ParseIcepakVersion`）
+- 対象: AEDT / SIwave / Icepak のバージョン判定（`CheckAEDTversion`、`CheckSIversion`、`CheckSAdirectory`、`ParseIcepakVersion`）
 - 内容: テストプロジェクトが存在しないため、解析処理の回帰を検出する手段がない。
 - 補足: テストプロジェクトの追加は依存関係の変更を伴うため、実施前に承認が必要。
 - 終了フラグ: [x]
 
 ## 11. パス区切りのハードコード
 
-- 場所: `FileClass.cs` の `checkSAversion`
-- 内容: `Path.GetDirectoryName(fi) + "\\" + te.Name.Split('/')[0]` のように `"\\"` を直接連結している。
+- 場所: `FileClass.cs` の `CheckSAversion`
+- 内容: `Path.GetDirectoryName(path) + "\\" + entry.Name.Split('/')[0]` のように `"\\"` を直接連結している。
 - 影響: `Path.Combine` を使うと安全に組み立てられる。
 - 終了フラグ: [ ]
 
@@ -112,19 +112,20 @@
 - 命名規則の不統一: `get_filename` / `get_fileversion` などの `get_` 接頭辞（プロパティにする）、`checkFILE` の大文字（`CheckFile`）、`checkSIversion` などの PascalCase 化、`filename` などの private フィールドに `_` 接頭辞がない、`fi` / `ar` / `te` / `li` などの短い変数名
 - リソース: `launchApplication` の `Process` が Dispose されていない
 - 補足: 公開メソッド名を変更するとすべての呼び出し元の修正が必要になる。
+- 進捗: #13 で「未使用の変数・型」「typo」「Process の Dispose」を、#27 で命名規則を完了。PR マージ後に `[x]` にする。
 - 終了フラグ: [ ]
 
 ## 13. 展開処理が Launch の中で実行される・状態を flag で持っている
 
-- 場所: `FileClass.cs` の `launchApplication`、`extrctSAversion`、フィールド `flag`
-- 内容: 「Launch」の処理の中で `flag == 0` の場合に展開（副作用）が走る。展開済みかどうかを `int flag` で判断しており、意味が分かりにくい。
+- 場所: `FileClass.cs` の `launchApplication`、`ExtractSAversion`、フィールド `_flag`
+- 内容: 「Launch」の処理の中で `_flag == 0` の場合に展開（副作用）が走る。展開済みかどうかを `int _flag` で判断しており、意味が分かりにくい。
 - 影響: 展開の失敗時の扱いが Launch 側と分離されていない。状態の受け渡しがフィールドに依存している。
-- 対応案: 判定結果（種類・バージョン・パス）を 1 つのオブジェクトにまとめ、展開は別メソッドとして明示的に呼ぶ。`flag` は `bool` にする。
+- 対応案: 判定結果（種類・バージョン・パス）を 1 つのオブジェクトにまとめ、展開は別メソッドとして明示的に呼ぶ。`_flag` は `bool` にする。
 - 終了フラグ: [ ]
 
 ## 14. UI の表示文字列で処理を分岐している・種類を文字列で管理している
 
-- 場所: `MainWindow.xaml.cs` の `checkFile`、`FileClass.cs` の `filetype` / `launchApplication`
+- 場所: `MainWindow.xaml.cs` の `checkFile`、`FileClass.cs` の `_filetype` / `launchApplication`
 - 内容: `textBox_Type.Text` と `"None"` / `"ICEPAK Packfile"` を比較して Extract / Launch ボタンの有効・無効を決めている。種類も `"ICEPAK"`、`"AEDT"`、`"SIwave"` などの文字列で扱っている。
 - 影響: 表示文字列を変えると動作が壊れる。タイプミスをコンパイラが検出できない。
 - 対応案: 種類を `enum` にし、ボタンの状態は FileClass 側の判定結果から決める。
@@ -132,17 +133,17 @@
 
 ## 15. 拡張子判定が大文字小文字を区別する・Regex の使い方が広い
 
-- 場所: `FileClass.cs` の `checkFILE`（`switch (ext)`）、`checkSAversion`（`Regex.IsMatch(te.Name, "model$")`）、`checkSIversion` / `checkAEDTversion`
+- 場所: `FileClass.cs` の `CheckFile`（`switch (ext)`）、`CheckSAversion`（`Regex.IsMatch(entry.Name, "model$")`）、`CheckSIversion` / `CheckAEDTversion`
 - 内容:
   - `.TZR` や `.AEDT` など大文字の拡張子が認識されない。
   - `"model$"` は `xmodel` のような名前にも一致する。
   - `"DB_VERSION"` や `"begin 'Desktop'"` の判定は `Contains` で十分である。
-- 対応案: 拡張子は大文字小文字を無視して比較する。tar のエントリ名は `Path.GetFileName(te.Name) == "model"` のように完全一致で判定する。
+- 対応案: 拡張子は大文字小文字を無視して比較する。tar のエントリ名は `Path.GetFileName(entry.Name) == "model"` のように完全一致で判定する。
 - 終了フラグ: [ ]
 
 ## 16. 展開先の上書き確認がなく、展開後のフィードバックもない
 
-- 場所: `FileClass.cs` の `extrctSAversion`、`MainWindow.xaml.cs` の `button_Extract_Click`
+- 場所: `FileClass.cs` の `ExtractSAversion`、`MainWindow.xaml.cs` の `button_Extract_Click`
 - 内容:
   - 展開先は元ファイルと同じフォルダで、既存のファイル・フォルダがあっても確認せず上書きする。
   - 展開が成功したか、どこに展開されたかが画面に表示されない。
@@ -195,7 +196,7 @@
 - **aedtz / siwz（項目 6・7）**: テンポラリへ展開せず、メモリ上で 7z を読み、判定に必要なエントリだけを文字列として取り出す。
 - **ライブラリ**: SharpCompress（MIT）を追加する想定。SharpZipLib は 7z 非対応。
   - SharpCompress は 7z に加えて TAR / GZip（`.tar.gz` を含む）にも対応している。既存の `.tzr` / `.tgz` 処理（SharpZipLib）を SharpCompress に統一できるが、既存処理の変更になるため別項目として扱う。
-- **判定ロジックの共通化**: `checkAEDTversion` / `checkSIversion` を `TextReader` 入力に分け、ファイルとメモリで同じ判定を使う。
+- **判定ロジックの共通化**: `CheckAEDTversion` / `CheckSIversion` を `TextReader` 入力に分け、ファイルとメモリで同じ判定を使う。
 - **暗号化**: AES 暗号化されたエントリは「暗号化されているため判定不可」と表示する。
 
 ### 未決・確認事項
