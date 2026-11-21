@@ -109,7 +109,7 @@ namespace aedt_launcher
 
                             this._filetype = "ICEPAK Packfile";
                             this._fileversion = ParseIcepakVersion(head.Split(' ')) ?? this._fileversion;
-                            this._filepath = Path.GetDirectoryName(path) + "\\" + entry.Name.Split('/')[0];
+                            this._filepath = Path.Combine(Path.GetDirectoryName(path) ?? string.Empty, entry.Name.Split('/')[0]);
                         }
                         break;
                     }
