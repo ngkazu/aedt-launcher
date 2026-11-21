@@ -2,21 +2,21 @@
 
 対象: `aedt-launcher/` (WPF / .NET 10, `net10.0-windows`)
 
-## 1. 不正なファイルで例外が未処理のまま落ちる可能性
+## 1. 不正なファイルで例外が未処理のまま落ちる可能性 (#2)
 
 - 場所: `FileClass.cs` の `CheckSAversion`、`CheckAEDTversion`、`CheckSIversion`、`ExtractSAversion`
 - 内容: gzip でない `.tgz`、壊れた `.aedt` / `.siw` などで例外が発生しても捕捉していない。
 - 影響: ドロップ時にアプリケーションが異常終了する可能性がある。
 - 終了フラグ: [ ]
 
-## 2. 複数ファイル指定時に最後の1件しか表示されない
+## 2. 複数ファイル指定時に最後の1件しか表示されない (#3)
 
 - 場所: `MainWindow.xaml.cs` の `checkFile(string[])`
 - 内容: ループ内で毎回テキストボックスを上書きしているため、最後のファイルの結果だけが残る。
 - 影響: 複数ファイルをドロップ/引数指定したときに、先頭のファイルの情報が見えない。
 - 終了フラグ: [ ]
 
-## 3. Ctrl+Q でアプリが終了しない
+## 3. Ctrl+Q でアプリが終了しない (#4)
 
 - 場所: `MainWindow.xaml` の `File > Quit`
 - 内容: メニューの `InputGestureText="Ctrl+Q"` は表示のみで、実際のショートカット（`KeyBinding`）が定義されていないため、Ctrl+Q を押してもアプリが終了しない。
@@ -24,21 +24,21 @@
 - 補足: 既存の終了処理（`app_Exit`）を再利用できるため、変更は小さい。
 - 終了フラグ: [ ]
 
-## 4. 起動時に実行ファイル自身のパスを解析対象にしている
+## 4. 起動時に実行ファイル自身のパスを解析対象にしている (#5)
 
 - 場所: `MainWindow.xaml.cs` の `Window_Loaded`
 - 内容: `checkFile(args)` に `args[0]`（実行ファイル自身のパス）も渡している。
 - 影響: 解析対象外のパスを処理しており、無駄な処理になっている。
 - 終了フラグ: [ ]
 
-## 5. Launch の失敗・未設定が無表示
+## 5. Launch の失敗・未設定が無表示 (#6)
 
 - 場所: `FileClass.cs` の `launchApplication`
 - 内容: `catch {}` が空で、`App.config` に設定キーがない場合や起動失敗時に何も通知されない。
 - 補足: README には「キーがない場合は何も起動せずエラーも表示しない」と記載されている。表示方針を変更する場合は README も併せて更新が必要。
 - 終了フラグ: [ ]
 
-## 6. aedtz ファイル（7-Zip 形式）への対応
+## 6. aedtz ファイル（7-Zip 形式）への対応 (#7)
 
 - 対象: 拡張子 `.aedtz` の追加
 - 内容: `.aedtz` は 7-Zip 形式のアーカイブのため、展開してからバージョンを判定する必要がある。
@@ -52,7 +52,7 @@
 - 補足: README の「Supported Files」表の更新が必要。
 - 終了フラグ: [ ]
 
-## 7. siwz ファイル（7-Zip 形式）への対応
+## 7. siwz ファイル（7-Zip 形式）への対応 (#8)
 
 - 対象: 拡張子 `.siwz` の追加
 - 内容: `.siwz` も 7-Zip 形式のため、項目 6 と同じメモリ上の読み取り処理を共通化する。
@@ -61,7 +61,7 @@
 - 補足: README の「Supported Files」表の更新が必要。
 - 終了フラグ: [ ]
 
-## 8. 環境変数から AEDT の実行パスを取得
+## 8. 環境変数から AEDT の実行パスを取得 (#9)
 
 - 内容: 現在は `App.config` の `appSettings` のみから実行パスを取得している。環境変数からも取得できるようにする。
 - 調査結果（このPC）:
@@ -80,7 +80,7 @@
 - 補足: 項目 5（未設定時の表示）と関連する。README の「Executable Configuration」の更新が必要。
 - 終了フラグ: [ ]
 
-## 9. アプリアイコンがさみしい
+## 9. アプリアイコンがさみしい (#10)
 
 - 内容: アプリアイコンの見た目が寂しい印象になっている。
 - 原因: `aedt-launcher.csproj` で `ApplicationIcon` を指定していないため、デフォルトアイコンが使われている。
@@ -91,31 +91,14 @@
 - 補足: 具体的なデザイン方針は未定。
 - 終了フラグ: [ ]
 
-## 10. 解析ロジックの単体テストがない
-
-- 対象: AEDT / SIwave / Icepak のバージョン判定（`CheckAEDTversion`、`CheckSIversion`、`CheckSAdirectory`、`ParseIcepakVersion`）
-- 内容: テストプロジェクトが存在しないため、解析処理の回帰を検出する手段がない。
-- 補足: テストプロジェクトの追加は依存関係の変更を伴うため、実施前に承認が必要。
-- 終了フラグ: [x]
-
-## 11. パス区切りのハードコード
+## 11. パス区切りのハードコード (#12)
 
 - 場所: `FileClass.cs` の `CheckSAversion`
 - 内容: `Path.GetDirectoryName(path) + "\\" + entry.Name.Split('/')[0]` のように `"\\"` を直接連結している。
 - 影響: `Path.Combine` を使うと安全に組み立てられる。
 - 終了フラグ: [ ]
 
-## 12. 未使用コード・命名・リソース管理の整理
-
-- 未使用の変数・型: `MainWindow.xaml.cs` の `list`（`MyFileList`）、`App.xaml.cs` の未使用 `using`
-- typo / 命名: `extrctSAversion`（extract）、`get_filetye`（filetype）
-- 命名規則の不統一: `get_filename` / `get_fileversion` などの `get_` 接頭辞（プロパティにする）、`checkFILE` の大文字（`CheckFile`）、`checkSIversion` などの PascalCase 化、`filename` などの private フィールドに `_` 接頭辞がない、`fi` / `ar` / `te` / `li` などの短い変数名
-- リソース: `launchApplication` の `Process` が Dispose されていない
-- 補足: 公開メソッド名を変更するとすべての呼び出し元の修正が必要になる。
-- 進捗: #13 で「未使用の変数・型」「typo」「Process の Dispose」を、#27 で命名規則を完了。
-- 終了フラグ: [x]
-
-## 13. 展開処理が Launch の中で実行される・状態を flag で持っている
+## 13. 展開処理が Launch の中で実行される・状態を flag で持っている (#15)
 
 - 場所: `FileClass.cs` の `launchApplication`、`ExtractSAversion`、フィールド `_flag`
 - 内容: 「Launch」の処理の中で `_flag == 0` の場合に展開（副作用）が走る。展開済みかどうかを `int _flag` で判断しており、意味が分かりにくい。
@@ -123,7 +106,7 @@
 - 対応案: 判定結果（種類・バージョン・パス）を 1 つのオブジェクトにまとめ、展開は別メソッドとして明示的に呼ぶ。`_flag` は `bool` にする。
 - 終了フラグ: [ ]
 
-## 14. UI の表示文字列で処理を分岐している・種類を文字列で管理している
+## 14. UI の表示文字列で処理を分岐している・種類を文字列で管理している (#16)
 
 - 場所: `MainWindow.xaml.cs` の `checkFile`、`FileClass.cs` の `_filetype` / `launchApplication`
 - 内容: `textBox_Type.Text` と `"None"` / `"ICEPAK Packfile"` を比較して Extract / Launch ボタンの有効・無効を決めている。種類も `"ICEPAK"`、`"AEDT"`、`"SIwave"` などの文字列で扱っている。
@@ -131,7 +114,7 @@
 - 対応案: 種類を `enum` にし、ボタンの状態は FileClass 側の判定結果から決める。
 - 終了フラグ: [ ]
 
-## 15. 拡張子判定が大文字小文字を区別する・Regex の使い方が広い
+## 15. 拡張子判定が大文字小文字を区別する・Regex の使い方が広い (#17)
 
 - 場所: `FileClass.cs` の `CheckFile`（`switch (ext)`）、`CheckSAversion`（`Regex.IsMatch(entry.Name, "model$")`）、`CheckSIversion` / `CheckAEDTversion`
 - 内容:
@@ -141,7 +124,7 @@
 - 対応案: 拡張子は大文字小文字を無視して比較する。tar のエントリ名は `Path.GetFileName(entry.Name) == "model"` のように完全一致で判定する。
 - 終了フラグ: [ ]
 
-## 16. 展開先の上書き確認がなく、展開後のフィードバックもない
+## 16. 展開先の上書き確認がなく、展開後のフィードバックもない (#18)
 
 - 場所: `FileClass.cs` の `ExtractSAversion`、`MainWindow.xaml.cs` の `button_Extract_Click`
 - 内容:
@@ -151,7 +134,7 @@
 - 対応案: 展開先が既に存在する場合は確認する。展開完了後にパスを表示し、展開済みならボタンを無効にする。
 - 終了フラグ: [ ]
 
-## 17. App.config のバージョンキーとインストール先の対応を確認していない
+## 17. App.config のバージョンキーとインストール先の対応を確認していない (#19)
 
 - 場所: [App.config](d:/+Projects/repos/aedt-launcher/aedt-launcher/App.config)
 - 内容:
@@ -161,33 +144,12 @@
 - 補足: 項目 8 の環境変数対応を行う場合は、この確認結果を前提にする。
 - 終了フラグ: [ ]
 
-## 18. app.manifest・AssemblyInfo.cs がテンプレートのまま
-
-- 場所: [app.manifest](d:/+Projects/repos/aedt-launcher/aedt-launcher/Properties/app.manifest)、[AssemblyInfo.cs](d:/+Projects/repos/aedt-launcher/aedt-launcher/Properties/AssemblyInfo.cs)
-- 内容:
-  - `assemblyIdentity name="MyApplication.app"` が初期値のまま。
-  - `applicationRequestMinimum` の `PermissionSet` は .NET Framework の旧機能で、.NET 10 では効果がない。
-  - `AssemblyCopyright` の年が 2019 のまま。
-- 対応案: manifest は `requestedExecutionLevel` 以外を削除し、名前を実際のアプリ名に合わせる。著作権年は意図を確認して更新する。
-- 終了フラグ: [x]
-
-## 19. 「About」メニューに処理が割り当てられていない
+## 19. 「About」メニューに処理が割り当てられていない (#21)
 
 - 場所: `MainWindow.xaml` の `Help > About`
 - 内容: `MenuItem` に `Click` ハンドラがなく、クリックしても何も起きない。
 - 対応案: About ダイアログを表示するか、項目を削除する。どちらにするかは仕様として決める必要がある。
 - 終了フラグ: [ ]
-
-## 20. csproj と未使用ファイルの整理
-
-- 場所: [aedt-launcher.csproj](d:/+Projects/repos/aedt-launcher/aedt-launcher/aedt-launcher.csproj)、[Settings.settings](d:/+Projects/repos/aedt-launcher/aedt-launcher/Properties/Settings.settings)
-- 内容:
-  - `ErrorReport` と `WarningLevel` は SDK スタイルの csproj では不要。
-  - `<None Include="App.config" />` は `<AppConfig>` と重複している。
-  - `Settings.settings` は空で、使われていない。
-  - `App.xaml.cs` の未使用 `using` は項目 12 で扱う。
-- 対応案: 不要な項目を削除する。`Settings.settings` は `Settings.Designer.cs` と合わせて削除する。
-- 終了フラグ: [x]
 
 ## 方針・未決事項のまとめ（6・7・8）
 
@@ -213,4 +175,3 @@
 ### 実装前に必要な作業
 
 - README の「Supported Files」「Executable Configuration」の更新案を提示し、承認を得る。
-- 項目 10（単体テスト）を実施する場合は、テストプロジェクト追加の承認を得る。
