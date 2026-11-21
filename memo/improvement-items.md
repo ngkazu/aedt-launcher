@@ -91,13 +91,6 @@
 - 補足: 具体的なデザイン方針は未定。
 - 終了フラグ: [ ]
 
-## 11. パス区切りのハードコード (#12)
-
-- 場所: `FileClass.cs` の `CheckSAversion`
-- 内容: `Path.GetDirectoryName(path) + "\\" + entry.Name.Split('/')[0]` のように `"\\"` を直接連結している。
-- 影響: `Path.Combine` を使うと安全に組み立てられる。
-- 終了フラグ: [ ]
-
 ## 13. 展開処理が Launch の中で実行される・状態を flag で持っている (#15)
 
 - 場所: `FileClass.cs` の `launchApplication`、`ExtractSAversion`、フィールド `_flag`
