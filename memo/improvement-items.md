@@ -112,8 +112,8 @@
 - 命名規則の不統一: `get_filename` / `get_fileversion` などの `get_` 接頭辞（プロパティにする）、`checkFILE` の大文字（`CheckFile`）、`checkSIversion` などの PascalCase 化、`filename` などの private フィールドに `_` 接頭辞がない、`fi` / `ar` / `te` / `li` などの短い変数名
 - リソース: `launchApplication` の `Process` が Dispose されていない
 - 補足: 公開メソッド名を変更するとすべての呼び出し元の修正が必要になる。
-- 進捗: #13 で「未使用の変数・型」「typo」「Process の Dispose」を、#27 で命名規則を完了。PR マージ後に `[x]` にする。
-- 終了フラグ: [ ]
+- 進捗: #13 で「未使用の変数・型」「typo」「Process の Dispose」を、#27 で命名規則を完了。
+- 終了フラグ: [x]
 
 ## 13. 展開処理が Launch の中で実行される・状態を flag で持っている
 
