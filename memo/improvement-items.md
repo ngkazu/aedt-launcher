@@ -91,14 +91,6 @@
 - 補足: 具体的なデザイン方針は未定。
 - 終了フラグ: [ ]
 
-## 13. 展開処理が Launch の中で実行される・状態を flag で持っている (#15)
-
-- 場所: `FileClass.cs` の `launchApplication`、`ExtractSAversion`、フィールド `_flag`
-- 内容: 「Launch」の処理の中で `_flag == 0` の場合に展開（副作用）が走る。展開済みかどうかを `int _flag` で判断しており、意味が分かりにくい。
-- 影響: 展開の失敗時の扱いが Launch 側と分離されていない。状態の受け渡しがフィールドに依存している。
-- 対応案: 判定結果（種類・バージョン・パス）を 1 つのオブジェクトにまとめ、展開は別メソッドとして明示的に呼ぶ。`_flag` は `bool` にする。
-- 終了フラグ: [ ]
-
 ## 14. UI の表示文字列で処理を分岐している・種類を文字列で管理している (#16)
 
 - 場所: `MainWindow.xaml.cs` の `checkFile`、`FileClass.cs` の `_filetype` / `launchApplication`
