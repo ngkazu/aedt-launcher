@@ -36,10 +36,10 @@ namespace aedt_launcher.Tests
             File.WriteAllText(path, "DB_VERSION 2019.1\n");
 
             var file = new FileClass();
-            file.checkFILE(path);
+            file.CheckFile(path);
 
-            Assert.Equal("SIwave", file.get_filetype());
-            Assert.Equal("2019.1", file.get_fileversion());
+            Assert.Equal("SIwave", file.FileType);
+            Assert.Equal("2019.1", file.FileVersion);
         }
 
         [Fact]
@@ -49,10 +49,10 @@ namespace aedt_launcher.Tests
             File.WriteAllText(path, "begin 'Desktop'\n\t2019,1\n");
 
             var file = new FileClass();
-            file.checkFILE(path);
+            file.CheckFile(path);
 
-            Assert.Equal("AEDT", file.get_filetype());
-            Assert.Equal("2019.1", file.get_fileversion());
+            Assert.Equal("AEDT", file.FileType);
+            Assert.Equal("2019.1", file.FileVersion);
         }
 
         [Fact]
@@ -63,10 +63,10 @@ namespace aedt_launcher.Tests
             File.WriteAllText(Path.Combine(dir, "model"), "ICEPAK 2019 Icepak 19.0\n");
 
             var file = new FileClass();
-            file.checkFILE(dir);
+            file.CheckFile(dir);
 
-            Assert.Equal("ICEPAK", file.get_filetype());
-            Assert.Equal("19.0", file.get_fileversion());
+            Assert.Equal("ICEPAK", file.FileType);
+            Assert.Equal("19.0", file.FileVersion);
         }
 
         [Fact]
@@ -76,19 +76,19 @@ namespace aedt_launcher.Tests
             File.WriteAllText(path, "DB_VERSION 2019.1\n");
 
             var file = new FileClass();
-            file.checkFILE(path);
+            file.CheckFile(path);
 
-            Assert.Equal("None", file.get_filetype());
-            Assert.Equal("None", file.get_fileversion());
+            Assert.Equal("None", file.FileType);
+            Assert.Equal("None", file.FileVersion);
         }
 
         [Fact]
         public void CheckFile_MissingPath_LeavesTypeNone()
         {
             var file = new FileClass();
-            file.checkFILE(Path.Combine(tempDir, "missing.siw"));
+            file.CheckFile(Path.Combine(tempDir, "missing.siw"));
 
-            Assert.Equal("None", file.get_filetype());
+            Assert.Equal("None", file.FileType);
         }
     }
 }
