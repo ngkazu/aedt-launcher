@@ -6,6 +6,12 @@
         xmlns:local="clr-namespace:aedt_launcher"
         mc:Ignorable="d"
         Title="AEDT Launcher" Height="145" Width="543" Loaded="Window_Loaded" Drop="Window_Drop" PreviewDragOver="Window_PreviewDragOver" ResizeMode="NoResize" WindowStyle="None">
+    <Window.CommandBindings>
+        <CommandBinding Command="{x:Static local:MainWindow.QuitCommand}" Executed="QuitCommand_Executed"/>
+    </Window.CommandBindings>
+    <Window.InputBindings>
+        <KeyBinding Key="Q" Modifiers="Control" Command="{x:Static local:MainWindow.QuitCommand}"/>
+    </Window.InputBindings>
     <Grid>
         <TextBox x:Name="textBox_Filename" HorizontalAlignment="Left" Height="23" Margin="83,45,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="450"/>
         <TextBox x:Name="textBox_Type" HorizontalAlignment="Left" Height="23" Margin="83,73,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="152"/>
@@ -18,7 +24,7 @@
         <Image x:Name="appIcon" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Width="34" Source="Images/032.ico"/>
         <Menu x:Name="mainMenu" HorizontalAlignment="Left" Height="34" Margin="39,0,0,0" VerticalAlignment="Top" Width="110">
             <MenuItem Header="File(_F)" Height="34" Width="55">
-                <MenuItem Header="Quit" HorizontalAlignment="Left" Width="140" InputGestureText="Ctrl+Q" Click="MenuItem_Click" />
+                <MenuItem Header="Quit" HorizontalAlignment="Left" Width="140" InputGestureText="Ctrl+Q" Command="{x:Static local:MainWindow.QuitCommand}" />
             </MenuItem>
             <MenuItem Header="Help(_H)" Height="34" Width="55">
                 <MenuItem Header="About" HorizontalAlignment="Left" Width="140"/>

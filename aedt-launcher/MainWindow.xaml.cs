@@ -20,6 +20,8 @@ namespace aedt_launcher
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static readonly RoutedUICommand QuitCommand = new RoutedUICommand("Quit", "QuitCommand", typeof(MainWindow));
+
         aedt_launcher.FileClass icepak = new FileClass();
 
         public MainWindow()
@@ -113,7 +115,7 @@ namespace aedt_launcher
             this.app_Exit();
         }
 
-        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        private void QuitCommand_Executed(object sender, ExecutedRoutedEventArgs e)
         {
             this.app_Exit();
         }
