@@ -68,6 +68,14 @@ namespace aedt_launcher
         private void button_Extract_Click(object sender, RoutedEventArgs e)
         {
             icepak.ExtractSAversion();
+            this.textBox_Type.Text = icepak.FileType;
+            this.textBox_Version.Text = icepak.FileVersion;
+
+            if (icepak.FileType == "Error")
+            {
+                this.button_Extract.IsEnabled = false;
+                this.button_Launch.IsEnabled = false;
+            }
         }
 
         private void button_Launch_Click(object sender, RoutedEventArgs e)

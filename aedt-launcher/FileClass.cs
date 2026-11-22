@@ -6,6 +6,7 @@ using System.IO.Compression;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using ICSharpCode.SharpZipLib;
 using ICSharpCode.SharpZipLib.Tar;
 
 namespace aedt_launcher
@@ -29,13 +30,20 @@ namespace aedt_launcher
         {
             string folder = Path.GetDirectoryName(_detected.FileName) ?? string.Empty;
 
-            using (var tzrStream = File.OpenRead(_detected.FileName))
-            using (var gzStream = new GZipStream(tzrStream, CompressionMode.Decompress))
-            using (var tarStream = TarArchive.CreateInputTarArchive(gzStream, Encoding.UTF8))
+            try
             {
-                tarStream.ExtractContents(folder);
+                using (var tzrStream = File.OpenRead(_detected.FileName))
+                using (var gzStream = new GZipStream(tzrStream, CompressionMode.Decompress))
+                using (var tarStream = TarArchive.CreateInputTarArchive(gzStream, Encoding.UTF8))
+                {
+                    tarStream.ExtractContents(folder);
+                }
+                _detected = _detected with { IsExtracted = true };
             }
-            _detected = _detected with { IsExtracted = true };
+            catch (Exception ex) when (IsParseException(ex))
+            {
+                _detected = new DetectedFile(_detected.FileName, "Error", ex.Message, _detected.FilePath, false);
+            }
         }
 
         private static DetectedFile? CheckSIversion(string path)
@@ -118,32 +126,42 @@ namespace aedt_launcher
             }
         }
 
+        private static bool IsParseException(Exception ex) =>
+            ex is IOException or InvalidDataException or SharpZipBaseException;
+
         public void CheckFile(string path)
         {
             DetectedFile? detected = null;
 
-            if (File.Exists(path))
+            try
             {
-                string extension = Path.GetExtension(path).ToLowerInvariant();
-                switch (extension)
+                if (File.Exists(path))
                 {
-                    case ".tzr":
-                    case ".tgz":
-                        detected = CheckSAversion(path);
-                        break;
-                    case ".aedt":
-                        detected = CheckAEDTversion(path);
-                        break;
-                    case ".siw":
-                        detected = CheckSIversion(path);
-                        break;
-                    default:
-                        break;
+                    string extension = Path.GetExtension(path).ToLowerInvariant();
+                    switch (extension)
+                    {
+                        case ".tzr":
+                        case ".tgz":
+                            detected = CheckSAversion(path);
+                            break;
+                        case ".aedt":
+                            detected = CheckAEDTversion(path);
+                            break;
+                        case ".siw":
+                            detected = CheckSIversion(path);
+                            break;
+                        default:
+                            break;
+                    }
+                }
+                else if (Directory.Exists(path))
+                {
+                    detected = CheckSAdirectory(path);
                 }
             }
-            else if (Directory.Exists(path))
+            catch (Exception ex) when (IsParseException(ex))
             {
-                detected = CheckSAdirectory(path);
+                detected = null;
             }
 
             _detected = detected ?? DetectedFile.None(path);

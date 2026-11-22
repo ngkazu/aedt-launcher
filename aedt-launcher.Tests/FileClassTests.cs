@@ -86,6 +86,31 @@ namespace aedt_launcher.Tests
         }
 
         [Fact]
+        public void CheckFile_NonGzipTgz_LeavesTypeNone()
+        {
+            string path = Path.Combine(tempDir, "broken.tgz");
+            File.WriteAllText(path, "not a gzip file");
+
+            var file = new FileClass();
+            file.CheckFile(path);
+
+            Assert.Equal("None", file.FileType);
+        }
+
+        [Fact]
+        public void ExtractSAversion_NonGzipTgz_SetsTypeToError()
+        {
+            string path = Path.Combine(tempDir, "broken.tgz");
+            File.WriteAllText(path, "not a gzip file");
+
+            var file = new FileClass();
+            file.CheckFile(path);
+            file.ExtractSAversion();
+
+            Assert.Equal("Error", file.FileType);
+        }
+
+        [Fact]
         public void CheckFile_MissingPath_LeavesTypeNone()
         {
             var file = new FileClass();
