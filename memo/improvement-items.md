@@ -2,13 +2,6 @@
 
 対象: `aedt-launcher/` (WPF / .NET 10, `net10.0-windows`)
 
-## 不正なファイルで例外が未処理のまま落ちる可能性 (#2)
-
-- 場所: `FileClass.cs` の `CheckSAversion`、`CheckAEDTversion`、`CheckSIversion`、`ExtractSAversion`
-- 内容: gzip でない `.tgz`、壊れた `.aedt` / `.siw` などで例外が発生しても捕捉していない。
-- 影響: ドロップ時にアプリケーションが異常終了する可能性がある。
-- 終了フラグ: [ ]
-
 ## 複数ファイル指定時に最後の1件しか表示されない (#3)
 
 - 場所: `MainWindow.xaml.cs` の `checkFile(string[])`
