@@ -9,8 +9,6 @@
 
 - Write commit messages in **English**.
 - Use a short summary on the first line, followed by a body explaining the reason for the change when needed.
-- End with the Co-authored-by trailer:
-  `Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>`
 
 ## Versioning and releases
 
