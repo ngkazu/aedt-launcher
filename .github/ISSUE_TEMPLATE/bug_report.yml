@@ -6,9 +6,9 @@ body:
     id: title_ja
     attributes:
       label: Japanese title
-      description: Enter the Japanese title of this issue.
+      description: Enter the Japanese title of this issue (optional).
     validations:
-      required: true
+      required: false
   - type: textarea
     id: summary
     attributes:

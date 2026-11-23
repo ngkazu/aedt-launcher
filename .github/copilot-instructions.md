@@ -20,7 +20,7 @@
 ## Issues
 
 - Write issue titles in **English**.
-- Write the issue body in **Japanese**, and include a Japanese title in the body.
+- Write the issue body in **Japanese**, and include a Japanese title in the body (optional).
 - Use the templates in `.github/ISSUE_TEMPLATE/`: `bug_report.yml` for bugs and `feature_request.yml` for enhancements.
 - Apply only labels that already exist in the repository. Do not create new labels.
 - When an issue came from `memo/improvement-items.md`, record the item number in the issue body.
