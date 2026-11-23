@@ -11,9 +11,19 @@ using ICSharpCode.SharpZipLib.Tar;
 
 namespace aedt_launcher
 {
-    internal sealed record DetectedFile(string FileName, string FileType, string FileVersion, string FilePath, bool IsExtracted)
+    internal enum FileKind
     {
-        public static DetectedFile None(string fileName) => new(fileName, "None", "None", "None", false);
+        None,
+        Error,
+        Icepak,
+        IcepakPackfile,
+        Aedt,
+        SIwave
+    }
+
+    internal sealed record DetectedFile(string FileName, FileKind FileType, string FileVersion, string FilePath, bool IsExtracted)
+    {
+        public static DetectedFile None(string fileName) => new(fileName, FileKind.None, "None", "None", false);
     }
 
     class FileClass
@@ -22,7 +32,17 @@ namespace aedt_launcher
 
         public string FileName => _detected.FileName;
 
-        public string FileType => _detected.FileType;
+        public FileKind FileType => _detected.FileType;
+
+        public static string GetTypeName(FileKind kind) => kind switch
+        {
+            FileKind.Error => "Error",
+            FileKind.Icepak => "ICEPAK",
+            FileKind.IcepakPackfile => "ICEPAK Packfile",
+            FileKind.Aedt => "AEDT",
+            FileKind.SIwave => "SIwave",
+            _ => "None",
+        };
 
         public string FileVersion => _detected.FileVersion;
 
@@ -42,7 +62,7 @@ namespace aedt_launcher
             }
             catch (Exception ex) when (IsParseException(ex))
             {
-                _detected = new DetectedFile(_detected.FileName, "Error", ex.Message, _detected.FilePath, false);
+                _detected = new DetectedFile(_detected.FileName, FileKind.Error, ex.Message, _detected.FilePath, false);
             }
         }
 
@@ -52,7 +72,7 @@ namespace aedt_launcher
             {
                 if (line.Contains("DB_VERSION"))
                 {
-                    return new DetectedFile(path, "SIwave", Regex.Replace(line, @"[^0-9.]", ""), path, false);
+                    return new DetectedFile(path, FileKind.SIwave, Regex.Replace(line, @"[^0-9.]", ""), path, false);
                 }
             }
             return null;
@@ -67,7 +87,7 @@ namespace aedt_launcher
                 {
                     var versionText = Regex.Replace(lines.Current, @"[^0-9,]", "");
                     var version = Regex.Replace(versionText, @",", ".");
-                    return new DetectedFile(path, "AEDT", version, path, false);
+                    return new DetectedFile(path, FileKind.Aedt, version, path, false);
                 }
             }
             return null;
@@ -88,7 +108,7 @@ namespace aedt_launcher
                 string? line = File.ReadLines(modelPath, Encoding.UTF8).FirstOrDefault();
                 if (line == null) return null;
 
-                return new DetectedFile(path, "ICEPAK", ParseIcepakVersion(line.Split(' ')) ?? "None", path, false);
+                return new DetectedFile(path, FileKind.Icepak, ParseIcepakVersion(line.Split(' ')) ?? "None", path, false);
             }
             return null;
         }
@@ -117,7 +137,7 @@ namespace aedt_launcher
                         string head = firstLine.Substring(0, Math.Min(100, firstLine.Length));
 
                         string folder = Path.Combine(Path.GetDirectoryName(path) ?? string.Empty, entry.Name.Split('/')[0]);
-                        var detected = new DetectedFile(path, "ICEPAK Packfile", ParseIcepakVersion(head.Split(' ')) ?? "None", folder, false);
+                        var detected = new DetectedFile(path, FileKind.IcepakPackfile, ParseIcepakVersion(head.Split(' ')) ?? "None", folder, false);
                         if (isModel) return detected;
                         fallback = detected;
                     }
@@ -174,20 +194,20 @@ namespace aedt_launcher
 
             switch (_detected.FileType)
             {
-                case "ICEPAK":
+                case FileKind.Icepak:
                     myKey = "ICEPAK:" + _detected.FileVersion;
                     myPath = _detected.FilePath;
                     break;
-                case "ICEPAK Packfile":
+                case FileKind.IcepakPackfile:
                     if (!_detected.IsExtracted) ExtractSAversion();
                     myKey = "ICEPAK:" + _detected.FileVersion;
                     myPath = _detected.FilePath;
                     break;
-                case "AEDT":
+                case FileKind.Aedt:
                     myKey = "AEDT:" + _detected.FileVersion;
                     myPath = _detected.FileName;
                     break;
-                case "SIwave":
+                case FileKind.SIwave:
                     myKey = "SIwave:" + _detected.FileVersion;
                     myPath = _detected.FileName;
                     break;

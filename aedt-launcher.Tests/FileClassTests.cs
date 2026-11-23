@@ -41,7 +41,7 @@ namespace aedt_launcher.Tests
             var file = new FileClass();
             file.CheckFile(path);
 
-            Assert.Equal("SIwave", file.FileType);
+            Assert.Equal(FileKind.SIwave, file.FileType);
             Assert.Equal("2019.1", file.FileVersion);
         }
 
@@ -54,7 +54,7 @@ namespace aedt_launcher.Tests
             var file = new FileClass();
             file.CheckFile(path);
 
-            Assert.Equal("AEDT", file.FileType);
+            Assert.Equal(FileKind.Aedt, file.FileType);
             Assert.Equal("2019.1", file.FileVersion);
         }
 
@@ -68,7 +68,7 @@ namespace aedt_launcher.Tests
             var file = new FileClass();
             file.CheckFile(dir);
 
-            Assert.Equal("ICEPAK", file.FileType);
+            Assert.Equal(FileKind.Icepak, file.FileType);
             Assert.Equal("19.0", file.FileVersion);
         }
 
@@ -81,7 +81,7 @@ namespace aedt_launcher.Tests
             var file = new FileClass();
             file.CheckFile(path);
 
-            Assert.Equal("None", file.FileType);
+            Assert.Equal(FileKind.None, file.FileType);
             Assert.Equal("None", file.FileVersion);
         }
 
@@ -94,7 +94,7 @@ namespace aedt_launcher.Tests
             var file = new FileClass();
             file.CheckFile(path);
 
-            Assert.Equal("None", file.FileType);
+            Assert.Equal(FileKind.None, file.FileType);
         }
 
         [Fact]
@@ -107,7 +107,7 @@ namespace aedt_launcher.Tests
             file.CheckFile(path);
             file.ExtractSAversion();
 
-            Assert.Equal("Error", file.FileType);
+            Assert.Equal(FileKind.Error, file.FileType);
         }
 
         [Fact]
@@ -116,7 +116,7 @@ namespace aedt_launcher.Tests
             var file = new FileClass();
             file.CheckFile(Path.Combine(tempDir, "missing.siw"));
 
-            Assert.Equal("None", file.FileType);
+            Assert.Equal(FileKind.None, file.FileType);
         }
 
         [Fact]
@@ -128,7 +128,7 @@ namespace aedt_launcher.Tests
             var file = new FileClass();
             file.CheckFile(path);
 
-            Assert.Equal("SIwave", file.FileType);
+            Assert.Equal(FileKind.SIwave, file.FileType);
         }
 
         [Fact]
@@ -140,7 +140,7 @@ namespace aedt_launcher.Tests
             var file = new FileClass();
             file.CheckFile(path);
 
-            Assert.Equal("ICEPAK Packfile", file.FileType);
+            Assert.Equal(FileKind.IcepakPackfile, file.FileType);
             Assert.Equal("19.0", file.FileVersion);
         }
 
@@ -153,7 +153,7 @@ namespace aedt_launcher.Tests
             var file = new FileClass();
             file.CheckFile(path);
 
-            Assert.Equal("ICEPAK Packfile", file.FileType);
+            Assert.Equal(FileKind.IcepakPackfile, file.FileType);
             Assert.Equal("18.0", file.FileVersion);
         }
 
@@ -166,7 +166,7 @@ namespace aedt_launcher.Tests
             var file = new FileClass();
             file.CheckFile(path);
 
-            Assert.Equal("None", file.FileType);
+            Assert.Equal(FileKind.None, file.FileType);
         }
 
         private static void CreatePackfile(string path, params (string Name, string Content)[] entries)

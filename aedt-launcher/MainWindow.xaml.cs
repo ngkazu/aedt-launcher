@@ -68,10 +68,10 @@ namespace aedt_launcher
         private void button_Extract_Click(object sender, RoutedEventArgs e)
         {
             icepak.ExtractSAversion();
-            this.textBox_Type.Text = icepak.FileType;
+            this.textBox_Type.Text = FileClass.GetTypeName(icepak.FileType);
             this.textBox_Version.Text = icepak.FileVersion;
 
-            if (icepak.FileType == "Error")
+            if (icepak.FileType == FileKind.Error)
             {
                 this.button_Extract.IsEnabled = false;
                 this.button_Launch.IsEnabled = false;
@@ -98,13 +98,13 @@ namespace aedt_launcher
                     this.button_Launch.IsEnabled = false;
                     icepak.CheckFile(path);
                     this.textBox_Filename.Text = icepak.FileName;
-                    this.textBox_Type.Text = icepak.FileType;
+                    this.textBox_Type.Text = FileClass.GetTypeName(icepak.FileType);
                     this.textBox_Version.Text = icepak.FileVersion;
 
-                    if (this.textBox_Type.Text != "None")
+                    if (icepak.FileType != FileKind.None)
                     {
                         this.button_Launch.IsEnabled = true;
-                        if (this.textBox_Type.Text == "ICEPAK Packfile")
+                        if (icepak.FileType == FileKind.IcepakPackfile)
                         {
                             this.button_Extract.IsEnabled = true;
                         }
