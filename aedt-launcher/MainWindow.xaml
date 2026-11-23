@@ -27,7 +27,7 @@
                 <MenuItem Header="Quit" HorizontalAlignment="Left" Width="140" InputGestureText="Ctrl+Q" Command="{x:Static local:MainWindow.QuitCommand}" />
             </MenuItem>
             <MenuItem Header="Help(_H)" Height="34" Width="55">
-                <MenuItem Header="About" HorizontalAlignment="Left" Width="140"/>
+                <MenuItem Header="About" HorizontalAlignment="Left" Width="140" Click="About_Click"/>
             </MenuItem>
         </Menu>
         <Button x:Name="clsButton" Content="X" HorizontalAlignment="Right" VerticalAlignment="Top" Width="34" Height="34" Click="clsButton_Click"/>
