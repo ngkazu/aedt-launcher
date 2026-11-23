@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -126,6 +127,11 @@ namespace aedt_launcher
         private void QuitCommand_Executed(object sender, ExecutedRoutedEventArgs e)
         {
             this.app_Exit();
+        }
+
+        private void About_Click(object sender, RoutedEventArgs e)
+        {
+            Process.Start(new ProcessStartInfo("https://github.com/ngkazu/aedt-launcher") { UseShellExecute = true });
         }
 
         private void minButton_Click(object sender, RoutedEventArgs e)
