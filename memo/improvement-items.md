@@ -26,7 +26,7 @@
   - 既存の `CheckAEDTversion` / `CheckSIversion` は `File.ReadLines` 前提のため、`TextReader` を受け取る形に分けて、ファイル・メモリ両方から同じ判定ロジックを使う。
   - 全体を展開せず、対象エントリ（`.aedt` / `.siw` 相当）だけを `StreamReader` で読む。
   - AES 暗号化されたエントリは読めないため、その場合は「暗号化されているため判定不可」と表示する。
-- 要確認: 展開後のファイル構成（どのエントリからバージョンを読むか）。サンプル `data/Graphics_Card_Test.aedtz`（pyaedt の `tests/system/**/*.aedtz` も参考）で確認する。
+- 要確認: 展開後のファイル構成（どのエントリからバージョンを読むか）。サンプル `aedt-launcher.Tests/TestData/Graphics_Card_Test.aedtz`（pyaedt の `tests/system/**/*.aedtz` も参考）で確認する。
 - 補足: README の「Supported Files」表の更新が必要。
 - 終了フラグ: [ ]
 
@@ -34,7 +34,7 @@
 
 - 対象: 拡張子 `.siwz` の追加
 - 内容: `.siwz` も 7-Zip 形式のため、#7 と同じメモリ上の読み取り処理を共通化する。
-- サンプル: `data/BD-SAMPLE.DSGN_GD6.siwz`
+- サンプル: `aedt-launcher.Tests/TestData/BD-SAMPLE.DSGN_GD6.siwz`
 - 要確認: 展開後のエントリ構成と、バージョンの取得元（現在の `.siw` の `DB_VERSION` 判定を流用できるか）。
 - 補足: README の「Supported Files」表の更新が必要。
 - 終了フラグ: [ ]
@@ -102,8 +102,8 @@
 ### 未決・確認事項
 
 - [ ] 承認: SharpCompress の NuGet 追加（依存関係の変更）
-- [ ] 確認: aedtz の展開後エントリ構成（どのエントリからバージョンを読むか）。サンプル `data/Graphics_Card_Test.aedtz`
-- [ ] 確認: siwz の展開後エントリ構成と、バージョン取得元（`DB_VERSION` を流用できるか）。サンプル `data/BD-SAMPLE.DSGN_GD6.siwz`
+- [ ] 確認: aedtz の展開後エントリ構成（どのエントリからバージョンを読むか）。サンプル `aedt-launcher.Tests/TestData/Graphics_Card_Test.aedtz`
+- [ ] 確認: siwz の展開後エントリ構成と、バージョン取得元（`DB_VERSION` を流用できるか）。サンプル `aedt-launcher.Tests/TestData/BD-SAMPLE.DSGN_GD6.siwz`
 - [ ] 決定: `ANSYSEM_ROOT<数値>` を使うか、使う場合の実行ファイルの組み立て方
 - [ ] 決定: `App.config` と環境変数の優先順位
 - [ ] 決定: #6 の未設定時表示方針（README の記載変更を含む）
